@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>Fit Plan</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Fit Plan">
+<meta name="theme-color" content="#FBF8F2">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FBF8F2;--paper:#FFFFFF;--ink:#3A322C;--soft:#7A6F66;--blush:#C49A92;--blush-tint:#F4E7E2;--sage:#8E9A82;--sage-tint:#E8ECE2;--line:#E8DFD2;--gold:#B79A6B;--gold-tint:#F3EEE4;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;}
+body{background:var(--ivory);color:var(--ink);font-family:"Mulish",-apple-system,system-ui,sans-serif;font-size:15px;line-height:1.5;padding-bottom:calc(74px + env(safe-area-inset-bottom));-webkit-font-smoothing:antialiased;}
+.serif{font-family:"GFS Didot","Hoefler Text",Georgia,serif;}
+em{color:var(--blush);font-style:italic;}
+.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);font-weight:700;}
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:calc(env(safe-area-inset-top) + 14px) 20px 12px;}
+.brand{display:flex;align-items:baseline;gap:9px;}
+.brand .mark{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--blush);font-weight:700;}
+.brand .stitle{font-family:"GFS Didot",Georgia,serif;font-size:24px;line-height:1;}
+main{padding:18px 20px 24px;max-width:560px;margin:0 auto;}
+.view{display:none;animation:fade .25s ease;}
+.view.on{display:block;}
+@keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+.sec-head{margin:4px 0 16px;}
+.sec-head h2{font-family:"GFS Didot",Georgia,serif;font-weight:400;font-size:30px;line-height:1.1;margin:6px 0 0;}
+.sec-head p{color:var(--soft);font-size:14px;margin:8px 0 0;}
+.divider{height:1px;background:var(--line);margin:22px 0;position:relative;}
+.divider::after{content:"\2726";color:var(--blush);position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--ivory);padding:0 10px;font-size:11px;}
+.block{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:17px 18px;margin-bottom:14px;}
+.block>.eyebrow{display:block;margin-bottom:12px;}
+.pill{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:3px 9px;border-radius:999px;}
+.pill.ontbijt{background:var(--gold-tint);color:#9a824f;}
+.pill.lunch{background:var(--sage-tint);color:#5d6a51;}
+.pill.avond{background:var(--blush-tint);color:#a06b61;}
+.pill.kind{background:#F3EEE4;color:var(--gold);}
+.daynav{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;}
+.daynav .arrow{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--blush);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.daynav .arrow:active{background:var(--blush);color:#fff;}
+.daynav .ctr{text-align:center;}
+.daynav .lbl{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--blush);font-weight:700;}
+.daynav .day{font-family:"GFS Didot",Georgia,serif;font-size:24px;line-height:1.1;}
+.daynav .date{font-size:12px;color:var(--soft);}
+.mealcard{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:14px 15px;margin-bottom:11px;cursor:pointer;transition:.15s;}
+.mealcard:active{transform:scale(.992);border-color:var(--blush);}
+.mealcard .mc-body{flex:1;}
+.mealcard .ml{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:3px;}
+.mealcard .mt{font-family:"GFS Didot",Georgia,serif;font-size:18px;line-height:1.15;}
+.mealcard .mt.muted{color:var(--soft);font-style:italic;font-family:"Mulish",sans-serif;font-size:14px;}
+.mealcard .chev{color:var(--blush);font-size:20px;}
+.movecard{background:linear-gradient(135deg,var(--sage-tint),#eef1e8);border:1px solid #dde3d4;border-radius:15px;padding:14px 15px;margin-bottom:11px;display:flex;align-items:center;gap:12px;cursor:pointer;}
+.movecard .mt{font-family:"GFS Didot",Georgia,serif;font-size:18px;}
+.movecard .ml{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#5d6a51;margin-bottom:3px;}
+.restcard{text-align:center;color:var(--soft);font-style:italic;padding:16px;border:1px dashed var(--line);border-radius:15px;margin-bottom:11px;font-size:14px;}
+.dayrow{display:grid;grid-template-columns:34px 1fr 1fr 1fr;gap:7px;align-items:stretch;margin-bottom:8px;}
+.dayrow .dl{display:flex;align-items:center;font-weight:700;font-size:13px;color:var(--soft);}
+.dayrow.today .dl{color:var(--blush);}
+.slot{border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:7px 6px;font-size:11px;line-height:1.2;min-height:42px;display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;overflow:hidden;}
+.slot.set{background:var(--blush-tint);border-color:#eed7d0;color:#8a5a50;font-weight:600;}
+.slot.nvt{color:var(--soft);font-style:italic;}
+.slot.empty{border-style:dashed;color:var(--blush);font-size:18px;}
+.slothead{display:grid;grid-template-columns:34px 1fr 1fr 1fr;gap:7px;margin-bottom:6px;}
+.slothead div{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:700;text-align:center;}
+.slothead div:first-child{text-align:left;}
+.daychips{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;}
+.daychip{border:1px solid var(--line);background:var(--paper);color:var(--soft);border-radius:999px;padding:7px 0;font-size:12px;font-weight:700;cursor:pointer;flex:1;text-align:center;min-width:38px;}
+.daychip.active{background:var(--sage);border-color:var(--sage);color:#fff;}
+.classpick{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:12px;padding:11px 13px;margin-top:10px;cursor:pointer;}
+.classpick .cv{font-weight:600;}
+.classpick .cv.muted{color:var(--soft);font-style:italic;font-weight:400;}
+.chips{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px;margin-bottom:10px;}
+.chips::-webkit-scrollbar{display:none;}
+.chip{flex:0 0 auto;border:1px solid var(--line);background:var(--paper);color:var(--soft);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer;}
+.chip.active{background:var(--blush);border-color:var(--blush);color:#fff;}
+.searchbar{position:relative;margin-bottom:12px;}
+.searchbar input{width:100%;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:11px 16px 11px 40px;font-family:inherit;font-size:15px;color:var(--ink);outline:none;}
+.searchbar input:focus{border-color:var(--blush);}
+.searchbar svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.5;}
+.toolrow{display:flex;gap:8px;margin-bottom:14px;}
+.toolrow button{flex:1;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:11px;padding:10px 6px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
+.toolrow button:active{border-color:var(--blush);color:var(--blush);}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin-bottom:12px;cursor:pointer;transition:.15s;position:relative;}
+.card:active{transform:scale(.992);border-color:var(--blush);}
+.card .tagrow{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:7px;padding-right:34px;}
+.card h3{font-family:"GFS Didot",Georgia,serif;font-weight:400;font-size:19px;margin:0 0 4px;line-height:1.15;padding-right:34px;}
+.card .meta{font-size:12.5px;color:var(--soft);}
+.heart{position:absolute;top:12px;right:11px;width:30px;height:30px;border:none;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.heart svg{width:21px;height:21px;}
+.badge-made{display:inline-block;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#5d6a51;background:var(--sage-tint);padding:2px 7px;border-radius:999px;}
+.lbl-tag{display:inline-block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#7a6448;background:var(--gold-tint);padding:2px 7px;border-radius:999px;margin:3px 3px 0 0;}
+.label-edit-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;}
+.lbl-tog{border:1px solid var(--line);border-radius:999px;padding:8px 13px;font-size:12.5px;font-weight:700;cursor:pointer;color:var(--soft);background:var(--paper);user-select:none;}
+.lbl-tog.on{background:var(--gold-tint);border-color:var(--gold);color:#7a6448;}
+.sheet{position:fixed;inset:0;z-index:50;background:var(--ivory);overflow-y:auto;transform:translateY(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);-webkit-overflow-scrolling:touch;}
+.sheet.on{transform:none;}
+.sheet-head{position:sticky;top:0;background:rgba(251,248,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:calc(env(safe-area-inset-top) + 12px) 18px 12px;display:flex;align-items:center;justify-content:space-between;z-index:5;}
+.backbtn{background:none;border:none;font-size:15px;color:var(--blush);font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;padding:4px 0;}
+.sheet-body{padding:20px 20px 70px;max-width:560px;margin:0 auto;}
+.sheet-body h1{font-family:"GFS Didot",Georgia,serif;font-weight:400;font-size:29px;line-height:1.1;margin:6px 0 8px;}
+.sheet-body .metaline{font-size:13px;color:var(--soft);margin-bottom:18px;}
+.servings{display:flex;align-items:center;justify-content:space-between;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:13px 16px;margin-bottom:20px;}
+.servings .lbl{font-weight:700;font-size:14px;}
+.servings .lbl span{display:block;font-weight:400;font-size:11.5px;color:var(--soft);}
+.stepper{display:flex;align-items:center;gap:14px;}
+.stepper button{width:34px;height:34px;border-radius:50%;border:1px solid var(--blush);background:var(--paper);color:var(--blush);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.stepper button:active{background:var(--blush);color:#fff;}
+.stepper .val{font-family:"GFS Didot",Georgia,serif;font-size:22px;min-width:24px;text-align:center;}
+.subhead{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--blush);font-weight:700;margin:24px 0 10px;}
+.ingrow{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line);cursor:pointer;}
+.ingrow:first-of-type{border-top:none;}
+.tick{width:19px;height:19px;border-radius:50%;border:1.5px solid var(--line);flex:0 0 auto;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:.15s;}
+.ingrow.done .tick,.shoprow.done .tick{background:var(--sage);border-color:var(--sage);}
+.tick svg{opacity:0;}
+.ingrow.done .tick svg,.shoprow.done .tick svg{opacity:1;}
+.ingrow .amt{font-weight:700;min-width:62px;font-variant-numeric:tabular-nums;}
+.ingrow.done .txt{text-decoration:line-through;color:var(--soft);}
+.steplist{counter-reset:s;list-style:none;margin:0;padding:0;}
+.steplist li{counter-increment:s;position:relative;padding:0 0 16px 40px;font-size:14.5px;}
+.steplist li::before{content:counter(s);position:absolute;left:0;top:-2px;width:27px;height:27px;border-radius:50%;background:var(--blush-tint);color:#a06b61;font-family:"GFS Didot",Georgia,serif;font-size:15px;display:flex;align-items:center;justify-content:center;}
+.steplist li:last-child{padding-bottom:6px;}
+.tipbox{background:var(--sage-tint);border-radius:12px;padding:11px 13px;font-size:13px;color:#54614a;margin-top:12px;}
+.tipbox b{color:#3f4a37;}
+.actionrow{display:flex;gap:8px;margin:18px 0 4px;}
+.actionrow button{flex:1;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:11px;padding:11px 6px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer;}
+.actionrow button.on{background:var(--sage);border-color:var(--sage);color:#fff;}
+.actionrow button.danger{color:#b06a5f;}
+.note{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;font-family:inherit;font-size:14px;margin-top:14px;resize:vertical;min-height:64px;outline:none;}
+.note:focus{border-color:var(--blush);}
+.noteshown{background:#fff8ee;border:1px solid #f0e4cf;border-radius:12px;padding:11px 13px;font-size:13.5px;margin-top:14px;}
+.noteshown .nl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:4px;}
+.pickopt{display:flex;align-items:center;gap:11px;padding:12px 13px;border:1px solid var(--line);border-radius:12px;margin-bottom:9px;cursor:pointer;background:var(--paper);}
+.pickopt:active{border-color:var(--blush);}
+.pickopt .pt{font-family:"GFS Didot",Georgia,serif;font-size:16px;flex:1;}
+.pickopt .ps{font-size:12px;color:var(--soft);}
+.pickopt.special{background:var(--ivory);border-style:dashed;}
+.field{margin-bottom:14px;}
+.field label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--blush);font-weight:700;margin-bottom:6px;}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:var(--paper);border-radius:11px;padding:11px 13px;font-family:inherit;font-size:15px;color:var(--ink);outline:none;}
+.field textarea{resize:vertical;min-height:90px;line-height:1.5;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blush);}
+.field .hint{font-size:11.5px;color:var(--soft);margin-top:5px;}
+.btn{width:100%;border:none;background:var(--blush);color:#fff;border-radius:13px;padding:14px;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;margin-bottom:10px;}
+.btn:active{opacity:.88;}
+.btn.ghost{background:var(--paper);color:var(--blush);border:1px solid var(--blush);}
+.btn.subtle{background:var(--paper);color:var(--soft);border:1px solid var(--line);font-weight:600;font-size:13.5px;}
+.progress{font-size:13px;color:var(--soft);margin-bottom:4px;}
+.pbar{height:5px;background:var(--line);border-radius:999px;overflow:hidden;margin:8px 0 18px;}
+.pbar i{display:block;height:100%;background:var(--blush);border-radius:999px;transition:width .3s;}
+.shoprow{display:flex;gap:11px;align-items:center;padding:11px 0;border-top:1px solid var(--line);cursor:pointer;}
+.shoprow:first-of-type{border-top:none;}
+.shoprow.done .txt{text-decoration:line-through;color:var(--soft);}
+.shoprow .amt{font-weight:700;min-width:58px;font-variant-numeric:tabular-nums;font-size:13.5px;}
+.empty{text-align:center;color:var(--soft);padding:44px 20px;}
+.empty .big{font-family:"GFS Didot",Georgia,serif;font-size:30px;color:var(--blush);}
+.installhint{background:var(--blush-tint);border-radius:12px;padding:12px 14px;font-size:12.5px;color:#8a5e55;margin-bottom:16px;line-height:1.45;display:flex;gap:9px;}
+.installhint b{color:#7a4f47;}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:40;background:rgba(251,248,242,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom);}
+nav button{flex:1;background:none;border:none;padding:10px 0 11px;cursor:pointer;color:var(--soft);display:flex;flex-direction:column;align-items:center;gap:4px;font-family:inherit;}
+nav button .nlbl{font-size:10.5px;font-weight:700;}
+nav button svg{width:22px;height:22px;}
+nav button.active{color:var(--blush);}
+</style>
+</head>
+<body>
+<header><div class="brand"><span class="mark">Fit</span><span class="stitle serif" id="htitle">Plan</span></div></header>
+<main>
+  <section class="view" id="v-vandaag"></section>
+  <section class="view" id="v-week"></section>
+  <section class="view" id="v-recepten"></section>
+  <section class="view" id="v-lijst"></section>
+</main>
+<div class="sheet" id="sheet"><div id="sheetContent"></div></div>
+<nav>
+  <button data-tab="vandaag" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="nlbl">Vandaag</span></button>
+  <button data-tab="week"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span class="nlbl">Week</span></button>
+  <button data-tab="recepten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span class="nlbl">Recepten</span></button>
+  <button data-tab="lijst"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></svg><span class="nlbl">Lijst</span></button>
+</nav>
+<script>
+
+const DATA={"recipes": [{"id": "B00", "meal": "ontbijt", "title": "Klassiek rood fruit", "sub": "Yoghurtpotjes", "tag": "yoghurt", "base": 1, "ing": [{"a": null, "u": "", "it": "Bessen"}, {"a": null, "u": "", "it": "granola"}, {"a": null, "u": "", "it": "streepje honing"}], "steps": ["Basis: Griekse yoghurt + granola apart.", "Bessen, granola, streepje honing."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B01", "meal": "ontbijt", "title": "Cacao-banaan", "sub": "Yoghurtpotjes", "tag": "yoghurt", "base": 1, "ing": [{"a": null, "u": "", "it": "Cacao door de yoghurt"}, {"a": null, "u": "", "it": "banaan"}, {"a": null, "u": "", "it": "walnoot"}], "steps": ["Basis: Griekse yoghurt + granola apart.", "Cacao door de yoghurt, banaan, walnoot."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B02", "meal": "ontbijt", "title": "Appel-kaneel", "sub": "Yoghurtpotjes", "tag": "yoghurt", "base": 1, "ing": [{"a": null, "u": "", "it": "Geraspte appel"}, {"a": null, "u": "", "it": "kaneel"}, {"a": null, "u": "", "it": "rozijn"}, {"a": null, "u": "", "it": "noot"}], "steps": ["Basis: Griekse yoghurt + granola apart.", "Geraspte appel, kaneel, rozijn, noot."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B03", "meal": "ontbijt", "title": "Citroen-blauwe bes", "sub": "Yoghurtpotjes", "tag": "yoghurt", "base": 1, "ing": [{"a": null, "u": "", "it": "Citroenrasp"}, {"a": null, "u": "", "it": "blauwe bes"}, {"a": null, "u": "", "it": "granola"}], "steps": ["Basis: Griekse yoghurt + granola apart.", "Citroenrasp, blauwe bes, granola."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B04", "meal": "ontbijt", "title": "Perzik-amandel", "sub": "Yoghurtpotjes", "tag": "yoghurt", "base": 1, "ing": [{"a": null, "u": "", "it": "Perzik"}, {"a": null, "u": "", "it": "amandelschijfjes"}, {"a": null, "u": "", "it": "honing"}], "steps": ["Basis: Griekse yoghurt + granola apart.", "Perzik, amandelschijfjes, honing."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B05", "meal": "ontbijt", "title": "Tropisch", "sub": "Yoghurtpotjes", "tag": "yoghurt", "base": 1, "ing": [{"a": null, "u": "", "it": "Mango of ananas"}, {"a": null, "u": "", "it": "kokos"}, {"a": null, "u": "", "it": "pompoenpit"}], "steps": ["Basis: Griekse yoghurt + granola apart.", "Mango of ananas, kokos, pompoenpit."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B10", "meal": "ontbijt", "title": "Berry", "sub": "Smoothies to-go", "tag": "smoothie", "base": 1, "ing": [{"a": null, "u": "", "it": "Yoghurt"}, {"a": null, "u": "", "it": "gemengde bessen"}, {"a": null, "u": "", "it": "banaan"}], "steps": ["Basis: Yoghurt + fruit, mix & giet in een beker.", "Yoghurt, gemengde bessen, banaan."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B11", "meal": "ontbijt", "title": "Groen", "sub": "Smoothies to-go", "tag": "smoothie", "base": 1, "ing": [{"a": null, "u": "", "it": "Spinazie"}, {"a": null, "u": "", "it": "banaan"}, {"a": null, "u": "", "it": "mango"}, {"a": null, "u": "", "it": "yoghurt"}], "steps": ["Basis: Yoghurt + fruit, mix & giet in een beker.", "Spinazie, banaan, mango, yoghurt."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B12", "meal": "ontbijt", "title": "Choco-pindakaas", "sub": "Smoothies to-go", "tag": "smoothie", "base": 1, "ing": [{"a": null, "u": "", "it": "Banaan"}, {"a": null, "u": "", "it": "cacao"}, {"a": null, "u": "", "it": "pindakaas"}, {"a": null, "u": "", "it": "melk"}], "steps": ["Basis: Yoghurt + fruit, mix & giet in een beker.", "Banaan, cacao, pindakaas, melk."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B13", "meal": "ontbijt", "title": "Tropisch", "sub": "Smoothies to-go", "tag": "smoothie", "base": 1, "ing": [{"a": null, "u": "", "it": "Mango"}, {"a": null, "u": "", "it": "ananas"}, {"a": null, "u": "", "it": "kokosmelk"}], "steps": ["Basis: Yoghurt + fruit, mix & giet in een beker.", "Mango, ananas, kokosmelk."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B14", "meal": "ontbijt", "title": "Koffie-boost", "sub": "Smoothies to-go", "tag": "smoothie", "base": 1, "ing": [{"a": null, "u": "", "it": "Koude koffie"}, {"a": null, "u": "", "it": "banaan"}, {"a": null, "u": "", "it": "yoghurt"}, {"a": null, "u": "", "it": "kaneel"}], "steps": ["Basis: Yoghurt + fruit, mix & giet in een beker.", "Koude koffie, banaan, yoghurt, kaneel."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B15", "meal": "ontbijt", "title": "Aardbei-vanille", "sub": "Smoothies to-go", "tag": "smoothie", "base": 1, "ing": [{"a": null, "u": "", "it": "Aardbei"}, {"a": null, "u": "", "it": "yoghurt"}, {"a": null, "u": "", "it": "vanille"}, {"a": null, "u": "", "it": "havermout"}], "steps": ["Basis: Yoghurt + fruit, mix & giet in een beker.", "Aardbei, yoghurt, vanille, havermout."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B20", "meal": "ontbijt", "title": "Spinazie & feta", "sub": "Egg bites", "tag": "egg bites", "base": 1, "ing": [{"a": null, "u": "", "it": "Klassiek"}, {"a": null, "u": "", "it": "mediterraan"}], "steps": ["Basis: 6 eieren + melk, muffinvorm, 18–20 min op 180°C.", "Klassiek, mediterraan."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B21", "meal": "ontbijt", "title": "Ham & paprika", "sub": "Egg bites", "tag": "egg bites", "base": 1, "ing": [{"a": null, "u": "", "it": "Stevig en hartig"}], "steps": ["Basis: 6 eieren + melk, muffinvorm, 18–20 min op 180°C.", "Stevig en hartig."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B22", "meal": "ontbijt", "title": "Champignon & kaas", "sub": "Egg bites", "tag": "egg bites", "base": 1, "ing": [{"a": null, "u": "", "it": "Umami"}, {"a": null, "u": "", "it": "lekker vullend"}], "steps": ["Basis: 6 eieren + melk, muffinvorm, 18–20 min op 180°C.", "Umami, lekker vullend."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B23", "meal": "ontbijt", "title": "Courgette & tomaat", "sub": "Egg bites", "tag": "egg bites", "base": 1, "ing": [{"a": null, "u": "", "it": "Frisser"}, {"a": null, "u": "", "it": "veel groenten"}], "steps": ["Basis: 6 eieren + melk, muffinvorm, 18–20 min op 180°C.", "Frisser, veel groenten."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B24", "meal": "ontbijt", "title": "Zalm & bieslook", "sub": "Egg bites", "tag": "egg bites", "base": 1, "ing": [{"a": null, "u": "", "it": "Net iets chiquer"}], "steps": ["Basis: 6 eieren + melk, muffinvorm, 18–20 min op 180°C.", "Net iets chiquer."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B25", "meal": "ontbijt", "title": "Pesto & mozzarella", "sub": "Egg bites", "tag": "egg bites", "base": 1, "ing": [{"a": null, "u": "", "it": "Caprese-gevoel"}], "steps": ["Basis: 6 eieren + melk, muffinvorm, 18–20 min op 180°C.", "Caprese-gevoel."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B30", "meal": "ontbijt", "title": "Banaan-kaneel-noot", "sub": "Kwark- & skyrbowls", "tag": "bowl", "base": 1, "ing": [{"a": null, "u": "", "it": "Vullend en zoet zonder suiker"}], "steps": ["Basis: Kwark of skyr, scheppen en gaan.", "Vullend en zoet zonder suiker."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B31", "meal": "ontbijt", "title": "Perzik-honing", "sub": "Kwark- & skyrbowls", "tag": "bowl", "base": 1, "ing": [{"a": null, "u": "", "it": "Zomers en zacht"}], "steps": ["Basis: Kwark of skyr, scheppen en gaan.", "Zomers en zacht."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B32", "meal": "ontbijt", "title": "Aardbei-basilicum", "sub": "Kwark- & skyrbowls", "tag": "bowl", "base": 1, "ing": [{"a": null, "u": "", "it": "Verrassend fris"}], "steps": ["Basis: Kwark of skyr, scheppen en gaan.", "Verrassend fris."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B33", "meal": "ontbijt", "title": "Speculoos-appel", "sub": "Kwark- & skyrbowls", "tag": "bowl", "base": 1, "ing": [{"a": null, "u": "", "it": "Geraspte appel"}, {"a": null, "u": "", "it": "snuf speculoos"}], "steps": ["Basis: Kwark of skyr, scheppen en gaan.", "Geraspte appel, snuf speculoos."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B34", "meal": "ontbijt", "title": "Bessen-pompoenpit", "sub": "Kwark- & skyrbowls", "tag": "bowl", "base": 1, "ing": [{"a": null, "u": "", "it": "Knapperig en kleurrijk"}], "steps": ["Basis: Kwark of skyr, scheppen en gaan.", "Knapperig en kleurrijk."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B35", "meal": "ontbijt", "title": "Mango-kokos", "sub": "Kwark- & skyrbowls", "tag": "bowl", "base": 1, "ing": [{"a": null, "u": "", "it": "Tropische toets"}], "steps": ["Basis: Kwark of skyr, scheppen en gaan.", "Tropische toets."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B40", "meal": "ontbijt", "title": "Avocado-ei", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "ing": [{"a": null, "u": "", "it": "Geprakte avocado"}, {"a": null, "u": "", "it": "gekookt of gebakken ei"}], "steps": ["Basis: Volkoren of zuurdesem, geroosterd.", "Geprakte avocado, gekookt of gebakken ei."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B41", "meal": "ontbijt", "title": "Ricotta-honing-aardbei", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "ing": [{"a": null, "u": "", "it": "Zoet en romig"}], "steps": ["Basis: Volkoren of zuurdesem, geroosterd.", "Zoet en romig."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B42", "meal": "ontbijt", "title": "Caprese", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "ing": [{"a": null, "u": "", "it": "Mozzarella"}, {"a": null, "u": "", "it": "tomaat"}, {"a": null, "u": "", "it": "basilicum"}], "steps": ["Basis: Volkoren of zuurdesem, geroosterd.", "Mozzarella, tomaat, basilicum."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B43", "meal": "ontbijt", "title": "Hummus-komkommer-feta", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "ing": [{"a": null, "u": "", "it": "Hartig en fris"}], "steps": ["Basis: Volkoren of zuurdesem, geroosterd.", "Hartig en fris."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B44", "meal": "ontbijt", "title": "Pindakaas-banaan", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "ing": [{"a": null, "u": "", "it": "De luie klassieker"}], "steps": ["Basis: Volkoren of zuurdesem, geroosterd.", "De luie klassieker."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"id": "B45", "meal": "ontbijt", "title": "Roerei & bieslook", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "ing": [{"a": null, "u": "", "it": "Warm en stevig"}], "steps": ["Basis: Volkoren of zuurdesem, geroosterd.", "Warm en stevig."], "tip": "", "yield": "1 portie", "keeps": "vers", "time": "5 min"}, {"title": "Mediterrane bokaalsalade", "type": "lunch", "tag": "make-ahead", "yield": "per bokaal", "keeps": "3–4 dagen", "time": "10 min", "base": 1, "ing": [{"a": 2, "u": "el", "it": "dressing (olijfolie + citroen + oregano)"}, {"a": null, "u": "", "it": "kikkererwten"}, {"a": null, "u": "", "it": "komkommer"}, {"a": null, "u": "", "it": "kersttomaat"}, {"a": null, "u": "", "it": "paprika"}, {"a": null, "u": "", "it": "couscous of pasta (afgekoeld)"}, {"a": null, "u": "", "it": "feta of stukjes kip"}, {"a": null, "u": "", "it": "rucola bovenaan"}], "steps": ["Laag de ingrediënten in díé volgorde in een bokaal van ±750 ml — dressing onderaan, blad bovenaan.", "Deksel erop, in de koelkast.", "Schud om in een kom vlak voor ’t eten, zodat de dressing zich verdeelt."], "tip": "De volgorde is de truc: zo blijft de rucola knapperig en wordt niets zompig.", "id": "L0", "meal": "lunch"}, {"title": "Caprese pastasalade", "type": "lunch", "tag": "make-ahead", "yield": "2–3 lunches", "keeps": "3 dagen", "time": "15 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "volkoren pasta (fusilli)"}, {"a": 150, "u": "g", "it": "mini-mozzarella"}, {"a": null, "u": "", "it": "handvol kersttomaten, gehalveerd"}, {"a": 2, "u": "el", "it": "groene pesto"}, {"a": null, "u": "", "it": "rucola of verse basilicum"}, {"a": null, "u": "", "it": "pijnboompitten, olijfolie, peper"}], "steps": ["Kook de pasta, spoel koud onder de kraan.", "Meng met mozzarella, tomaat, pesto, olijfolie en pitten.", "Rucola of basilicum apart houden en pas vlak voor ’t eten erdoor."], "tip": "Koud lekkerder dan warm. Een lepel extra pesto net voor ’t eten frist alles weer op.", "id": "L1", "meal": "lunch"}, {"title": "Vooraf gerolde wraps", "type": "lunch", "tag": "make-ahead", "yield": "2 wraps", "keeps": "2 dagen", "time": "10 min", "base": 2, "ing": [{"a": 2, "u": "", "it": "volkoren wraps"}, {"a": 3, "u": "el", "it": "hummus, kruidenkaas of muhammara"}, {"a": 100, "u": "g", "it": "rauwkost p.p.: paprika, komkommer, wortel, kersttomaat"}, {"a": null, "u": "", "it": "kip, kalkoen of mozzarella/feta"}, {"a": null, "u": "", "it": "handje rucola"}], "steps": ["Besmeer de wrap volledig en verdeel de rucola.", "Beleg met groenten en je eiwit — leg de vochtige dingen (tomaat) in het midden zodat de wrap niet zompig wordt.", "Rol stevig op, wikkel in folie, bewaar in de koelkast. Snij pas door bij het eten."], "tip": "Groentenwraps (wortel, rode biet) geven meteen kleur en passen mooi bij je esthetiek.", "id": "L2", "meal": "lunch"}, {"title": "Couscoussalade met ovengroenten", "type": "lunch", "tag": "make-ahead", "yield": "3–4 lunches", "keeps": "3–4 dagen", "time": "35 min", "base": 3, "ing": [{"a": 200, "u": "g", "it": "volkoren couscous"}, {"a": 250, "u": "ml", "it": "warme groentebouillon"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 1, "u": "", "it": "paprika"}, {"a": 1, "u": "", "it": "rode ui"}, {"a": 100, "u": "g", "it": "feta"}, {"a": null, "u": "", "it": "handvol rucola, muntblaadjes"}, {"a": 2, "u": "el", "it": "olijfolie, citroensap, peper"}], "steps": ["Oven op 200°C. Snij de groenten in blokjes, meng met olie en peper, rooster 25 min.", "Doe de couscous in een kom, giet de warme bouillon erover, dek af, laat 5 min wellen en pluis los met een vork.", "Meng de couscous met de geroosterde groenten, verkruimelde feta en citroensap.", "Rucola en munt pas vlak voor ’t eten erdoor."], "tip": "Een zak kant-en-klare ovengroenten scheelt al het snijwerk.", "id": "L3", "meal": "lunch"}, {"title": "Orzo-salade met zongedroogde tomaat", "type": "lunch", "tag": "make-ahead", "yield": "3 lunches", "keeps": "3 dagen", "time": "15 min", "base": 3, "ing": [{"a": 200, "u": "g", "it": "orzo (pasta-rijst)"}, {"a": 8, "u": "", "it": "zongedroogde tomaten, in reepjes"}, {"a": null, "u": "", "it": "handvol zwarte olijven"}, {"a": 100, "u": "g", "it": "feta"}, {"a": null, "u": "", "it": "rucola of basilicum, pijnboompitten"}, {"a": 2, "u": "el", "it": "olie van de zongedroogde tomaten, citroensap"}], "steps": ["Kook de orzo beetgaar, spoel koud onder de kraan.", "Meng met de zongedroogde tomaat, olijven, feta en pitten.", "Maak aan met de tomatenolie en citroensap — dat is je dressing.", "Blad pas vlak voor ’t eten erdoor."], "tip": "De olie uit het potje zongedroogde tomaten zit vol smaak — gooi die niet weg.", "id": "L4", "meal": "lunch"}, {"title": "Kip-caesarsalade", "type": "lunch", "tag": "dressing apart", "yield": "2–3 lunches", "keeps": "3 dagen", "time": "20 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "kipfilet"}, {"a": null, "u": "", "it": "romaine sla"}, {"a": null, "u": "", "it": "handvol croutons"}, {"a": null, "u": "", "it": "parmezaanschilfers"}, {"a": 3, "u": "el", "it": "Griekse yoghurt (dressing)"}, {"a": 1, "u": "el", "it": "mayo"}, {"a": 1, "u": "tl", "it": "mosterd"}, {"a": null, "u": "", "it": "citroensap, snuf knoflook, parmezaan, peper"}], "steps": ["Bak of grill de kip, kruid met peper, laat afkoelen en snij in reepjes.", "Roer alle dressing-ingrediënten glad.", "Bewaar sla, kip, croutons en dressing apart in de bokaal of doos.", "Meng pas bij het eten, zodat de sla knapperig blijft."], "tip": "Croutons in een apart zakje = nooit zompig tegen de middag.", "id": "L5", "meal": "lunch"}, {"title": "Caprese-traybake met kip", "type": "avond", "tag": "oven", "yield": "2 porties", "keeps": "één schaal", "time": "30 min", "base": 2, "ing": [{"a": 2, "u": "", "it": "kipfilets"}, {"a": 250, "u": "g", "it": "kersttomaten"}, {"a": 1, "u": "", "it": "bol mozzarella"}, {"a": 2, "u": "el", "it": "pesto"}, {"a": null, "u": "", "it": "olijfolie, balsamico, peper"}, {"a": null, "u": "", "it": "verse basilicum"}], "steps": ["Oven op 200°C. Leg de kip en kersttomaten in een ovenschaal, besprenkel met olie, pesto en peper.", "20 min in de oven.", "Haal eruit, leg plakjes mozzarella op de kip, nog 5–8 min tot gesmolten.", "Werk af met basilicum en een drupje balsamico."], "tip": "Serveer met brood of een restje pasta. Eén schaal = bijna geen afwas.", "id": "A0", "meal": "avond"}, {"title": "Champignonrisotto", "type": "avond", "tag": "één pan", "yield": "2 porties", "keeps": "één pan", "time": "30 min", "base": 2, "ing": [{"a": 150, "u": "g", "it": "risottorijst"}, {"a": 250, "u": "g", "it": "champignons"}, {"a": 1, "u": "", "it": "sjalot"}, {"a": 1, "u": "", "it": "teen knoflook"}, {"a": 750, "u": "ml", "it": "warme bouillon"}, {"a": 50, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "klontje boter"}, {"a": null, "u": "", "it": "scheut witte wijn (optioneel), olijfolie, peper"}], "steps": ["Stoof sjalot en knoflook in olie. Voeg de champignons toe, bak goudbruin.", "Voeg de rijst toe, roer 1 min, blus met de wijn.", "Voeg de bouillon pollepel per pollepel toe, blijf roeren tot de rijst beetgaar is (±18 min).", "Van het vuur: roer parmezaan en boter erdoor, peper erover."], "tip": "Het enige recept dat je aandacht vraagt — zet muziek op en roer. Verrassend rustgevend.", "id": "A1", "meal": "avond"}, {"title": "Ovenschotel kip, spinazie & krieltjes", "type": "avond", "tag": "oven", "yield": "2 porties", "keeps": "één schaal", "time": "40 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "kipfilet in reepjes"}, {"a": 200, "u": "g", "it": "krieltjes in blokjes"}, {"a": 150, "u": "g", "it": "verse spinazie"}, {"a": 300, "u": "g", "it": "champignons"}, {"a": 40, "u": "g", "it": "light kruidenkaas"}, {"a": 40, "u": "ml", "it": "kippenbouillon"}, {"a": null, "u": "", "it": "knoflook, olijfolie, peper/muskaat"}], "steps": ["Oven op 190°C. Leg de kip op de bodem van een ingevette schaal.", "Spinazie, champignons en krieltjes erover verdelen.", "Roer kruidenkaas, bouillon en knoflook glad, giet over de schotel.", "Dek af met folie, 20 min. Folie eraf, nog 10 min tot goudbruin."], "tip": "Maak meteen een dubbele portie — de volgende dag nog lekkerder.", "id": "A2", "meal": "avond"}, {"title": "Mediterrane kip uit de oven", "type": "avond", "tag": "oven · batch", "yield": "4–6 porties", "keeps": "in te vriezen", "time": "60 min", "base": 4, "ing": [{"a": 1, "u": "", "it": "hele kip (of 4 dijfilets)"}, {"a": 2, "u": "", "it": "paprika's"}, {"a": 3, "u": "", "it": "wortelen"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 2, "u": "", "it": "uien"}, {"a": 6, "u": "", "it": "aardappelen"}, {"a": 3, "u": "", "it": "tomaten"}, {"a": null, "u": "", "it": "knoflook, olijfolie"}, {"a": null, "u": "", "it": "mediterrane kruiden, tijm, peper"}], "steps": ["Oven op 200°C. Leg de kip in een grote schaal.", "Snij de groenten en aardappelen, meng met olie, knoflook en kruiden, schik rond de kip.", "Na 15 min oven op 160°C; bedruip de kip met het vocht.", "Nog 30–45 min, bedruip elke 15 min. Klaar als het vlees van het bot valt."], "tip": "Eén keer maken = meerdere avonden. Restjes gaan perfect in de wok of een wrap.", "id": "A3", "meal": "avond"}, {"title": "Wok met kip & groenten", "type": "avond", "tag": "één pan", "yield": "2 porties", "keeps": "snel", "time": "20 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "kipfilet in blokjes"}, {"a": 400, "u": "g", "it": "wokgroenten (vers of diepvries)"}, {"a": 100, "u": "g", "it": "zilvervliesrijst"}, {"a": 1, "u": "el", "it": "sojasaus"}, {"a": 1, "u": "el", "it": "arachideolie"}, {"a": null, "u": "", "it": "stukje gember, peper"}], "steps": ["Kook de rijst.", "Bak de kip in hete olie, haal uit de pan.", "Wok de groenten 4–5 min knapperig met de gember.", "Kip terug erbij, sojasaus erover, kort doorwarmen. Serveer op de rijst."], "tip": "Diepvries-wokgroenten = geen snijwerk en even snel klaar.", "id": "A4", "meal": "avond"}, {"title": "Ovenpasta met groenten", "type": "avond", "tag": "make-ahead", "yield": "4 porties", "keeps": "in te vriezen", "time": "45 min", "base": 4, "ing": [{"a": 300, "u": "g", "it": "volkoren penne"}, {"a": 500, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 1, "u": "", "it": "paprika"}, {"a": 1, "u": "", "it": "ui"}, {"a": null, "u": "", "it": "champignons"}, {"a": 125, "u": "g", "it": "mozzarella + parmezaan"}, {"a": null, "u": "", "it": "knoflook, Italiaanse kruiden, olijfolie"}], "steps": ["Kook de pasta beetgaar. Oven op 200°C.", "Stoof ui, knoflook en groenten; voeg passata en kruiden toe, 10 min pruttelen.", "Meng de saus met de pasta, doe in een ovenschaal, mozzarella en parmezaan erover.", "20–25 min tot goudbruin."], "tip": "Verdeel in porties en vries in — je eigen “kant-en-klaar” voor luie avonden.", "id": "A5", "meal": "avond"}, {"title": "Courgette-lasagne", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "60 min", "base": 4, "ing": [{"a": 3, "u": "", "it": "courgettes, in linten"}, {"a": 500, "u": "g", "it": "rundergehakt"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": 2, "u": "", "it": "tenen knoflook"}, {"a": 250, "u": "g", "it": "ricotta"}, {"a": 150, "u": "g", "it": "geraspte mozzarella"}, {"a": 50, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "Italiaanse kruiden, olijfolie, peper"}], "steps": ["Oven op 200°C. Snij de courgette in linten, bestrooi licht met zout en dep na 10 min droog.", "Bak ui, knoflook en gehakt los; voeg passata en kruiden toe, 15 min pruttelen.", "Vet een schaal in en laag courgette, saus en ricotta. Herhaal en eindig met mozzarella en parmezaan.", "35–40 min tot goudbruin. Laat 10 min rusten voor je snijdt."], "tip": "Courgette i.p.v. pasta houdt het lichter — perfect om per portie in te vriezen.", "id": "I0", "meal": "avond"}, {"title": "Gevulde paprika's met gehakt & rijst", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "50 min", "base": 4, "ing": [{"a": 4, "u": "", "it": "paprika's"}, {"a": 400, "u": "g", "it": "rundergehakt"}, {"a": 150, "u": "g", "it": "rijst (ongekookt)"}, {"a": 400, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": null, "u": "", "it": "knoflook"}, {"a": 100, "u": "g", "it": "geraspte kaas"}, {"a": null, "u": "", "it": "Italiaanse kruiden, olijfolie, peper"}], "steps": ["Oven op 190°C. Halveer de paprika's en verwijder de zaadlijsten.", "Kook de rijst beetgaar. Bak ui, knoflook en gehakt; meng met de rijst, de helft van de passata en kruiden.", "Vul de paprika's, leg ze in een schaal met de rest van de passata eronder. Kaas erover.", "35 min in de oven, de laatste 5 min zonder folie."], "tip": "Maak een dubbele lading — ze warmen perfect op en gaan mee in de diepvries.", "id": "I1", "meal": "avond"}, {"title": "One-pot tomatenpasta met burrata", "type": "avond", "tag": "één pan", "yield": "2 porties", "keeps": "vers eten", "time": "25 min", "base": 2, "ing": [{"a": 250, "u": "g", "it": "pasta (penne of casarecce)"}, {"a": 400, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "burrata"}, {"a": 2, "u": "", "it": "tenen knoflook"}, {"a": null, "u": "", "it": "handvol kersttomaten"}, {"a": null, "u": "", "it": "basilicum, olijfolie, peper"}], "steps": ["Stoof de knoflook in olie. Voeg passata, kersttomaten en 250 ml water toe, breng aan de kook.", "Voeg de rauwe pasta toe en kook ±12 min al dente, af en toe roeren.", "Peper erover, scheur de burrata erbovenop en werk af met basilicum."], "tip": "Eén pan, geen vergiet — de pasta kookt in de saus en wordt zo romiger.", "id": "I2", "meal": "avond"}, {"title": "Vlaamse stoverij", "type": "avond", "tag": "batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "2u30", "base": 4, "ing": [{"a": 800, "u": "g", "it": "stoofvlees (rund)"}, {"a": 2, "u": "", "it": "uien"}, {"a": 330, "u": "ml", "it": "bruin bier"}, {"a": 2, "u": "el", "it": "bruine suiker"}, {"a": 1, "u": "el", "it": "mosterd"}, {"a": 2, "u": "", "it": "sneetjes peperkoek"}, {"a": null, "u": "", "it": "laurier, tijm, boter, peper"}], "steps": ["Dep het vlees droog en bak het bruin in boter; haal uit de pan.", "Stoof de uien zacht. Doe het vlees terug, blus met het bier, voeg suiker, laurier en tijm toe.", "Smeer de peperkoek met mosterd en leg die bovenop.", "Deksel erop en 2 à 2,5 uur zacht laten pruttelen tot het vlees uit elkaar valt."], "tip": "De dag erna nog lekkerder. Heerlijk met brood — sla de friet over als je het lichter wil.", "id": "I3", "meal": "avond"}, {"title": "Aubergine parmigiana", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "60 min", "base": 4, "ing": [{"a": 2, "u": "", "it": "aubergines, in plakjes"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": null, "u": "", "it": "knoflook"}, {"a": 150, "u": "g", "it": "geraspte mozzarella"}, {"a": 60, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "basilicum, olijfolie, peper"}], "steps": ["Oven op 200°C. Bak of gril de aubergineplakjes met olie goudbruin (of 15 min in de oven).", "Maak een snelle saus van ui, knoflook, passata en basilicum.", "Laag aubergine, saus en parmezaan in een schaal, herhaal en eindig met mozzarella.", "30 min tot bubbelend en goudbruin."], "tip": "Geen pasta nodig — de aubergine is vullend genoeg en blijft heerlijk Italiaans.", "id": "I4", "meal": "avond"}, {"title": "Pesto-orzo met geroosterde tomaat & mozzarella", "type": "lunch", "tag": "make-ahead", "yield": "3 lunches", "keeps": "3 dagen", "time": "25 min", "base": 3, "ing": [{"a": 250, "u": "g", "it": "orzo"}, {"a": 300, "u": "g", "it": "kersttomaten"}, {"a": 3, "u": "el", "it": "groene pesto"}, {"a": 150, "u": "g", "it": "mini-mozzarella"}, {"a": null, "u": "", "it": "rucola, pijnboompitten"}, {"a": null, "u": "", "it": "olijfolie, peper"}], "steps": ["Oven op 200°C. Rooster de kersttomaten met olie 18 min tot ze barsten.", "Kook de orzo beetgaar en spoel kort koud.", "Meng met pesto, de geroosterde tomaten en mozzarella.", "Pitten en rucola erdoor (rucola apart als je het meeneemt)."], "tip": "Warm of koud even lekker — ideaal voor de lunchbox.", "id": "I5", "meal": "lunch"}, {"title": "Caprese-frittata", "type": "lunch", "tag": "make-ahead", "yield": "4 porties", "keeps": "3 dagen", "time": "30 min", "base": 4, "ing": [{"a": 8, "u": "", "it": "eieren"}, {"a": 150, "u": "g", "it": "mini-mozzarella"}, {"a": 200, "u": "g", "it": "kersttomaten"}, {"a": 30, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "handvol basilicum, olijfolie, peper"}], "steps": ["Oven op 180°C. Klop de eieren met parmezaan en peper.", "Verdeel tomaten en mozzarella in een ovenvaste pan met wat olie, giet de eieren erover.", "5 min op het vuur, dan 15 min in de oven tot gestold. Basilicum erover."], "tip": "In punten snijden en meenemen — koud verrassend lekker en boordevol eiwit.", "id": "I6", "meal": "lunch"}, {"title": "Pasta e fagioli", "type": "avond", "tag": "één pan · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "40 min", "base": 4, "ing": [{"a": 200, "u": "g", "it": "kleine pasta (ditalini)"}, {"a": 2, "u": "", "it": "blikken witte bonen"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": 1, "u": "", "it": "wortel"}, {"a": 1, "u": "", "it": "stengel selder"}, {"a": null, "u": "", "it": "knoflook, parmezaan, bouillon, olijfolie, peper"}], "steps": ["Stoof ui, wortel, selder en knoflook zacht.", "Voeg passata, één blik gepureerde bonen, één blik hele bonen en bouillon toe. 15 min pruttelen.", "Voeg de pasta toe en kook tot beetgaar. Parmezaan erover."], "tip": "Romige Italiaanse comfortfood — dikker de volgende dag, gewoon een scheutje water erbij.", "id": "I7", "meal": "avond"}, {"title": "Gnocchi alla sorrentina", "type": "avond", "tag": "oven", "yield": "2 porties", "keeps": "vers eten", "time": "30 min", "base": 2, "ing": [{"a": 500, "u": "g", "it": "gnocchi"}, {"a": 400, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "burrata of mozzarella"}, {"a": null, "u": "", "it": "knoflook, basilicum, parmezaan, olijfolie, peper"}], "steps": ["Kook de gnocchi kort tot ze bovendrijven.", "Maak een saus van knoflook, passata en basilicum.", "Meng de gnocchi door de saus, doe in een schaal, mozzarella erover.", "12 min onder de grill tot goudbruin."], "tip": "Klaar in een half uur en oogt als een restaurantbord.", "id": "I8", "meal": "avond"}, {"title": "Ricotta & spinazie cannelloni", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "50 min", "base": 4, "ing": [{"a": 250, "u": "g", "it": "cannelloni"}, {"a": 500, "u": "g", "it": "ricotta"}, {"a": 300, "u": "g", "it": "spinazie (gekookt, uitgeknepen)"}, {"a": 1, "u": "", "it": "ei"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 150, "u": "g", "it": "geraspte mozzarella"}, {"a": null, "u": "", "it": "parmezaan, nootmuskaat, peper"}], "steps": ["Oven op 190°C. Meng ricotta, spinazie, ei, nootmuskaat en peper.", "Vul de cannelloni met het mengsel.", "Bedek de bodem van een schaal met passata, leg de cannelloni erop, rest passata erover, mozzarella en parmezaan.", "Folie erop, 25 min; folie eraf, nog 15 min."], "tip": "Wat werk vooraf, maar één lading = meerdere avonden uit de diepvries.", "id": "I9", "meal": "avond"}, {"title": "Couscous-traybake met halloumi", "type": "lunch", "tag": "oven", "yield": "3 lunches", "keeps": "3–4 dagen", "time": "35 min", "base": 3, "ing": [{"a": 200, "u": "g", "it": "parelcouscous"}, {"a": 250, "u": "g", "it": "halloumi, in blokjes"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 1, "u": "", "it": "paprika"}, {"a": 1, "u": "", "it": "rode ui"}, {"a": 250, "u": "ml", "it": "groentebouillon"}, {"a": null, "u": "", "it": "citroen, munt, olijfolie, peper"}], "steps": ["Oven op 200°C. Rooster courgette, paprika, ui en halloumi met olie 22 min.", "Kook de parelcouscous beetgaar in de bouillon.", "Meng alles met citroensap en munt."], "tip": "Halloumi blijft stevig en zout-lekker, ook koud uit de lunchbox.", "id": "I10", "meal": "lunch"}, {"title": "Tonijn–witte bonen salade", "type": "lunch", "tag": "make-ahead", "yield": "3 lunches", "keeps": "3 dagen", "time": "10 min", "base": 3, "ing": [{"a": 2, "u": "", "it": "blikken tonijn"}, {"a": 2, "u": "", "it": "blikken witte bonen"}, {"a": 200, "u": "g", "it": "kersttomaten"}, {"a": 1, "u": "", "it": "rode ui"}, {"a": null, "u": "", "it": "peterselie, citroen, olijfolie, peper"}], "steps": ["Laat de tonijn en bonen goed uitlekken.", "Meng met gehalveerde tomaten en fijngesneden rode ui.", "Maak aan met citroen, olijfolie en peper. Peterselie erdoor."], "tip": "Geen koken, vol eiwit, dagen houdbaar — de luie favoriet.", "id": "I11", "meal": "lunch"}], "home": {"billen": ["Glute bridges — 3 × 15", "Hip thrusts (rug op de zetel) — 3 × 12", "Squats — 3 × 15", "Lunges (per been) — 3 × 10", "Kickbacks (per been) — 3 × 12", "Clamshells met band — 3 × 15"], "tip": "Voeg om de 2–3 weken reps, een band of een halter toe. Die progressie doet billen groeien.", "buik": ["Genoeg water — 1,5 tot 2 liter per dag", "Regelmatig eten i.p.v. skippen + ’s avonds schransen", "Minder ultra-bewerkt en zout (dat bloat het meest)", "Core & houding: plank, dead bug, pilates — 2× per week", "Rechtop zitten/staan oogt meteen platter", "Voldoende slaap en minder stress"]}, "jims": ["Reformer pilates", "Yoga", "Small group training", "Danceles", "Spinning", "Bodypump", "Zwemmen"], "labelMap": {"B00": ["high-protein", "koud"], "B01": ["high-protein", "koud"], "B02": ["high-protein", "koud"], "B03": ["high-protein", "koud"], "B04": ["high-protein", "koud"], "B05": ["high-protein", "koud"], "B10": ["light", "koud"], "B11": ["light", "koud"], "B12": ["high-protein", "koud"], "B13": ["light", "koud"], "B14": ["high-protein", "koud"], "B15": ["light", "koud"], "B20": ["high-protein", "warm"], "B21": ["high-protein", "warm"], "B22": ["high-protein", "warm"], "B23": ["high-protein", "warm"], "B24": ["high-protein", "warm"], "B25": ["high-protein", "warm"], "B30": ["high-protein", "koud"], "B31": ["high-protein", "koud"], "B32": ["high-protein", "koud"], "B33": ["high-protein", "koud"], "B34": ["high-protein", "koud"], "B35": ["high-protein", "koud"], "B40": ["high-protein", "warm"], "B41": ["light", "koud"], "B42": ["light", "koud"], "B43": ["light", "koud"], "B44": ["high-protein", "koud"], "B45": ["high-protein", "warm"], "L0": ["high-protein", "koud", "light"], "L1": ["koud"], "L2": ["high-protein", "koud"], "L3": ["koud", "light"], "L4": ["koud"], "L5": ["high-protein", "koud"], "A0": ["high-protein", "warm", "hoofdgerecht"], "A1": ["warm", "hoofdgerecht"], "A2": ["high-protein", "warm", "hoofdgerecht"], "A3": ["high-protein", "warm", "hoofdgerecht"], "A4": ["high-protein", "warm", "hoofdgerecht"], "A5": ["warm", "hoofdgerecht"], "I0": ["warm", "hoofdgerecht"], "I1": ["high-protein", "warm", "hoofdgerecht"], "I2": ["warm", "hoofdgerecht"], "I3": ["warm", "hoofdgerecht"], "I4": ["warm", "hoofdgerecht"], "I5": ["koud", "light"], "I6": ["high-protein", "warm"], "I7": ["warm", "hoofdgerecht"], "I8": ["warm", "hoofdgerecht"], "I9": ["warm", "hoofdgerecht"], "I10": ["warm", "light"], "I11": ["high-protein", "koud", "light"]}, "allLabels": [["high-protein", "High Protein"], ["light", "Light Meal"], ["koud", "Koud"], ["warm", "Warm"], ["hoofdgerecht", "Hoofdgerecht"], ["batch", "Batch Cook"], ["hapje", "Hapje"], ["voorgerecht", "Voorgerecht"]]};
+const BUILTIN=DATA.recipes;
+const LABEL_MAP=DATA.labelMap;
+const ALL_LABELS=DATA.allLabels;
+const DAYS=["Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag","Zondag"];
+const SHORT=["Ma","Di","Wo","Do","Vr","Za","Zo"];
+const MON=["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
+const MEALS=["ontbijt","lunch","avond"];
+const todayIdx=(new Date().getDay()+6)%7;
+
+function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+function defPlan(){return {meals:DAYS.map(()=>({ontbijt:null,lunch:null,avond:null})),billen:null,jims:null,jimsClass:null};}
+var plan=load("fp_plan",defPlan());
+var custom=load("fp_custom",[]);
+var meta=load("fp_meta",{});
+var jimsClasses=load("fp_jims",DATA.jims.slice());
+var listChecks=load("fp_list",{});
+var viewOffset=0,servingsState={},recQuery="",recFilter="all",recLabels=new Set();
+
+var checkSvg='<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M5 12l5 5L20 6"/></svg>';
+
+function esc(s){return (""+s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function heart(on){
+  if(on) return '<svg viewBox="0 0 24 24" fill="#C49A92" stroke="#C49A92" stroke-width="1.5"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 1.7 5 5 5c2 0 3.2 1.1 4 2.3C9.8 6.1 11 5 13 5c3.3 0 4.6 3.6 3 6.8C18.5 16.4 12 21 12 21z"/></svg>';
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="#C49A92" stroke-width="1.7"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 1.7 5 5 5c2 0 3.2 1.1 4 2.3C9.8 6.1 11 5 13 5c3.3 0 4.6 3.6 3 6.8C18.5 16.4 12 21 12 21z"/></svg>';
+}
+function metaOf(id){return meta[id]||{};}
+function getLabels(id){
+  var built=(LABEL_MAP[id]||[]).concat(metaOf(id).extraLabels||[]);
+  var excl=metaOf(id).exLabels||[];
+  return built.filter(function(l){return excl.indexOf(l)<0;});
+}
+function renderLabelTags(id){
+  return getLabels(id).map(function(l){
+    var nm=(ALL_LABELS.find(function(x){return x[0]===l;})||[l,l])[1];
+    return '<span class="lbl-tag">'+nm+'</span>';
+  }).join("");
+}
+function allRecipes(){
+  return BUILTIN.concat(custom).filter(function(r){
+    var m=metaOf(r.id); if(m.deleted) return false;
+    if(m.ov) return Object.assign({},r,m.ov);
+    return true;
+  }).map(function(r){var m=metaOf(r.id);return m.ov?Object.assign({},r,m.ov):r;});
+}
+function recipeById(id){
+  var r=BUILTIN.concat(custom).find(function(x){return x.id===id;});
+  if(!r) return null;
+  var m=metaOf(id); return m.ov?Object.assign({},r,m.ov):r;
+}
+function scaleAmt(a,u,f){
+  if(a==null) return null;
+  var v=a*f;
+  if(u==="g"||u==="ml"){v=v>=20?Math.round(v/5)*5:Math.round(v);}
+  else{v=Math.round(v*10)/10;}
+  return Number.isInteger(v)?v.toString():v.toString().replace(".",",");
+}
+function ingText(r){return (r.ing||[]).map(function(x){return x.it;}).join(" ");}
+function fmtDate(off){var d=new Date();d.setDate(d.getDate()+off);return d.getDate()+" "+MON[d.getMonth()];}
+
+// ── VANDAAG ──
+function renderVandaag(){
+  var idx=((todayIdx+viewOffset)%7+7)%7;
+  var lbl=viewOffset===0?"Vandaag":viewOffset===1?"Morgen":viewOffset===-1?"Gisteren":SHORT[idx];
+  var h='<div class="daynav">'
+    +'<button class="arrow" onclick="shiftDay(-1)">&#8249;</button>'
+    +'<div class="ctr"><div class="lbl">'+lbl+'</div><div class="day serif">'+DAYS[idx]+'</div><div class="date">'+fmtDate(viewOffset)+'</div></div>'
+    +'<button class="arrow" onclick="shiftDay(1)">&#8250;</button></div>';
+  MEALS.forEach(function(m){
+    var v=plan.meals[idx][m];
+    if(v&&v!=="nvt"){
+      var r=recipeById(v);
+      h+='<div class="mealcard" onclick="openDetail(\''+esc(v)+'\')">'
+        +'<div class="mc-body"><div class="ml">'+m+'</div><div class="mt">'+(r?esc(r.title):"?")+'</div></div>'
+        +'<div class="chev">&#8250;</div></div>';
+    } else if(v==="nvt"){
+      h+='<div class="mealcard" onclick="openPicker('+idx+',\''+m+'\',\'vandaag\')">'
+        +'<div class="mc-body"><div class="ml">'+m+'</div><div class="mt muted">nvt &mdash; geen '+m+'</div></div>'
+        +'<div class="chev">&#8250;</div></div>';
+    } else {
+      h+='<div class="mealcard" onclick="openPicker('+idx+',\''+m+'\',\'vandaag\')">'
+        +'<div class="mc-body"><div class="ml">'+m+'</div><div class="mt muted">nog niet gekozen &mdash; tik om te kiezen</div></div>'
+        +'<div class="chev">+</div></div>';
+    }
+  });
+  var moved=false;
+  if(plan.billen===idx){
+    moved=true;
+    h+='<div class="movecard" onclick="openWorkout()">'
+      +'<div style="flex:1"><div class="ml">Beweging</div><div class="mt serif">Billentraining &middot; thuis</div></div>'
+      +'<div class="chev" style="color:#5d6a51">&#8250;</div></div>';
+  }
+  if(plan.jims===idx){
+    moved=true;
+    h+='<div class="movecard" onclick="go(\'week\')">'
+      +'<div style="flex:1"><div class="ml">Beweging</div><div class="mt serif">Jims'+(plan.jimsClass?' &middot; '+esc(plan.jimsClass):'')+'</div></div>'
+      +'<div class="chev" style="color:#5d6a51">&#8250;</div></div>';
+  }
+  if(!moved) h+='<div class="restcard">Rustdag &mdash; geniet ervan. &#10022;</div>';
+  h+='<button class="btn ghost" style="margin-top:8px" onclick="go(\'week\')">Plan deze week op &#8250;</button>';
+  document.getElementById("v-vandaag").innerHTML=h;
+}
+function shiftDay(d){viewOffset+=d;renderVandaag();}
+
+// ── WEEK ──
+function slotLabel(v){
+  if(v==null) return {cls:"empty",t:"+"};
+  if(v==="nvt") return {cls:"nvt",t:"nvt"};
+  var r=recipeById(v);
+  var t=r?(r.title.length>16?r.title.slice(0,15)+"\u2026":r.title):"?";
+  return {cls:"set",t:t};
+}
+function renderWeek(){
+  var h='<div class="sec-head"><span class="eyebrow">Deel I &middot; Voeding</span>'
+    +'<h2 class="serif">Je <em>week</em></h2>'
+    +'<p>Kies per dag wat je eet, of zet &lsquo;nvt&rsquo; als je niet thuis eet of een maaltijd overslaat.</p></div>';
+  h+='<div class="slothead"><div>Dag</div><div>Ontbijt</div><div>Lunch</div><div>Avond</div></div>';
+  for(var i=0;i<7;i++){
+    h+='<div class="dayrow'+(i===todayIdx?' today':'')+'"><div class="dl">'+SHORT[i]+'</div>';
+    MEALS.forEach(function(m){
+      var s=slotLabel(plan.meals[i][m]);
+      h+='<div class="slot '+s.cls+'" onclick="openPicker('+i+',\''+m+'\',\'week\')">'+esc(s.t)+'</div>';
+    });
+    h+='</div>';
+  }
+  h+='<button class="btn subtle" style="margin-top:12px" onclick="clearWeekMeals()">Voeding leegmaken</button>';
+  h+='<div class="divider"></div>'
+    +'<div class="sec-head"><span class="eyebrow">Deel II &middot; Beweging</span>'
+    +'<h2 class="serif">Vastgepind <em>= gedaan</em></h2>'
+    +'<p>Pin een dag vast &mdash; voor jou werkt dat als accountability.</p></div>';
+  h+='<div class="block"><span class="eyebrow">Billentraining &middot; thuis</span><div class="daychips">';
+  for(var i=0;i<7;i++) h+='<div class="daychip'+(plan.billen===i?' active':'')+'" onclick="pinBillen('+i+')">'+SHORT[i]+'</div>';
+  h+='</div><button class="btn ghost" style="margin-top:12px" onclick="openWorkout()">Bekijk de oefeningen &#8250;</button></div>';
+  h+='<div class="block"><span class="eyebrow">Jims</span><div class="daychips">';
+  for(var i=0;i<7;i++) h+='<div class="daychip'+(plan.jims===i?' active':'')+'" onclick="pinJims('+i+')">'+SHORT[i]+'</div>';
+  h+='</div>'
+    +'<div class="classpick" onclick="openClassPicker()">'
+    +'<div><div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--blush);font-weight:700;margin-bottom:3px">Les</div>'
+    +'<div class="cv'+(plan.jimsClass?'':' muted')+'">'+(plan.jimsClass?esc(plan.jimsClass):"Kies een les")+'</div></div>'
+    +'<div class="chev" style="color:var(--blush);font-size:20px">&#8250;</div></div></div>';
+  document.getElementById("v-week").innerHTML=h;
+}
+function pinBillen(i){plan.billen=(plan.billen===i?null:i);save("fp_plan",plan);renderWeek();}
+function pinJims(i){plan.jims=(plan.jims===i?null:i);save("fp_plan",plan);renderWeek();}
+function clearWeekMeals(){plan.meals=defPlan().meals;save("fp_plan",plan);renderWeek();}
+
+// ── PICKER ──
+var pickerCtx=null;
+function openPicker(day,meal,origin){pickerCtx={day:day,meal:meal,origin:origin,q:""};drawPicker();openSheet();}
+function drawPicker(){
+  var day=pickerCtx.day,meal=pickerCtx.meal;
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body">'
+    +'<span class="eyebrow">'+esc(meal)+' &middot; '+DAYS[day]+'</span>'
+    +'<h1 class="serif">Kies een '+esc(meal)+'</h1>'
+    +'<div class="searchbar"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3A322C" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>'
+    +'<input id="pq" placeholder="Zoek..." oninput="pickerCtx.q=this.value.trim().toLowerCase();drawPickerList()"></div>'
+    +'<div class="pickopt special" onclick="assign(\'nvt\')"><div class="pt" style="font-style:italic">Niet van toepassing (nvt)</div></div>'
+    +'<div class="pickopt special" onclick="assign(null)"><div class="pt" style="font-style:italic;color:var(--soft)">Leegmaken</div></div>'
+    +'<div id="pickList"></div></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  drawPickerList();
+}
+function drawPickerList(){
+  var meal=pickerCtx.meal;
+  var list=allRecipes().filter(function(r){return r.meal===meal;});
+  if(pickerCtx.q) list=list.filter(function(r){return r.title.toLowerCase().indexOf(pickerCtx.q)>=0;});
+  list.sort(function(a,b){return (metaOf(b.id).liked?1:0)-(metaOf(a.id).liked?1:0);});
+  var h="";
+  list.forEach(function(r){
+    var lk=metaOf(r.id).liked;
+    h+='<div class="pickopt" onclick="assign(\''+r.id+'\')"><div><div class="pt">'+esc(r.title)+'</div>'
+      +'<div class="ps">'+(r.sub?esc(r.sub)+' &middot; ':'')+esc(r.tag||'')+'</div></div>'
+      +(lk?'<div style="width:18px;height:18px">'+heart(true)+'</div>':'')+'</div>';
+  });
+  if(!list.length) h='<div class="empty"><p>Geen recepten gevonden.</p></div>';
+  document.getElementById("pickList").innerHTML=h;
+}
+function assign(val){
+  plan.meals[pickerCtx.day][pickerCtx.meal]=val;
+  save("fp_plan",plan);
+  var o=pickerCtx.origin;
+  closeSheet();
+  if(o==="week") renderWeek(); else renderVandaag();
+}
+
+// ── CLASS PICKER ──
+function openClassPicker(){drawClassPicker();openSheet();}
+function drawClassPicker(){
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Jims</span><h1 class="serif">Kies je les</h1>'
+    +'<div class="pickopt special" onclick="setClass(null)"><div class="pt" style="font-style:italic;color:var(--soft)">Geen les</div></div>';
+  jimsClasses.forEach(function(c,i){
+    h+='<div class="pickopt" style="justify-content:space-between">'
+      +'<div class="pt" onclick="setClass(\''+esc(c).replace(/'/g,"\\'")+'\')" style="flex:1">'+esc(c)+'</div>'
+      +'<button style="background:none;border:none;color:var(--soft);font-size:20px;cursor:pointer" onclick="delClass('+i+')">&times;</button></div>';
+  });
+  h+='<div class="field" style="margin-top:16px"><label>Les toevoegen</label>'
+    +'<input id="newClass" placeholder="bv. Pilates vrijdag">'
+    +'<button class="btn ghost" style="margin-top:10px" onclick="addClass()">Toevoegen</button></div></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+}
+function setClass(c){plan.jimsClass=c;save("fp_plan",plan);closeSheet();renderWeek();}
+function addClass(){var v=document.getElementById("newClass").value.trim();if(!v)return;jimsClasses.push(v);save("fp_jims",jimsClasses);drawClassPicker();}
+function delClass(i){jimsClasses.splice(i,1);save("fp_jims",jimsClasses);drawClassPicker();}
+
+// ── WORKOUT ──
+function openWorkout(){
+  var H=DATA.home;
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Thuis &middot; &plusmn;25 min</span>'
+    +'<h1 class="serif">Billentraining</h1>'
+    +'<div class="metaline">'+(plan.billen!=null?"Gepind op "+DAYS[plan.billen]:"Nog geen dag gepind")+'</div>';
+  H.billen.forEach(function(b){
+    h+='<div class="ingrow" onclick="this.classList.toggle(\'done\')">'
+      +'<div class="tick">'+checkSvg+'</div><div class="txt">'+esc(b)+'</div></div>';
+  });
+  h+='<div class="tipbox" style="margin-top:16px"><b>Progressie &mdash;</b> '+esc(H.tip)+'</div>';
+  h+='<div class="subhead">Platte-buik-hefbomen</div>';
+  H.buik.forEach(function(b){
+    h+='<div class="ingrow" style="cursor:default">'
+      +'<div class="tick" style="border:none">&#10022;</div><div class="txt">'+esc(b)+'</div></div>';
+  });
+  h+='</div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  openSheet();
+}
+
+// ── RECEPTEN ──
+function renderRecepten(){
+  var lblChips=ALL_LABELS.map(function(lbl){
+    return '<button class="chip'+(recLabels.has(lbl[0])?' active':'')+'" onclick="toggleLabel(\''+lbl[0]+'\')">'+esc(lbl[1])+'</button>';
+  }).join("");
+  var h='<div class="sec-head"><span class="eyebrow">Bibliotheek</span><h2 class="serif">Mijn <em>recepten</em></h2></div>'
+    +'<div class="toolrow">'
+    +'<button onclick="openEditor(null)">+ Eigen recept</button>'
+    +'<button onclick="openImport()">Importeren</button>'
+    +'<button onclick="backup()">Backup</button></div>'
+    +'<div class="searchbar"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3A322C" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>'
+    +'<input placeholder="Zoek recept of ingredi\u00ebnt..." oninput="recQuery=this.value.trim().toLowerCase();drawRecList()"></div>'
+    +'<div class="chips">'
+    +'<button class="chip'+(recFilter==='all'?' active':'')+'" onclick="setRecF(\'all\')">Alles</button>'
+    +'<button class="chip'+(recFilter==='ontbijt'?' active':'')+'" onclick="setRecF(\'ontbijt\')">Ontbijt</button>'
+    +'<button class="chip'+(recFilter==='lunch'?' active':'')+'" onclick="setRecF(\'lunch\')">Lunch</button>'
+    +'<button class="chip'+(recFilter==='avond'?' active':'')+'" onclick="setRecF(\'avond\')">Avond</button>'
+    +'<button class="chip'+(recFilter==='fav'?' active':'')+'" onclick="setRecF(\'fav\')">&#9829; Favoriet</button>'
+    +'<button class="chip'+(recFilter==='made'?' active':'')+'" onclick="setRecF(\'made\')">&#10003; Gemaakt</button>'
+    +'</div>'
+    +'<div class="chips" id="lblChips">'+lblChips+'</div>'
+    +'<div id="recList"></div>';
+  document.getElementById("v-recepten").innerHTML=h;
+  drawRecList();
+}
+function setRecF(f){recFilter=f;renderRecepten();}
+function toggleLabel(l){if(recLabels.has(l))recLabels.delete(l);else recLabels.add(l);renderRecepten();}
+function drawRecList(){
+  var list=allRecipes();
+  if(["ontbijt","lunch","avond"].indexOf(recFilter)>=0) list=list.filter(function(r){return r.meal===recFilter;});
+  else if(recFilter==="fav") list=list.filter(function(r){return metaOf(r.id).liked;});
+  else if(recFilter==="made") list=list.filter(function(r){return metaOf(r.id).made;});
+  if(recLabels.size>0) list=list.filter(function(r){
+    var lbl=getLabels(r.id);
+    return Array.from(recLabels).every(function(l){return lbl.indexOf(l)>=0;});
+  });
+  if(recQuery) list=list.filter(function(r){return (r.title+" "+ingText(r)).toLowerCase().indexOf(recQuery)>=0;});
+  var h="";
+  list.forEach(function(r){
+    var m=metaOf(r.id);
+    var pills='<span class="pill '+r.meal+'">'+r.meal+'</span>'
+      +(r.tag?'<span class="pill kind">'+esc(r.tag)+'</span>':'')
+      +(m.made?'<span class="badge-made">gemaakt</span>':'');
+    var metaStr=(r.sub?esc(r.sub)+' &middot; ':'')+(r.yield?esc(r.yield):'')+( r.time?' &middot; '+esc(r.time):'');
+    h+='<div class="card" onclick="openDetail(\''+r.id+'\')"> '
+      +'<button class="heart" data-like="'+r.id+'" onclick="toggleLike(\''+r.id+'\',event)">'+heart(!!m.liked)+'</button>'
+      +'<div class="tagrow">'+pills+'</div>'
+      +'<h3>'+esc(r.title)+'</h3>'
+      +'<div class="meta">'+metaStr+'</div>'
+      +renderLabelTags(r.id)
+      +'</div>';
+  });
+  if(!list.length) h='<div class="empty"><div class="big">&#10022;</div><p>Niets gevonden.</p></div>';
+  document.getElementById("recList").innerHTML=h;
+}
+function toggleLike(id,ev){
+  if(ev) ev.stopPropagation();
+  var m=meta[id]||(meta[id]={});
+  m.liked=!m.liked;
+  save("fp_meta",meta);
+  document.querySelectorAll('[data-like="'+id+'"]').forEach(function(b){b.innerHTML=heart(!!m.liked);});
+}
+
+// ── DETAIL ──
+function openDetail(id){
+  if(!servingsState[id]) servingsState[id]=(recipeById(id)||{base:1}).base||1;
+  drawDetail(id);
+  openSheet();
+}
+function changeServ(id,d){servingsState[id]=Math.max(1,servingsState[id]+d);drawDetail(id);}
+function drawDetail(id){
+  var r=recipeById(id);
+  if(!r){closeSheet();return;}
+  var m=metaOf(id),serv=servingsState[id],f=serv/(r.base||1);
+  var h='<div class="sheet-head">'
+    +'<button class="backbtn" onclick="closeSheet()">&#8249; Terug</button>'
+    +'<button class="heart" style="position:static" data-like="'+id+'" onclick="toggleLike(\''+id+'\',event)">'+heart(!!m.liked)+'</button>'
+    +'</div><div class="sheet-body">'
+    +'<span class="eyebrow">'+r.meal+(r.tag?' &middot; '+esc(r.tag):'')+'</span>'
+    +'<h1 class="serif">'+esc(r.title)+'</h1>'
+    +'<div class="metaline">'+(r.yield?esc(r.yield):'')+( r.keeps?' &middot; houdt '+esc(r.keeps):'')+( r.time?' &middot; '+esc(r.time):'')+'</div>'
+    +'<div class="servings"><div class="lbl">'+serv+' '+(serv===1?"portie":"porties")+'<span>basis: '+(r.base||1)+'</span></div>'
+    +'<div class="stepper">'
+    +'<button onclick="changeServ(\''+id+'\',-1)">&minus;</button>'
+    +'<span class="val serif">'+serv+'</span>'
+    +'<button onclick="changeServ(\''+id+'\',1)">+</button>'
+    +'</div></div>'
+    +'<div class="subhead">Nodig</div>';
+  (r.ing||[]).forEach(function(x){
+    var a=scaleAmt(x.a,x.u,f);
+    var at=a!=null?'<span class="amt">'+a+(x.u?' '+x.u:'')+'</span>':'<span class="amt"></span>';
+    h+='<div class="ingrow" onclick="this.classList.toggle(\'done\')">'
+      +'<div class="tick">'+checkSvg+'</div>'+at+'<div class="txt">'+esc(x.it)+'</div></div>';
+  });
+  h+='<div class="subhead">Zo maak je \u2019t</div><ol class="steplist">';
+  (r.steps||[]).forEach(function(s){h+='<li>'+esc(s)+'</li>';});
+  h+='</ol>';
+  if(r.tip) h+='<div class="tipbox" style="margin-top:14px"><b>Tip &mdash;</b> '+esc(r.tip)+'</div>';
+  if(m.notes) h+='<div class="noteshown"><div class="nl">Mijn notitie</div>'+esc(m.notes)+'</div>';
+  h+='<div class="actionrow">'
+    +'<button class="'+(m.made?'on':'')+'" onclick="toggleMade(\''+id+'\')">'+(m.made?'&#10003; Gemaakt':'Al gemaakt?')+'</button>'
+    +'<button onclick="openNote(\''+id+'\')">Notitie</button>'
+    +'<button onclick="openEditor(\''+id+'\')">Bewerken</button>'
+    +'</div>'
+    +'<div class="actionrow">'
+    +'<button class="danger" onclick="delRecipe(\''+id+'\')">Verwijderen</button>';
+  if(metaOf(id).ov) h+='<button onclick="resetRecipe(\''+id+'\')">Herstel origineel</button>';
+  h+='</div>'
+    +'<div class="subhead">Labels</div>'
+    +'<div class="label-edit-row" id="detailLbls"></div>'
+    +'</div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  document.getElementById("sheet").scrollTop=0;
+  var curLbls=getLabels(id);
+  var row=document.getElementById("detailLbls");
+  if(row){
+    ALL_LABELS.forEach(function(lbl){
+      var sp=document.createElement("span");
+      sp.className="lbl-tog"+(curLbls.indexOf(lbl[0])>=0?" on":"");
+      sp.textContent=lbl[1];
+      sp.onclick=function(){toggleRecLabel(id,lbl[0]);};
+      row.appendChild(sp);
+    });
+  }
+}
+function toggleMade(id){var m=meta[id]||(meta[id]={});m.made=!m.made;save("fp_meta",meta);drawDetail(id);}
+function toggleRecLabel(id,l){
+  var m=meta[id]||(meta[id]={});
+  var built=LABEL_MAP[id]||[];
+  if(built.indexOf(l)>=0){
+    if(!m.exLabels) m.exLabels=[];
+    var i=m.exLabels.indexOf(l);
+    if(i>=0) m.exLabels.splice(i,1); else m.exLabels.push(l);
+  } else {
+    if(!m.extraLabels) m.extraLabels=[];
+    var i=m.extraLabels.indexOf(l);
+    if(i>=0) m.extraLabels.splice(i,1); else m.extraLabels.push(l);
+  }
+  save("fp_meta",meta);drawDetail(id);
+}
+function openNote(id){
+  var m=metaOf(id);
+  var h='<div class="sheet-head"><button class="backbtn" onclick="drawDetail(\''+id+'\')">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Notitie</span>'
+    +'<h1 class="serif">'+(recipeById(id)?esc(recipeById(id).title):"Recept")+'</h1>'
+    +'<textarea class="note" id="noteText" placeholder="bv. minder zout, extra knoflook...">'+esc(m.notes||'')+'</textarea>'
+    +'<button class="btn" style="margin-top:12px" onclick="saveNote(\''+id+'\')">Bewaren</button></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+}
+function saveNote(id){
+  var v=document.getElementById("noteText").value.trim();
+  var m=meta[id]||(meta[id]={});
+  if(v) m.notes=v; else delete m.notes;
+  save("fp_meta",meta);drawDetail(id);
+}
+function delRecipe(id){
+  if(!confirm("Dit recept verwijderen?")) return;
+  var m=meta[id]||(meta[id]={});m.deleted=true;save("fp_meta",meta);closeSheet();renderRecepten();
+}
+function resetRecipe(id){var m=meta[id];if(m){delete m.ov;save("fp_meta",meta);}drawDetail(id);}
+
+// ── EDITOR ──
+function ingToText(ing){
+  return (ing||[]).map(function(x){return (x.a!=null?x.a+(x.u?' '+x.u:'')+" ":"")+x.it;}).join("\n");
+}
+function parseIng(line){
+  line=line.trim();if(!line)return null;
+  var m=line.match(/^(\d+(?:[.,]\d+)?)\s*([a-zA-Z]+)?\s+(.+)$/);
+  var units=["g","kg","ml","l","el","tl","tsp","tbsp","cup","stuks","blik","blikken","teen","tenen","bol"];
+  if(m){
+    var a=parseFloat(m[1].replace(",",".")),u="",it;
+    if(m[2]&&units.indexOf(m[2].toLowerCase())>=0){u=m[2].toLowerCase();it=m[3];}
+    else{it=(m[2]?m[2]+" ":"")+m[3];}
+    return {a:a,u:u,it:it};
+  }
+  return {a:null,u:"",it:line};
+}
+function openEditor(id){
+  var r=id?recipeById(id):{meal:"avond",base:2,ing:[],steps:[],title:"",tag:"",tip:""};
+  if(!r) r={meal:"avond",base:2,ing:[],steps:[],title:"",tag:"",tip:""};
+  var curLbls=id?getLabels(id):[];
+  var lblHtml=ALL_LABELS.map(function(lbl){
+    return '<span class="lbl-tog'+(curLbls.indexOf(lbl[0])>=0?" on":"")+'" onclick="this.classList.toggle(\'on\')">'+esc(lbl[1])+'</span>';
+  }).join("");
+  var h='<div class="sheet-head"><button class="backbtn" onclick="'+(id?"drawDetail('"+id+"')":'closeSheet()')+'">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">'+(id?"Bewerken":"Nieuw recept")+'</span>'
+    +'<h1 class="serif">'+(id?"Recept aanpassen":"Eigen recept")+'</h1>'
+    +'<div class="field"><label>Titel</label><input id="eTitle" value="'+esc(r.title||'')+'"></div>'
+    +'<div class="field"><label>Maaltijd</label><select id="eMeal">'
+    +'<option value="ontbijt"'+(r.meal==="ontbijt"?" selected":"")+'>Ontbijt</option>'
+    +'<option value="lunch"'+(r.meal==="lunch"?" selected":"")+'>Lunch</option>'
+    +'<option value="avond"'+(r.meal==="avond"?" selected":"")+'>Avond</option>'
+    +'</select></div>'
+    +'<div class="field"><label>Label (optioneel)</label><input id="eTag" value="'+esc(r.tag||'')+'" placeholder="bv. oven \u00b7 batch"></div>'
+    +'<div class="field"><label>Porties (basis)</label><input id="eBase" type="number" min="1" value="'+(r.base||2)+'"></div>'
+    +'<div class="field"><label>Ingredi\u00ebnten &mdash; \u00e9\u00e9n per regel</label>'
+    +'<textarea id="eIng" placeholder="200 g pasta\n1 burrata\nbasilicum, peper">'+esc(ingToText(r.ing))+'</textarea>'
+    +'<div class="hint">Begin met hoeveelheid + eenheid (g, ml, el...) als je porties wil laten meeschalen.</div></div>'
+    +'<div class="field"><label>Stappen &mdash; \u00e9\u00e9n per regel</label>'
+    +'<textarea id="eSteps" placeholder="Oven op 200\u00b0C.\nMeng alles.\n20 min bakken.">'+esc((r.steps||[]).join("\n"))+'</textarea></div>'
+    +'<div class="field"><label>Tip (optioneel)</label><input id="eTip" value="'+esc(r.tip||'')+'"></div>'
+    +'<div class="field"><label>Labels</label><div class="label-edit-row" id="eLblRow">'+lblHtml+'</div></div>'
+    +'<button class="btn" onclick="saveRecipe(\''+( id||'')+'\')">Bewaren</button>'
+    +'<button class="btn subtle" onclick="'+(id?"drawDetail('"+id+"')":'closeSheet()')+'">Annuleren</button>'
+    +'</div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  openSheet();
+}
+function saveRecipe(id){
+  var lblNodes=document.querySelectorAll("#eLblRow .lbl-tog.on");
+  var lblArr=[];
+  lblNodes.forEach(function(el){
+    var found=ALL_LABELS.find(function(x){return x[1]===el.textContent;});
+    if(found) lblArr.push(found[0]);
+  });
+  var obj={
+    title:document.getElementById("eTitle").value.trim()||"Naamloos recept",
+    meal:document.getElementById("eMeal").value,
+    tag:document.getElementById("eTag").value.trim(),
+    base:Math.max(1,parseInt(document.getElementById("eBase").value)||2),
+    ing:document.getElementById("eIng").value.split("\n").map(parseIng).filter(Boolean),
+    steps:document.getElementById("eSteps").value.split("\n").map(function(s){return s.trim();}).filter(Boolean),
+    tip:document.getElementById("eTip").value.trim(),
+  };
+  if(id){
+    var isCustom=custom.find(function(x){return x.id===id;});
+    if(isCustom){Object.assign(isCustom,obj);save("fp_custom",custom);if(meta[id])delete meta[id].ov;}
+    else{var m=meta[id]||(meta[id]={});m.ov=obj;}
+    var m2=meta[id]||(meta[id]={});m2.extraLabels=lblArr;
+    save("fp_meta",meta);drawDetail(id);
+  } else {
+    var nid="C"+Date.now();
+    custom.push(Object.assign({id:nid},obj));
+    var nm=meta[nid]||(meta[nid]={});nm.extraLabels=lblArr;
+    save("fp_custom",custom);save("fp_meta",meta);
+    closeSheet();renderRecepten();
+  }
+}
+
+// ── IMPORT / BACKUP ──
+function openImport(){
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Importeren</span><h1 class="serif">Recepten inladen</h1>'
+    +'<p style="color:var(--soft);font-size:13.5px;margin-top:0">Plak hier een receptenpakket van Claude en tik op Importeren.</p>'
+    +'<div class="field"><textarea id="impText" style="min-height:160px;font-family:monospace;font-size:12px" placeholder=\'[{"meal":"avond","title":"..."}]\'></textarea></div>'
+    +'<button class="btn" onclick="doImport()">Importeren</button></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  openSheet();
+}
+function doImport(){
+  var raw=document.getElementById("impText").value.trim();
+  try{
+    var arr=JSON.parse(raw);
+    if(!Array.isArray(arr)) arr=[arr];
+    var n=0;
+    arr.forEach(function(r,i){
+      if(!r.title)return;
+      custom.push({id:"C"+Date.now()+"_"+i,meal:r.meal||"avond",title:r.title,tag:r.tag||"",
+        base:r.base||2,ing:(r.ing||[]).map(function(x){return{a:x.a!=null?x.a:null,u:x.u||"",it:x.it||x.item||""};;}),
+        steps:r.steps||[],tip:r.tip||"",yield:r.yield||"",keeps:r.keeps||"",time:r.time||""});
+      if(r.labels){var m=meta["C"+Date.now()+"_"+i]||(meta["C"+Date.now()+"_"+i]={});m.extraLabels=r.labels;}
+      n++;
+    });
+    save("fp_custom",custom);closeSheet();renderRecepten();
+    alert(n+" recept"+(n===1?"":"en")+" toegevoegd.");
+  }catch(e){alert("Hmm, dat lukte niet. Controleer of je de volledige code plakte.");}
+}
+function backup(){
+  var data=JSON.stringify({plan:plan,custom:custom,meta:meta,jims:jimsClasses});
+  copyText(data,"Backup gekopieerd! Bewaar \u2019m in Notes.");
+}
+function copyText(t,msg){
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){alert(msg);}).catch(function(){fallbackCopy(t,msg);});}
+  else fallbackCopy(t,msg);
+}
+function fallbackCopy(t,msg){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");alert(msg);}catch(e){prompt("Kopieer handmatig:",t);}document.body.removeChild(ta);}
+
+// ── LIJST ──
+function buildList(){
+  var map={},staples={};
+  plan.meals.forEach(function(day){
+    MEALS.forEach(function(m){
+      var id=day[m];
+      if(!id||id==="nvt")return;
+      var r=recipeById(id);if(!r)return;
+      (r.ing||[]).forEach(function(x){
+        if(x.a==null){staples[x.it.toLowerCase()]=x.it;return;}
+        var k=x.it.toLowerCase()+"|"+x.u;
+        if(!map[k])map[k]={it:x.it,u:x.u,a:0};
+        map[k].a+=x.a;
+      });
+    });
+  });
+  var toBuy=Object.values(map).map(function(o){
+    var a=(o.u==="g"||o.u==="ml")?(o.a>=20?Math.round(o.a/5)*5:Math.round(o.a)):Math.round(o.a*10)/10;
+    return {txt:o.it,amt:a,unit:o.u};
+  });
+  toBuy.sort(function(a,b){return a.txt.localeCompare(b.txt);});
+  return {toBuy:toBuy,staples:Object.values(staples).sort()};
+}
+function renderLijst(){
+  var L=buildList();
+  var h='<div class="sec-head"><span class="eyebrow">Boodschappen</span><h2 class="serif">Je <em>lijst</em></h2><p>Automatisch uit je weekplan.</p></div>'
+    +'<div class="installhint"><span>&#10022;</span><div><b>Zet me op je beginscherm</b> &mdash; deel-icoon &rarr; &ldquo;Zet op beginscherm&rdquo;. De app opent dan offline.</div></div>';
+  if(!L.toBuy.length&&!L.staples.length){
+    h+='<div class="empty"><div class="big">&#10022;</div><p>Nog niets om te kopen.<br>Stel eerst je <b>week</b> samen.</p></div>'
+      +'<button class="btn ghost" onclick="go(\'week\')">Naar de week &#8250;</button>';
+    document.getElementById("v-lijst").innerHTML=h;return;
+  }
+  var all=L.toBuy.length+L.staples.length,done=0;
+  L.toBuy.forEach(function(o){if(listChecks["b|"+o.txt])done++;});
+  L.staples.forEach(function(s){if(listChecks["s|"+s])done++;});
+  var pct=all?Math.round(done/all*100):0;
+  h+='<button class="btn" onclick="copyList()">Lijst kopi\u00ebren om te delen</button>'
+    +'<div class="progress">'+done+' van '+all+' &middot; '+pct+'%</div>'
+    +'<div class="pbar"><i id="pbarI" style="width:'+pct+'%"></i></div>';
+  L.toBuy.forEach(function(o){
+    var key="b|"+o.txt,d=listChecks[key]?"done":"";
+    var amt='<span class="amt">'+((""+o.amt).replace(".",","))+(o.unit?" "+o.unit:"")+'</span>';
+    h+='<div class="shoprow '+d+'" onclick="toggleL(this,\''+esc(key).replace(/'/g,"\\'")+'\')">'
+      +'<div class="tick">'+checkSvg+'</div>'+amt+'<div class="txt">'+esc(o.txt)+'</div></div>';
+  });
+  if(L.staples.length){
+    h+='<div class="subhead">Check je voorraad</div>';
+    L.staples.forEach(function(s){
+      var key="s|"+s,d=listChecks[key]?"done":"";
+      h+='<div class="shoprow '+d+'" onclick="toggleL(this,\''+esc(key).replace(/'/g,"\\'")+'\')">'
+        +'<div class="tick">'+checkSvg+'</div><span class="amt"></span><div class="txt">'+esc(s)+'</div></div>';
+    });
+  }
+  h+='<button class="btn subtle" style="margin-top:16px" onclick="resetL()">Vinkjes wissen</button>';
+  document.getElementById("v-lijst").innerHTML=h;
+}
+function updListBar(){
+  var L=buildList(),all=L.toBuy.length+L.staples.length,done=0;
+  L.toBuy.forEach(function(o){if(listChecks["b|"+o.txt])done++;});
+  L.staples.forEach(function(s){if(listChecks["s|"+s])done++;});
+  var pct=all?Math.round(done/all*100):0;
+  var pr=document.querySelector("#v-lijst .progress");
+  var bar=document.getElementById("pbarI");
+  if(pr)pr.innerHTML=done+" van "+all+" &middot; "+pct+"%";
+  if(bar)bar.style.width=pct+"%";
+}
+function toggleL(el,key){
+  el.classList.toggle("done");
+  listChecks[key]=el.classList.contains("done");
+  if(!listChecks[key])delete listChecks[key];
+  save("fp_list",listChecks);updListBar();
+}
+function resetL(){listChecks={};save("fp_list",listChecks);renderLijst();}
+function copyList(){
+  var L=buildList(),t="Boodschappen\n\n";
+  L.toBuy.forEach(function(o){t+="- "+((""+o.amt).replace(".",","))+(o.unit?" "+o.unit:"")+" "+o.txt+"\n";});
+  if(L.staples.length){t+="\nCheck voorraad:\n";L.staples.forEach(function(s){t+="- "+s+"\n";});}
+  copyText(t,"Lijst gekopieerd! Plak \u2019m in Notes, Bring of WhatsApp.");
+}
+
+// ── SHEET / NAV ──
+function openSheet(){document.getElementById("sheet").classList.add("on");document.body.style.overflow="hidden";}
+function closeSheet(){document.getElementById("sheet").classList.remove("on");document.body.style.overflow="";}
+var TABS={vandaag:{t:"Plan"},week:{t:"Week"},recepten:{t:"Recepten"},lijst:{t:"Boodschappen"}};
+function go(tab){
+  if(tab==="vandaag")renderVandaag();
+  if(tab==="week")renderWeek();
+  if(tab==="recepten")renderRecepten();
+  if(tab==="lijst")renderLijst();
+  document.querySelectorAll(".view").forEach(function(v){v.classList.remove("on");});
+  document.getElementById("v-"+tab).classList.add("on");
+  document.querySelectorAll("nav button").forEach(function(b){b.classList.toggle("active",b.dataset.tab===tab);});
+  document.getElementById("htitle").textContent=TABS[tab].t;
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("nav button").forEach(function(b){b.onclick=function(){go(b.dataset.tab);};});
+go("vandaag");
+
+</script>
+</body>
+</html>
