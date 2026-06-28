@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>Fit Plan</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Fit Plan">
+<meta name="theme-color" content="#EDE8DE">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════
+   FIT PLAN — SWISS / SCANDINAVIAN EDITION
+   Zero shadow. Zero gradient. Zero radius.
+   Four colors. Type as decoration.
+   ═══════════════════════════════════════ */
+
+:root {
+  --bone:     #EDE8DE;
+  --alabaster:#F6F2EA;
+  --espresso: #2A2420;
+  --ochre:    #B8893E;
+  --hairline: #D5CEC2;
+  --soft:     #8C8278;
+  --faint:    #C8C0B4;
+}
+
+* { box-sizing:border-box; -webkit-tap-highlight-color:transparent; margin:0; padding:0; }
+html, body { margin:0; padding:0; }
+
+body {
+  background: var(--bone);
+  color: var(--espresso);
+  font-family: "Jost", -apple-system, system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .01em;
+}
+
+/* ── GLOBAL TYPE SCALE ── */
+.label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+.serif { font-family: "Jost", sans-serif; } /* override — no serif in Swiss */
+em { font-style: italic; color: var(--ochre); }
+
+/* ── HEADER ── */
+header {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--bone);
+  border-bottom: 1px solid var(--hairline);
+  padding: calc(env(safe-area-inset-top) + 16px) 24px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand { display: flex; align-items: baseline; gap: 10px; }
+.brand .mark {
+  font-size: 9px; letter-spacing: .5em; text-transform: uppercase;
+  color: var(--ochre); font-weight: 700;
+}
+.brand .stitle {
+  font-size: 17px; font-weight: 500; letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+/* ── VIEWS ── */
+main { padding: 0; max-width: 560px; margin: 0 auto; }
+.view { display: none; }
+.view.on { display: block; }
+
+/* ── DAY HEADER (Vandaag) ── */
+.day-header {
+  padding: 36px 24px 28px;
+  border-bottom: 1px solid var(--hairline);
+}
+.day-header .day-nav {
+  display: flex; align-items: flex-start;
+  justify-content: space-between;
+}
+.day-center { flex: 1; }
+.day-lbl {
+  font-size: 9px; font-weight: 700; letter-spacing: .45em;
+  text-transform: uppercase; color: var(--ochre); margin-bottom: 8px;
+}
+.day-name {
+  font-size: 44px; font-weight: 300; line-height: 1;
+  letter-spacing: -.02em;
+}
+.day-date { font-size: 13px; color: var(--soft); margin-top: 6px; letter-spacing: .04em; }
+.arrow {
+  width: 36px; height: 36px;
+  border: 1px solid var(--hairline);
+  background: transparent;
+  color: var(--espresso); font-size: 20px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 8px;
+}
+.arrow:active { background: var(--espresso); color: var(--bone); }
+
+/* ── MEAL ROWS ── */
+.meal-row {
+  display: flex; align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--hairline);
+  cursor: pointer;
+  background: var(--bone);
+  transition: background .1s;
+}
+.meal-row:active { background: var(--alabaster); }
+.meal-row .m-type {
+  font-size: 9px; font-weight: 700; letter-spacing: .35em;
+  text-transform: uppercase; color: var(--soft);
+  width: 68px; flex: 0 0 auto;
+}
+.meal-row .m-title {
+  flex: 1; font-size: 16px; font-weight: 400; line-height: 1.3;
+}
+.meal-row .m-title.empty {
+  color: var(--faint); font-style: italic; font-size: 14px;
+}
+.meal-row .m-arrow { color: var(--faint); font-size: 16px; margin-left: 12px; }
+.meal-row .m-emoji { font-size: 16px; margin-right: 14px; opacity: .7; }
+
+/* ── SECTION LABEL ── */
+.section-label {
+  padding: 24px 24px 8px;
+  font-size: 9px; font-weight: 700; letter-spacing: .45em;
+  text-transform: uppercase; color: var(--soft);
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* ── TRACKING BARS ── */
+.tracker-block {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--hairline);
+}
+.tracker-row {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.tracker-lbl {
+  font-size: 9px; font-weight: 700; letter-spacing: .35em;
+  text-transform: uppercase; color: var(--soft);
+}
+.tracker-val { font-size: 13px; font-weight: 500; color: var(--espresso); }
+.track-bar {
+  height: 2px; background: var(--hairline);
+  position: relative; margin-bottom: 16px;
+}
+.track-bar:last-child { margin-bottom: 0; }
+.track-fill {
+  position: absolute; left: 0; top: 0; height: 100%;
+  background: var(--ochre);
+  transition: width .3s;
+}
+.tracker-controls {
+  display: flex; align-items: center; gap: 0;
+  margin-top: 14px;
+}
+.track-btn {
+  width: 36px; height: 36px;
+  border: 1px solid var(--hairline);
+  background: transparent; color: var(--espresso);
+  font-size: 20px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.track-btn:active { background: var(--espresso); color: var(--bone); }
+.track-count {
+  flex: 1; text-align: center;
+  font-size: 28px; font-weight: 300; letter-spacing: -.02em;
+}
+.track-unit {
+  font-size: 11px; color: var(--soft); letter-spacing: .08em;
+  display: block; margin-top: 2px;
+}
+
+/* ── ENERGY ROW ── */
+.energy-block {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--hairline);
+}
+.energy-opts {
+  display: flex; gap: 0; margin-top: 12px;
+}
+.energy-btn {
+  flex: 1; padding: 10px 8px;
+  border: 1px solid var(--hairline);
+  border-right: none;
+  background: transparent; color: var(--soft);
+  font-family: inherit; font-size: 11px;
+  font-weight: 600; letter-spacing: .2em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.energy-btn:last-child { border-right: 1px solid var(--hairline); }
+.energy-btn.on { background: var(--espresso); color: var(--bone); border-color: var(--espresso); }
+.daynote-text {
+  width: 100%; border: none; border-top: 1px solid var(--hairline);
+  padding: 14px 0 0; margin-top: 14px;
+  font-family: inherit; font-size: 14px;
+  resize: none; outline: none;
+  min-height: 40px; line-height: 1.5;
+  background: transparent; color: var(--espresso);
+}
+
+/* ── CYCLE BAR ── */
+.cycle-row {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--hairline);
+  display: flex; align-items: center;
+  justify-content: space-between; cursor: pointer;
+}
+.cycle-row:active { background: var(--alabaster); }
+.cycle-phase {
+  font-size: 9px; font-weight: 700; letter-spacing: .4em;
+  text-transform: uppercase; color: var(--ochre);
+}
+.cycle-day {
+  font-size: 13px; color: var(--soft);
+}
+.cycle-tip { font-size: 13px; color: var(--soft); margin-top: 2px; }
+
+/* ── MOVE ROW ── */
+.move-row {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--hairline);
+  cursor: pointer; background: var(--alabaster);
+  display: flex; align-items: center; gap: 0;
+}
+.move-row:active { background: var(--hairline); }
+.move-type {
+  font-size: 9px; font-weight: 700; letter-spacing: .35em;
+  text-transform: uppercase; color: var(--soft); width: 68px;
+}
+.move-name { flex: 1; font-size: 16px; font-weight: 400; }
+.move-done { font-size: 13px; color: var(--ochre); margin-left: 12px; letter-spacing: .05em; }
+.rest-row {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 13px; color: var(--faint);
+  font-style: italic; letter-spacing: .04em;
+}
+
+/* ── PLAN BUTTON ── */
+.plan-btn-row {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* ── WORKOUT DONE BADGES ── */
+.wd-row {
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--hairline);
+  display: flex; gap: 0;
+}
+.wdbtn {
+  flex: 1; padding: 10px;
+  border: 1px solid var(--hairline); border-right: none;
+  background: transparent; color: var(--soft);
+  font-family: inherit; font-size: 11px;
+  font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+  cursor: pointer;
+}
+.wdbtn:last-child { border-right: 1px solid var(--hairline); }
+.wdbtn.on { background: var(--espresso); color: var(--bone); border-color: var(--espresso); }
+
+/* ── WEEK SWITCHER ── */
+.week-switcher {
+  display: flex; border-bottom: 1px solid var(--hairline);
+  background: var(--bone);
+}
+.wstab {
+  flex: 1; padding: 14px 24px;
+  border: none; border-right: 1px solid var(--hairline);
+  background: transparent; color: var(--soft);
+  font-family: inherit; font-size: 11px;
+  font-weight: 600; letter-spacing: .25em; text-transform: uppercase;
+  cursor: pointer;
+}
+.wstab:last-child { border-right: none; }
+.wstab.active { background: var(--espresso); color: var(--bone); }
+
+/* ── WEEK GRID ── */
+.sec-head { padding: 32px 24px 0; }
+.sec-head h2 {
+  font-size: 42px; font-weight: 300; line-height: 1;
+  letter-spacing: -.02em;
+}
+.sec-head h2 em { color: var(--ochre); font-style: italic; }
+.sec-head p { font-size: 13.5px; color: var(--soft); margin-top: 8px; line-height: 1.5; }
+.sec-head .eyebrow {
+  display: block; font-size: 9px; font-weight: 700;
+  letter-spacing: .4em; text-transform: uppercase;
+  color: var(--ochre); margin-bottom: 10px;
+}
+.slothead {
+  display: grid; grid-template-columns: 40px 1fr 1fr 1fr;
+  gap: 1px; padding: 16px 24px 8px;
+}
+.slothead div {
+  font-size: 9px; letter-spacing: .2em; text-transform: uppercase;
+  font-weight: 600; color: var(--soft); text-align: center;
+}
+.slothead div:first-child { text-align: left; }
+.week-grid { padding: 0 24px; }
+.dayrow {
+  display: grid; grid-template-columns: 40px 1fr 1fr 1fr;
+  gap: 1px; margin-bottom: 1px;
+}
+.dayrow .dl {
+  display: flex; align-items: center;
+  font-size: 12px; font-weight: 600; color: var(--soft);
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.dayrow.today .dl { color: var(--ochre); }
+.slot {
+  background: var(--alabaster);
+  padding: 10px 8px; font-size: 11px;
+  min-height: 48px; display: flex; align-items: center;
+  justify-content: center; text-align: center;
+  cursor: pointer; line-height: 1.3;
+  border: none; transition: background .1s;
+}
+.slot:active { background: var(--hairline); }
+.slot.set { background: var(--espresso); color: var(--alabaster); font-weight: 500; font-size: 10.5px; }
+.slot.nvt { color: var(--faint); font-style: italic; }
+.slot.empty { color: var(--faint); font-size: 18px; font-weight: 300; }
+
+/* ── DAYCHIPS ── */
+.daychips { display: flex; gap: 1px; margin-top: 12px; }
+.daychip {
+  flex: 1; border: 1px solid var(--hairline); border-right: none;
+  background: transparent; color: var(--soft);
+  padding: 9px 0; font-size: 11px; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  cursor: pointer; text-align: center;
+}
+.daychip:last-child { border-right: 1px solid var(--hairline); }
+.daychip.active { background: var(--espresso); color: var(--bone); border-color: var(--espresso); }
+
+/* ── BLOCK ── */
+.block {
+  border-top: 1px solid var(--hairline);
+  padding: 24px;
+  background: var(--bone);
+}
+.block .eyebrow {
+  display: block; font-size: 9px; font-weight: 700;
+  letter-spacing: .4em; text-transform: uppercase;
+  color: var(--ochre); margin-bottom: 14px;
+}
+
+/* ── CLASS PICK ── */
+.classpick {
+  display: flex; align-items: center; justify-content: space-between;
+  border: 1px solid var(--hairline); padding: 14px 16px;
+  margin-top: 12px; cursor: pointer;
+}
+.classpick .cv { font-weight: 500; }
+.classpick .cv.muted { color: var(--soft); font-style: italic; font-weight: 400; }
+.chev { color: var(--faint); }
+
+/* ── DIVIDER ── */
+.divider {
+  height: 1px; background: var(--hairline);
+  margin: 0; position: relative;
+}
+
+/* ── SHEET ── */
+.sheet {
+  position: fixed; inset: 0; z-index: 50;
+  background: var(--bone); overflow-y: auto;
+  transform: translateY(100%);
+  transition: transform .28s cubic-bezier(.4,0,.2,1);
+  -webkit-overflow-scrolling: touch;
+}
+.sheet.on { transform: none; }
+.sheet-head {
+  position: sticky; top: 0;
+  background: var(--bone);
+  border-bottom: 1px solid var(--hairline);
+  padding: calc(env(safe-area-inset-top) + 14px) 24px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.backbtn {
+  background: none; border: none;
+  font-size: 13px; color: var(--ochre);
+  font-weight: 700; cursor: pointer;
+  letter-spacing: .2em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 8px;
+}
+.sheet-body { padding: 32px 24px 90px; max-width: 560px; margin: 0 auto; }
+.sheet-body .eyebrow {
+  display: block; font-size: 9px; font-weight: 700;
+  letter-spacing: .45em; text-transform: uppercase;
+  color: var(--ochre); margin-bottom: 14px;
+}
+.sheet-body h1 {
+  font-size: 38px; font-weight: 300; line-height: 1.05;
+  letter-spacing: -.02em; margin: 0 0 6px;
+}
+.sheet-body .metaline { font-size: 13px; color: var(--soft); margin-bottom: 28px; letter-spacing: .04em; }
+
+/* ── SERVINGS ── */
+.servings {
+  display: flex; align-items: center; justify-content: space-between;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: 16px 0; margin-bottom: 28px;
+}
+.servings .lbl { font-weight: 600; font-size: 14px; }
+.servings .lbl span { display: block; font-weight: 400; font-size: 12px; color: var(--soft); margin-top: 2px; }
+.stepper { display: flex; align-items: center; gap: 16px; }
+.stepper button {
+  width: 36px; height: 36px;
+  border: 1px solid var(--hairline);
+  background: transparent; color: var(--espresso);
+  font-size: 20px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.stepper button:active { background: var(--espresso); color: var(--bone); }
+.stepper .val { font-size: 26px; font-weight: 300; min-width: 28px; text-align: center; }
+
+/* ── SUBHEAD ── */
+.subhead {
+  font-size: 9px; font-weight: 700; letter-spacing: .4em;
+  text-transform: uppercase; color: var(--ochre);
+  margin: 28px 0 14px;
+}
+
+/* ── INGREDIENT ROWS ── */
+.ingrow {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 12px 0; border-bottom: 1px solid var(--hairline);
+  cursor: pointer;
+}
+.ingrow:last-of-type { border-bottom: none; }
+.tick {
+  width: 18px; height: 18px;
+  border: 1px solid var(--hairline);
+  flex: 0 0 auto; margin-top: 2px;
+  display: flex; align-items: center; justify-content: center;
+  transition: .15s;
+}
+.ingrow.done .tick, .shoprow.done .tick { background: var(--espresso); border-color: var(--espresso); }
+.tick svg { opacity: 0; }
+.ingrow.done .tick svg, .shoprow.done .tick svg { opacity: 1; }
+.ingrow .amt { font-weight: 600; min-width: 64px; font-variant-numeric: tabular-nums; }
+.ingrow.done .txt, .shoprow.done .txt { text-decoration: line-through; color: var(--faint); }
+
+/* ── STEPS ── */
+.steplist { counter-reset: s; list-style: none; padding: 0; }
+.steplist li {
+  counter-increment: s;
+  position: relative; padding: 0 0 18px 44px;
+  font-size: 15px; line-height: 1.6;
+}
+.steplist li::before {
+  content: counter(s, decimal-leading-zero);
+  position: absolute; left: 0; top: 0;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: .1em; color: var(--ochre);
+  padding-top: 4px;
+}
+.steplist li:last-child { padding-bottom: 0; }
+
+/* ── TIP BOX ── */
+.tipbox {
+  border-left: 2px solid var(--ochre);
+  padding: 12px 16px;
+  font-size: 13.5px; color: var(--soft);
+  margin-top: 20px; line-height: 1.55;
+  background: var(--alabaster);
+}
+.tipbox b { color: var(--espresso); }
+
+/* ── ACTION ROW ── */
+.actionrow { display: flex; gap: 1px; margin: 24px 0 6px; }
+.actionrow button {
+  flex: 1; border: 1px solid var(--hairline); border-right: none;
+  background: transparent; color: var(--espresso);
+  padding: 13px 8px; font-family: inherit;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .2em; text-transform: uppercase; cursor: pointer;
+}
+.actionrow button:last-child { border-right: 1px solid var(--hairline); }
+.actionrow button.on { background: var(--espresso); color: var(--bone); border-color: var(--espresso); }
+.actionrow button.danger { color: #9B3A2A; }
+.note {
+  width: 100%; border: 1px solid var(--hairline);
+  padding: 14px; font-family: inherit; font-size: 14px;
+  resize: vertical; min-height: 80px; outline: none;
+  background: transparent; color: var(--espresso);
+  margin-top: 14px;
+}
+.note:focus { border-color: var(--espresso); }
+.noteshown {
+  border-left: 2px solid var(--ochre);
+  padding: 12px 16px; font-size: 13.5px; margin-top: 14px;
+  background: var(--alabaster);
+}
+.noteshown .nl {
+  font-size: 9px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--ochre); font-weight: 700; margin-bottom: 5px; display: block;
+}
+
+/* ── LABEL EDITOR ── */
+.label-edit-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.lbl-tog {
+  border: 1px solid var(--hairline); padding: 8px 14px;
+  font-size: 11px; font-weight: 600; letter-spacing: .15em;
+  text-transform: uppercase; cursor: pointer;
+  color: var(--soft); background: transparent;
+}
+.lbl-tog.on { background: var(--espresso); color: var(--bone); border-color: var(--espresso); }
+
+/* ── PILLS ── */
+.pill {
+  font-size: 9px; letter-spacing: .15em; text-transform: uppercase;
+  font-weight: 700; padding: 3px 8px;
+  border: 1px solid currentColor;
+}
+.pill.ontbijt { color: var(--ochre); }
+.pill.lunch { color: var(--soft); }
+.pill.avond { color: var(--espresso); }
+.pill.hapje { color: var(--espresso); }
+.pill.kind { color: var(--ochre); }
+.lbl-tag {
+  display: inline-block; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 700; color: var(--ochre);
+  border: 1px solid var(--ochre); padding: 2px 7px;
+  margin: 4px 4px 0 0;
+}
+.badge-made {
+  display: inline-block; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 700; color: var(--soft);
+  border: 1px solid var(--hairline); padding: 2px 7px;
+}
+
+/* ── SEARCH / CHIPS / TOOLBAR ── */
+.searchbar { position: relative; padding: 0; margin-bottom: 0; border-bottom: 1px solid var(--hairline); }
+.searchbar input {
+  width: 100%; border: none;
+  background: var(--alabaster);
+  padding: 16px 24px 16px 52px;
+  font-family: inherit; font-size: 14px;
+  color: var(--espresso); outline: none;
+  letter-spacing: .02em;
+}
+.searchbar svg { position: absolute; left: 24px; top: 50%; transform: translateY(-50%); opacity: .4; }
+.chips {
+  display: flex; gap: 0; overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-bottom: 1px solid var(--hairline);
+  scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: 0 0 auto; border: none; border-right: 1px solid var(--hairline);
+  background: var(--alabaster); color: var(--soft);
+  padding: 11px 18px; font-size: 11px; font-weight: 600;
+  letter-spacing: .2em; text-transform: uppercase; cursor: pointer;
+}
+.chip.active { background: var(--espresso); color: var(--bone); }
+.toolrow {
+  display: flex; border-bottom: 1px solid var(--hairline);
+}
+.toolrow button {
+  flex: 1; border: none; border-right: 1px solid var(--hairline);
+  background: var(--alabaster); color: var(--espresso);
+  padding: 14px 10px; font-family: inherit;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .2em; text-transform: uppercase; cursor: pointer;
+}
+.toolrow button:last-child { border-right: none; }
+.toolrow button:active { background: var(--hairline); }
+
+/* ── CARD (Recepten) ── */
+.card {
+  border-bottom: 1px solid var(--hairline);
+  padding: 20px 24px; cursor: pointer;
+  background: var(--bone); position: relative;
+  transition: background .1s;
+}
+.card:active { background: var(--alabaster); }
+.card .tagrow { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; padding-right: 36px; }
+.card h3 { font-size: 21px; font-weight: 400; line-height: 1.2; padding-right: 36px; margin-bottom: 4px; }
+.card .meta { font-size: 12.5px; color: var(--soft); }
+.heart {
+  position: absolute; top: 18px; right: 20px;
+  width: 30px; height: 30px; border: none;
+  background: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.heart svg { width: 20px; height: 20px; }
+
+/* ── PICKER ── */
+.pickopt {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 24px; border-bottom: 1px solid var(--hairline);
+  cursor: pointer; background: var(--bone);
+}
+.pickopt:active { background: var(--alabaster); }
+.pickopt .pt { font-size: 17px; font-weight: 400; flex: 1; }
+.pickopt .ps { font-size: 12.5px; color: var(--soft); margin-top: 2px; }
+.pickopt.special { background: var(--alabaster); }
+
+/* ── FORM FIELDS ── */
+.field { margin-bottom: 18px; }
+.field label {
+  display: block; font-size: 9px; font-weight: 700;
+  letter-spacing: .38em; text-transform: uppercase;
+  color: var(--ochre); margin-bottom: 8px;
+}
+.field input, .field select, .field textarea {
+  width: 100%; border: 1px solid var(--hairline);
+  background: var(--alabaster); padding: 13px 16px;
+  font-family: inherit; font-size: 15px;
+  color: var(--espresso); outline: none; border-radius: 0;
+}
+.field textarea { resize: vertical; min-height: 90px; line-height: 1.5; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--espresso); }
+.field .hint { font-size: 12px; color: var(--soft); margin-top: 6px; line-height: 1.4; }
+
+/* ── BUTTONS ── */
+.btn {
+  width: 100%; border: none;
+  background: var(--espresso); color: var(--bone);
+  padding: 16px 24px; font-family: inherit;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: .3em; text-transform: uppercase;
+  cursor: pointer; margin-bottom: 10px;
+  transition: opacity .15s; border-radius: 0;
+}
+.btn:active { opacity: .85; }
+.btn.ghost {
+  background: transparent; color: var(--espresso);
+  border: 1px solid var(--espresso);
+}
+.btn.subtle {
+  background: transparent; color: var(--soft);
+  border: 1px solid var(--hairline);
+  font-size: 11px;
+}
+
+/* ── SHOPPING ── */
+.progress { font-size: 12px; color: var(--soft); margin-bottom: 8px; letter-spacing: .04em; }
+.pbar { height: 2px; background: var(--hairline); margin: 0 0 24px; }
+.pbar i { display: block; height: 100%; background: var(--ochre); transition: width .3s; }
+.shoprow {
+  display: flex; gap: 14px; align-items: center;
+  padding: 13px 0; border-bottom: 1px solid var(--hairline); cursor: pointer;
+}
+.shoprow:last-of-type { border-bottom: none; }
+.shoprow .amt { font-weight: 600; min-width: 62px; font-variant-numeric: tabular-nums; font-size: 14px; }
+.leftover-tag {
+  display: inline-block; font-size: 9px; letter-spacing: .1em;
+  text-transform: uppercase; font-weight: 700; color: var(--soft);
+  border: 1px solid var(--hairline); padding: 2px 6px; margin-left: 8px;
+}
+.shoprow.lo .txt { color: var(--soft); }
+
+/* ── MEALPREP ── */
+.mprow {
+  display: flex; gap: 14px; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid var(--hairline); cursor: pointer;
+}
+.mprow:last-of-type { border-bottom: none; }
+.mprow .tick { width: 18px; height: 18px; border: 1px solid var(--hairline); flex: 0 0 auto; display: flex; align-items: center; justify-content: center; }
+
+/* ── EMPTY ── */
+.empty { text-align: center; color: var(--soft); padding: 60px 24px; }
+.empty .big { font-size: 54px; font-weight: 300; color: var(--ochre); margin-bottom: 12px; letter-spacing: -.02em; }
+
+/* ── INSTALL HINT ── */
+.installhint {
+  border-left: 2px solid var(--ochre);
+  padding: 12px 16px; font-size: 13px; color: var(--soft);
+  margin-bottom: 20px; line-height: 1.5;
+  background: var(--alabaster); display: flex; gap: 10px;
+}
+
+/* ── CYCLE PICKER ── */
+.cycle-active { border-left: 3px solid var(--ochre) !important; background: var(--alabaster) !important; }
+
+/* ── WEEK SWITCHER CYCLE ── */
+.cycle-pill {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 24px; border-bottom: 1px solid var(--hairline);
+  cursor: pointer; background: var(--bone);
+}
+.cycle-pill:active { background: var(--alabaster); }
+
+/* ── NAV ── */
+nav {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 40;
+  background: var(--bone);
+  border-top: 1px solid var(--hairline);
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+nav button {
+  flex: 1; background: none; border: none; border-right: 1px solid var(--hairline);
+  padding: 13px 0 14px; cursor: pointer; color: var(--faint);
+  display: flex; flex-direction: column; align-items: center;
+  gap: 5px; font-family: inherit; transition: color .15s;
+}
+nav button:last-child { border-right: none; }
+nav button .nlbl { font-size: 9px; font-weight: 700; letter-spacing: .25em; text-transform: uppercase; }
+nav button svg { width: 20px; height: 20px; }
+nav button.active { color: var(--espresso); }
+
+/* ── WATER BLOCK ── */
+.water-card {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--hairline);
+  background: var(--bone);
+}
+.water-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.water-count { font-size: 32px; font-weight: 300; letter-spacing: -.02em; }
+.water-count span { font-size: 13px; color: var(--soft); font-weight: 400; letter-spacing: .02em; }
+.water-btns { display: flex; gap: 1px; }
+.water-btn {
+  width: 38px; height: 38px;
+  border: 1px solid var(--hairline);
+  background: transparent; color: var(--espresso);
+  font-size: 20px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.water-btn.plus { background: var(--espresso); color: var(--bone); border-color: var(--espresso); }
+.water-btn:active { opacity: .75; }
+.water-bar { height: 2px; background: var(--hairline); margin-bottom: 0; }
+.water-fill { height: 100%; background: var(--ochre); transition: width .3s; }
+.water-drops { display: none; } /* replaced by bar */
+.drop { display: none; }
+.drop.full { display: none; }
+
+.bulk-row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--hairline);cursor:pointer;transition:background .1s;}
+.bulk-row.selected{background:var(--alabaster);}
+.bulk-check{width:20px;height:20px;border:1px solid var(--hairline);flex:0 0 auto;display:flex;align-items:center;justify-content:center;transition:.15s;}
+.bulk-check.on{background:var(--espresso);border-color:var(--espresso);}
+.bulk-check.on::after{content:"\2713";color:var(--bone);font-size:13px;font-weight:700;}
+.bulk-title{font-size:16px;font-weight:400;margin-bottom:2px;}
+.bulk-sub{font-size:12px;color:var(--soft);letter-spacing:.04em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <span class="mark">Fit</span>
+    <span class="stitle" id="htitle">Plan</span>
+  </div>
+</header>
+<main>
+  <section class="view" id="v-vandaag"></section>
+  <section class="view" id="v-week"></section>
+  <section class="view" id="v-recepten"></section>
+  <section class="view" id="v-lijst"></section>
+</main>
+<div class="sheet" id="sheet"><div id="sheetContent"></div></div>
+<nav>
+  <button data-tab="vandaag" class="active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    <span class="nlbl">Vandaag</span>
+  </button>
+  <button data-tab="week">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="0"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    <span class="nlbl">Week</span>
+  </button>
+  <button data-tab="recepten">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    <span class="nlbl">Recepten</span>
+  </button>
+  <button data-tab="lijst">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></svg>
+    <span class="nlbl">Lijst</span>
+  </button>
+</nav>
+<script>
+
+const DATA={"recipes": [{"id": "B00", "meal": "ontbijt", "title": "Klassiek rood fruit", "sub": "Yoghurtpotjes", "tag": "yoghurt · make-ahead", "base": 1, "yield": "1 potje", "keeps": "4 dagen", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "Griekse yoghurt (10%)"}, {"a": 2, "u": "el", "it": "granola"}, {"a": 80, "u": "g", "it": "gemengde bessen (vers of diepvries)"}, {"a": 1, "u": "tl", "it": "honing"}], "steps": ["Schep de yoghurt in een glas of mason jar.", "Leg de bessen bovenop.", "Strooi de granola erover vlak voor het eten — zo blijft het knapperig.", "Drupje honing erbij naar smaak."], "tip": "Granola apart bewaren als je vooruit maakt, anders wordt het zacht. Diepvriesbessen ontdooien 's nachts in de koelkast."}, {"id": "B01", "meal": "ontbijt", "title": "Cacao-banaan", "sub": "Yoghurtpotjes", "tag": "yoghurt · make-ahead", "base": 1, "yield": "1 potje", "keeps": "3 dagen", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "Griekse yoghurt (10%)"}, {"a": 1, "u": "tl", "it": "cacaopoeder (ongezoet)"}, {"a": 1, "u": "tl", "it": "honing"}, {"a": 0.5, "u": "", "it": "banaan, in schijfjes"}, {"a": 1, "u": "el", "it": "granola of haverflakes"}], "steps": ["Meng de yoghurt met cacaopoeder en honing tot een egale chocoladecrème.", "Doe in een glas of jar.", "Leg de bananenschijfjes bovenop.", "Strooi granola erover vlak voor het eten."], "tip": "Banaan pas toevoegen de ochtend zelf — anders verkleurt die."}, {"id": "B02", "meal": "ontbijt", "title": "Appel-kaneel", "sub": "Yoghurtpotjes", "tag": "yoghurt · make-ahead", "base": 1, "yield": "1 potje", "keeps": "4 dagen", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "Griekse yoghurt (10%)"}, {"a": 0.5, "u": "tl", "it": "kaneel"}, {"a": 1, "u": "tl", "it": "honing"}, {"a": 0.5, "u": "", "it": "appel, in kleine blokjes"}, {"a": 1, "u": "el", "it": "granola"}, {"a": 5, "u": "", "it": "walnoten, grof gehakt"}], "steps": ["Meng yoghurt met kaneel en honing.", "Snij de appel in kleine blokjes.", "Laag yoghurt, appel, granola en walnoten in een glas.", "Eventueel nog een snufje kaneel erover."], "tip": "Appel kort in citroenwater weken voorkomt bruinkleuring als je vooruit maakt."}, {"id": "B03", "meal": "ontbijt", "title": "Citroen-blauwe bes", "sub": "Yoghurtpotjes", "tag": "yoghurt · make-ahead", "base": 1, "yield": "1 potje", "keeps": "4 dagen", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "Griekse yoghurt (10%)"}, {"a": 1, "u": "tl", "it": "citroenrasp"}, {"a": 1, "u": "tl", "it": "honing of agavesiroop"}, {"a": 80, "u": "g", "it": "blauwe bessen"}, {"a": 1, "u": "el", "it": "granola"}], "steps": ["Meng yoghurt met citroenrasp en honing.", "Doe in een glas.", "Leg de blauwe bessen bovenop.", "Granola erover vlak voor serveren."], "tip": "De citroensrasp geeft net dat frisser tintje. Limoensrasp werkt ook goed."}, {"id": "B04", "meal": "ontbijt", "title": "Perzik-amandel", "sub": "Yoghurtpotjes", "tag": "yoghurt · make-ahead", "base": 1, "yield": "1 potje", "keeps": "3 dagen", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "Griekse yoghurt (10%)"}, {"a": 1, "u": "tl", "it": "vanille-extract of vanillesuiker"}, {"a": 0.5, "u": "", "it": "perzik, in stukjes (of uit blik, uitgelekt)"}, {"a": 10, "u": "g", "it": "amandelschilfers"}, {"a": 1, "u": "tl", "it": "honing"}], "steps": ["Meng yoghurt met vanille en honing.", "Snij de perzik in stukjes.", "Laag yoghurt, perzik en amandelschilfers in een glas.", "Eventueel extra honing erover."], "tip": "Vers of uit blik — beide werken. Blik-perzik goed uitlaten lekken."}, {"id": "B05", "meal": "ontbijt", "title": "Tropisch", "sub": "Yoghurtpotjes", "tag": "yoghurt · make-ahead", "base": 1, "yield": "1 potje", "keeps": "3 dagen", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "Griekse yoghurt (10%)"}, {"a": 50, "u": "g", "it": "mangostukjes (vers of diepvries)"}, {"a": 50, "u": "g", "it": "ananasstukjes"}, {"a": 1, "u": "el", "it": "kokosrasp"}, {"a": 1, "u": "tl", "it": "honing"}], "steps": ["Doe de yoghurt in een glas.", "Leg mango en ananas bovenop.", "Strooi de kokosrasp erover.", "Honing erbij naar smaak."], "tip": "Diepvriesfruit 's nachts ontdooien in de koelkast. De yoghurt wordt lekker friszoet van het tropisch fruit."}, {"id": "B10", "meal": "ontbijt", "title": "Berry boost", "sub": "Smoothies to-go", "tag": "smoothie · make-ahead", "base": 1, "yield": "1 beker (400 ml)", "keeps": "24 uur", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "Griekse yoghurt"}, {"a": 100, "u": "g", "it": "gemengde bessen (diepvries)"}, {"a": 0.5, "u": "", "it": "banaan, bevroren"}, {"a": 100, "u": "ml", "it": "amandelmelk of gewone melk"}, {"a": 1, "u": "tl", "it": "honing (optioneel)"}], "steps": ["Doe alle ingrediënten in een blender.", "Mix 30–45 seconden tot een gladde smoothie.", "Proef en voeg honing toe als je het zoeter wil.", "Giet in een beker of mason jar en bewaar in de koelkast."], "tip": "Bevroren fruit maakt de smoothie dikker en kouder — geen ijs nodig. Smoothie-zakjes klaarmaken op zondag: fruit portioneren en invriezen."}, {"id": "B11", "meal": "ontbijt", "title": "Groene energie", "sub": "Smoothies to-go", "tag": "smoothie · make-ahead", "base": 1, "yield": "1 beker (400 ml)", "keeps": "24 uur", "time": "5 min", "ing": [{"a": 1, "u": "", "it": "handvol spinazie (vers)"}, {"a": 0.5, "u": "", "it": "banaan, bevroren"}, {"a": 1, "u": "", "it": "appel, in stukjes"}, {"a": 150, "u": "ml", "it": "amandelmelk"}, {"a": 1, "u": "tl", "it": "lijnzaad"}, {"a": 1, "u": "tl", "it": "honing (optioneel)"}], "steps": ["Doe spinazie, banaan en appel in de blender.", "Voeg de amandelmelk toe.", "Mix 45 seconden tot volledig glad.", "Proef en voeg honing of extra melk toe naar gewenste dikte."], "tip": "Spinazie proef je nauwelijks maar geeft een mooie groene kleur en voedingswaarde. Extra rijp is de banaan, hoe zoeter."}, {"id": "B12", "meal": "ontbijt", "title": "Choco-pindakaas", "sub": "Smoothies to-go", "tag": "smoothie · make-ahead", "base": 1, "yield": "1 beker (400 ml)", "keeps": "24 uur", "time": "5 min", "ing": [{"a": 1, "u": "", "it": "banaan, bevroren"}, {"a": 1, "u": "el", "it": "pindakaas (100% pinda)"}, {"a": 1, "u": "tl", "it": "cacaopoeder (ongezoet)"}, {"a": 200, "u": "ml", "it": "havermelk of gewone melk"}, {"a": 1, "u": "tl", "it": "honing"}], "steps": ["Doe alle ingrediënten in de blender.", "Mix 30–45 seconden tot een gladde, chocoladeachtige smoothie.", "Voeg meer melk toe als hij te dik is.", "Giet in een beker."], "tip": "Voegt eiwitten en gezonde vetten toe. Dessert als ontbijt, basically."}, {"id": "B13", "meal": "ontbijt", "title": "Tropische zon", "sub": "Smoothies to-go", "tag": "smoothie · make-ahead", "base": 1, "yield": "1 beker (400 ml)", "keeps": "24 uur", "time": "5 min", "ing": [{"a": 100, "u": "g", "it": "mangostukjes (bevroren)"}, {"a": 100, "u": "g", "it": "ananasstukjes (bevroren)"}, {"a": 150, "u": "ml", "it": "kokosmelk (uit blik, licht)"}, {"a": 50, "u": "ml", "it": "sinaasappelsap"}, {"a": 1, "u": "tl", "it": "honing (optioneel)"}], "steps": ["Doe mango, ananas, kokosmelk en sinaasappelsap in de blender.", "Mix 45 seconden tot glad.", "Proef op zoetheid — voeg honing toe indien nodig.", "Giet in een beker."], "tip": "Bevroren fruit is al zoet genoeg. De kokosmelk geeft een rijke, romige textuur."}, {"id": "B14", "meal": "ontbijt", "title": "Koffie-boost", "sub": "Smoothies to-go", "tag": "smoothie · make-ahead", "base": 1, "yield": "1 beker (350 ml)", "keeps": "24 uur", "time": "5 min", "ing": [{"a": 1, "u": "", "it": "banaan, bevroren"}, {"a": 60, "u": "ml", "it": "espresso of sterke koffie, afgekoeld"}, {"a": 150, "u": "ml", "it": "havermelk"}, {"a": 2, "u": "el", "it": "Griekse yoghurt"}, {"a": 1, "u": "tl", "it": "cacaopoeder (optioneel)"}, {"a": 1, "u": "tl", "it": "honing"}], "steps": ["Laat de espresso volledig afkoelen (of gebruik cold brew).", "Doe alle ingrediënten in de blender.", "Mix 30 seconden tot glad.", "Giet in een beker — koud serveren."], "tip": "Ontbijt en koffie in één. Ideaal voor drukke ochtenden."}, {"id": "B15", "meal": "ontbijt", "title": "Aardbei-vanille", "sub": "Smoothies to-go", "tag": "smoothie · make-ahead", "base": 1, "yield": "1 beker (400 ml)", "keeps": "24 uur", "time": "5 min", "ing": [{"a": 150, "u": "g", "it": "aardbeien (vers of bevroren)"}, {"a": 0.5, "u": "", "it": "banaan, bevroren"}, {"a": 150, "u": "g", "it": "Griekse yoghurt"}, {"a": 100, "u": "ml", "it": "melk"}, {"a": 0.5, "u": "tl", "it": "vanille-extract"}, {"a": 1, "u": "tl", "it": "honing (optioneel)"}], "steps": ["Doe aardbeien, banaan, yoghurt, melk en vanille in de blender.", "Mix 45 seconden tot volledig glad.", "Proef op zoetheid.", "Giet in een beker of jar."], "tip": "Zomers met verse aardbeien, rest van het jaar met diepvries. Beide smaken uitstekend."}, {"id": "B20", "meal": "ontbijt", "title": "Spinazie & feta egg bites", "sub": "Egg bites", "tag": "egg bites · make-ahead", "base": 6, "yield": "6 stuks", "keeps": "5 dagen", "time": "30 min", "ing": [{"a": 6, "u": "", "it": "eieren"}, {"a": 3, "u": "el", "it": "melk"}, {"a": 60, "u": "g", "it": "verse spinazie, grof gehakt"}, {"a": 60, "u": "g", "it": "feta, verkruimeld"}, {"a": null, "u": "", "it": "peper, zout, nootmuskaat"}], "steps": ["Oven op 180°C. Vet een muffinvorm voor 6 in of gebruik een siliconen bakvormpje.", "Klop de eieren los met de melk, peper, zout en een snufje nootmuskaat.", "Verdeel de spinazie en feta over de vakjes.", "Giet het eiermengsel erover — vul tot ¾.", "18–20 min in de oven tot ze gestold zijn. Even laten afkoelen voor je ze losmaakt."], "tip": "Heel de week ontbijt klaar. Koud of warm (30 sec in magnetron). Bewaar in een afgesloten bakje in de koelkast."}, {"id": "B21", "meal": "ontbijt", "title": "Ham & paprika egg bites", "sub": "Egg bites", "tag": "egg bites · make-ahead", "base": 6, "yield": "6 stuks", "keeps": "5 dagen", "time": "30 min", "ing": [{"a": 6, "u": "", "it": "eieren"}, {"a": 3, "u": "el", "it": "melk"}, {"a": 80, "u": "g", "it": "ham, in kleine blokjes"}, {"a": 0.5, "u": "", "it": "rode paprika, fijn gesneden"}, {"a": 30, "u": "g", "it": "geraspte kaas (emmental of cheddar)"}, {"a": null, "u": "", "it": "peper, paprikapoeder"}], "steps": ["Oven op 180°C. Vet een muffinvorm voor 6 in.", "Klop eieren los met melk, peper en een snufje paprikapoeder.", "Verdeel ham en paprika over de vakjes. Strooi de kaas erover.", "Giet het eiermengsel erover tot ¾ vol.", "18–20 min bakken tot gestold en lichtgoudbruin."], "tip": "De kaas bovenop geeft een licht goudbruin korstje. Warm 30 seconden op in de magnetron voor een snelle ochtend."}, {"id": "B22", "meal": "ontbijt", "title": "Champignon & kaas egg bites", "sub": "Egg bites", "tag": "egg bites · make-ahead", "base": 6, "yield": "6 stuks", "keeps": "5 dagen", "time": "30 min", "ing": [{"a": 6, "u": "", "it": "eieren"}, {"a": 3, "u": "el", "it": "melk"}, {"a": 100, "u": "g", "it": "champignons, fijn gesneden"}, {"a": 1, "u": "tl", "it": "boter of olijfolie"}, {"a": 40, "u": "g", "it": "geraspte gruyère of emmental"}, {"a": null, "u": "", "it": "tijm, peper, zout"}], "steps": ["Bak de champignons 3–4 min op middelhoog vuur in de boter. Ze moeten hun vocht verliezen. Kruid met peper en tijm.", "Oven op 180°C. Vet een muffinvorm in.", "Klop eieren los met melk en kruid met peper en zout.", "Verdeel de champignons over de vakjes, strooi kaas erover.", "Giet het eiermengsel erbij tot ¾ vol. 20 min in de oven."], "tip": "Champignons eerst bakken is essentieel — anders worden de egg bites waterig."}, {"id": "B23", "meal": "ontbijt", "title": "Courgette & zongedroogde tomaat egg bites", "sub": "Egg bites", "tag": "egg bites · make-ahead", "base": 6, "yield": "6 stuks", "keeps": "5 dagen", "time": "30 min", "ing": [{"a": 6, "u": "", "it": "eieren"}, {"a": 3, "u": "el", "it": "melk"}, {"a": 0.5, "u": "", "it": "courgette, geraspt"}, {"a": 4, "u": "", "it": "zongedroogde tomaten, fijn gesneden"}, {"a": 30, "u": "g", "it": "parmezaan, geraspt"}, {"a": null, "u": "", "it": "oregano, peper, zout"}], "steps": ["Rasp de courgette en knijp het overtollige vocht eruit met een keukenhanddoek.", "Oven op 180°C. Vet een muffinvorm in.", "Klop eieren los met melk, oregano, peper en zout.", "Verdeel courgette en zongedroogde tomaten over de vakjes. Parmezaan erover.", "Giet het eiermengsel erbij. 18–20 min in de oven."], "tip": "Courgette goed uitknijpen is de sleutel — anders worden de bites te waterig."}, {"id": "B24", "meal": "ontbijt", "title": "Zalm & bieslook egg bites", "sub": "Egg bites", "tag": "egg bites · make-ahead", "base": 6, "yield": "6 stuks", "keeps": "4 dagen", "time": "30 min", "ing": [{"a": 6, "u": "", "it": "eieren"}, {"a": 3, "u": "el", "it": "room of melk"}, {"a": 80, "u": "g", "it": "gerookte zalm, in stukjes"}, {"a": 2, "u": "el", "it": "bieslook, fijn gesneden"}, {"a": 30, "u": "g", "it": "roomkaas"}, {"a": null, "u": "", "it": "peper, citroensap"}], "steps": ["Oven op 175°C. Vet een muffinvorm goed in.", "Klop eieren met room, bieslook, peper en een druppel citroensap.", "Verdeel de zalm en kleine klontjes roomkaas over de vakjes.", "Giet het eiermengsel erover tot ¾ vol.", "18–20 min bakken. Even laten afkoelen voor je ze losmaakt."], "tip": "Room i.p.v. melk geeft een zachtere, rijkere textuur — luxueuzer van smaak. Maximaal 4 dagen bewaren door de zalm."}, {"id": "B25", "meal": "ontbijt", "title": "Pesto & mozzarella egg bites", "sub": "Egg bites", "tag": "egg bites · make-ahead", "base": 6, "yield": "6 stuks", "keeps": "5 dagen", "time": "30 min", "ing": [{"a": 6, "u": "", "it": "eieren"}, {"a": 3, "u": "el", "it": "melk"}, {"a": 2, "u": "el", "it": "groene pesto"}, {"a": 80, "u": "g", "it": "mini-mozzarella of mozzarella in stukjes"}, {"a": null, "u": "", "it": "peper, basilicum"}], "steps": ["Oven op 180°C. Vet een muffinvorm in.", "Klop eieren los met melk, pesto en peper.", "Verdeel de mozzarella over de vakjes.", "Giet het pestomengsel erover tot ¾ vol.", "20 min in de oven tot goudbruin en gestold."], "tip": "De pesto geeft direct smaak zonder veel werk. Werk af met verse basilicumblaadjes als je serveert."}, {"id": "B30", "meal": "ontbijt", "title": "Banaan-kaneel-noot", "sub": "Kwark- & skyrbowls", "tag": "bowl · make-ahead", "base": 1, "yield": "1 bowl", "keeps": "2 dagen", "time": "5 min", "ing": [{"a": 200, "u": "g", "it": "kwark of skyr (naturel)"}, {"a": 0.5, "u": "", "it": "banaan, in schijfjes"}, {"a": 0.5, "u": "tl", "it": "kaneel"}, {"a": 1, "u": "tl", "it": "honing"}, {"a": 1, "u": "el", "it": "gemengde noten, grof gehakt"}], "steps": ["Schep de kwark of skyr in een kom.", "Leg de bananenschijfjes erop.", "Strooi de kaneel erover en voeg een drupje honing toe.", "Werk af met de gehakte noten."], "tip": "Kwark en skyr zijn beide uitstekend — skyr is iets steviger en heeft meer eiwitten. Lekker vullend voor een lange ochtend."}, {"id": "B31", "meal": "ontbijt", "title": "Perzik-honing", "sub": "Kwark- & skyrbowls", "tag": "bowl · make-ahead", "base": 1, "yield": "1 bowl", "keeps": "2 dagen", "time": "5 min", "ing": [{"a": 200, "u": "g", "it": "kwark of skyr"}, {"a": 0.5, "u": "", "it": "rijpe perzik (of uit blik, uitgelekt)"}, {"a": 1, "u": "tl", "it": "honing"}, {"a": 0.5, "u": "tl", "it": "vanille-extract"}, {"a": 1, "u": "el", "it": "amandelschilfers, geroosterd"}], "steps": ["Meng kwark met vanille-extract.", "Schep in een kom.", "Snij de perzik in plakjes en leg bovenop.", "Amandelschilfers erover, honing bedruppelen."], "tip": "Rooster amandelschilfers 2–3 min in een droge pan — geeft extra diepte aan de smaak."}, {"id": "B32", "meal": "ontbijt", "title": "Aardbei-basilicum", "sub": "Kwark- & skyrbowls", "tag": "bowl · make-ahead", "base": 1, "yield": "1 bowl", "keeps": "1 dag", "time": "5 min", "ing": [{"a": 200, "u": "g", "it": "kwark of skyr"}, {"a": 100, "u": "g", "it": "aardbeien, in kwarten"}, {"a": 4, "u": "", "it": "blaadjes verse basilicum"}, {"a": 1, "u": "tl", "it": "honing"}, {"a": 1, "u": "el", "it": "pistachenootjes, grof gehakt"}], "steps": ["Schep de kwark in een kom.", "Leg de aardbeien erop.", "Scheur de basilicumblaadjes grof en verdeel erover.", "Pistachenootjes en honing erbovenop."], "tip": "Basilicum bij aardbeien klinkt raar maar smaakt verrassend lekker — een echte restaurant-combo."}, {"id": "B33", "meal": "ontbijt", "title": "Speculoos-appel", "sub": "Kwark- & skyrbowls", "tag": "bowl · make-ahead", "base": 1, "yield": "1 bowl", "keeps": "2 dagen", "time": "5 min", "ing": [{"a": 200, "u": "g", "it": "kwark of skyr"}, {"a": 0.5, "u": "", "it": "appel, geraspt of in stukjes"}, {"a": 2, "u": "", "it": "speculoos of Biscoff, verkruimeld"}, {"a": 1, "u": "tl", "it": "speculoospasta"}, {"a": 1, "u": "tl", "it": "honing"}], "steps": ["Meng de kwark met een theelepel speculoospasta en honing.", "Schep in een kom.", "Voeg de appel toe.", "Verkruimel de speculoos erbovenop vlak voor het eten."], "tip": "Speculoos vlak voor eten toevoegen voor de crunch. Speculoospasta door de kwark roeren geeft meteen smaak zonder suiker te hoeven toevoegen."}, {"id": "B34", "meal": "ontbijt", "title": "Bessen-pompoenpit", "sub": "Kwark- & skyrbowls", "tag": "bowl · make-ahead", "base": 1, "yield": "1 bowl", "keeps": "2 dagen", "time": "5 min", "ing": [{"a": 200, "u": "g", "it": "kwark of skyr"}, {"a": 80, "u": "g", "it": "gemengde bessen"}, {"a": 1, "u": "el", "it": "pompoenpitten"}, {"a": 1, "u": "tl", "it": "chiazaad"}, {"a": 1, "u": "tl", "it": "ahornsiroop of honing"}], "steps": ["Schep de kwark in een kom.", "Verdeel de bessen erover.", "Strooi pompoenpitten en chiazaad erbovenop.", "Ahornsiroop of honing erbij."], "tip": "Pompoenpitten zijn rijk aan magnesium en zink — ideaal als je bewust met voeding bezig bent."}, {"id": "B35", "meal": "ontbijt", "title": "Mango-kokos", "sub": "Kwark- & skyrbowls", "tag": "bowl · make-ahead", "base": 1, "yield": "1 bowl", "keeps": "2 dagen", "time": "5 min", "ing": [{"a": 200, "u": "g", "it": "kwark of skyr"}, {"a": 100, "u": "g", "it": "mangostukjes (vers of diepvries, ontdooid)"}, {"a": 1, "u": "el", "it": "kokosrasp, geroosterd"}, {"a": 1, "u": "tl", "it": "limoensap"}, {"a": 1, "u": "tl", "it": "honing"}], "steps": ["Meng de kwark met limoensap en honing.", "Schep in een kom.", "Leg de mango erop.", "Werk af met de geroosterde kokosrasp."], "tip": "Kokosrasp even dry-toasten in een pan geeft een nootachtige smaak. Limoensap maakt de mango extra fris."}, {"id": "B40", "meal": "ontbijt", "title": "Avocado & ei", "sub": "Toast in 5 minuten", "tag": "toast · make-ahead", "base": 1, "yield": "1 portie", "keeps": "vers", "time": "8 min", "ing": [{"a": 2, "u": "", "it": "sneden volkoren of zuurdesembrood"}, {"a": 0.5, "u": "", "it": "rijpe avocado"}, {"a": 1, "u": "", "it": "ei (gepocheerd of gebakken)"}, {"a": null, "u": "", "it": "citroensap, chilivlokken, peper, zeezout"}], "steps": ["Rooster het brood knapperig.", "Prak de avocado met een vork en breng op smaak met citroensap, zout en peper.", "Smeer de avocado op het geroosterde brood.", "Leg het gebakken of gepocheerde ei erbovenop. Chilivlokken erover."], "tip": "Avocado meteen na het prakken bedruppelen met citroensap voorkomt bruinkleuring. Gekruid eigeel dat over de avocado loopt = bonus."}, {"id": "B41", "meal": "ontbijt", "title": "Ricotta-honing-aardbei", "sub": "Toast in 5 minuten", "tag": "toast · make-ahead", "base": 1, "yield": "1 portie", "keeps": "vers", "time": "5 min", "ing": [{"a": 2, "u": "", "it": "sneden brood (zuurdesem of brioche)"}, {"a": 4, "u": "el", "it": "ricotta"}, {"a": 6, "u": "", "it": "aardbeien, in plakjes"}, {"a": 1, "u": "tl", "it": "honing"}, {"a": null, "u": "", "it": "verse munt of basilicum (optioneel)"}], "steps": ["Rooster het brood.", "Smeer rijkelijk ricotta erover.", "Leg de aardbeienplakjes bovenop.", "Bedruppel met honing. Werk af met verse munt indien gewenst."], "tip": "Briochebrood maakt dit van een simpel ontbijt naar iets wat feels like a treat. Ricotta is subtieler van smaak dan roomkaas — probeert het eens."}, {"id": "B42", "meal": "ontbijt", "title": "Caprese toast", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "yield": "1 portie", "keeps": "vers", "time": "5 min", "ing": [{"a": 2, "u": "", "it": "sneden ciabatta of zuurdesembrood"}, {"a": 4, "u": "", "it": "plakjes verse mozzarella"}, {"a": 1, "u": "", "it": "rijpe tomaat, in plakjes"}, {"a": null, "u": "", "it": "verse basilicum, olijfolie, peper, zeezout"}, {"a": null, "u": "", "it": "balsamico (optioneel)"}], "steps": ["Rooster de boterhammen knapperig.", "Leg de mozzarella en tomaat afwisselend op het brood.", "Basilicumblaadjes erover scheuren.", "Olijfolie bedruppelen, peper en zeezout erover. Optioneel balsamico."], "tip": "Dit is eigenlijk een salade op brood — gebruik kwalitatieve mozzarella voor het beste resultaat."}, {"id": "B43", "meal": "ontbijt", "title": "Hummus-komkommer-feta", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "yield": "1 portie", "keeps": "vers", "time": "5 min", "ing": [{"a": 2, "u": "", "it": "sneden volkoren brood"}, {"a": 3, "u": "el", "it": "hummus"}, {"a": 6, "u": "", "it": "plakjes komkommer"}, {"a": 30, "u": "g", "it": "feta, verkruimeld"}, {"a": null, "u": "", "it": "chilivlokken, citroensap, olijfolie"}], "steps": ["Rooster het brood.", "Smeer een dikke laag hummus erop.", "Leg de komkommerplakjes erop.", "Verkruimel feta erover. Chilivlokken en een druppel olijfolie."], "tip": "Hummus is proteïnerijk en vullend. Voeg een paar olijven of zongedroogde tomaten toe voor extra smaak."}, {"id": "B44", "meal": "ontbijt", "title": "Pindakaas-banaan", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "yield": "1 portie", "keeps": "vers", "time": "5 min", "ing": [{"a": 2, "u": "", "it": "sneden brood"}, {"a": 2, "u": "el", "it": "pindakaas (100% pinda, zonder suiker)"}, {"a": 0.5, "u": "", "it": "banaan, in schijfjes"}, {"a": 1, "u": "tl", "it": "honing"}, {"a": null, "u": "", "it": "chiavlokken of kaneel (optioneel)"}], "steps": ["Rooster het brood.", "Smeer pindakaas dik op het brood.", "Leg de bananenschijfjes bovenop.", "Bedruppel met honing. Kaneel of chiavlokken naar smaak."], "tip": "Kies pindakaas zonder toegevoegde suiker of palmolie — die zijn voller van smaak. De combinatie pinda-banaan-honing is klassiek om een reden."}, {"id": "B45", "meal": "ontbijt", "title": "Roerei & bieslook", "sub": "Toast in 5 minuten", "tag": "toast", "base": 1, "yield": "1 portie", "keeps": "vers", "time": "8 min", "ing": [{"a": 2, "u": "", "it": "sneden brood"}, {"a": 3, "u": "", "it": "eieren"}, {"a": 2, "u": "el", "it": "melk of room"}, {"a": 1, "u": "el", "it": "boter"}, {"a": 2, "u": "el", "it": "bieslook, fijn gesneden"}, {"a": null, "u": "", "it": "peper, zout"}], "steps": ["Rooster het brood.", "Klop de eieren los met de melk, peper en zout.", "Smelt de boter op laag vuur. Giet het eiermengsel erin.", "Roer rustig en langzaam tot de eieren luchtig en romig zijn — neem je tijd.", "Op het geroosterde brood lepelen, bieslook erover."], "tip": "Het geheim van goed roerei: laag vuur en geduld. Van het vuur halen voor ze volledig gestold zijn — dan zijn ze perfect."}, {"title": "Mediterrane bokaalsalade", "type": "lunch", "tag": "make-ahead", "yield": "per bokaal", "keeps": "3–4 dagen", "time": "10 min", "base": 1, "ing": [{"a": 2, "u": "el", "it": "dressing (olijfolie + citroen + oregano)"}, {"a": null, "u": "", "it": "kikkererwten"}, {"a": null, "u": "", "it": "komkommer"}, {"a": null, "u": "", "it": "kersttomaat"}, {"a": null, "u": "", "it": "paprika"}, {"a": null, "u": "", "it": "couscous of pasta (afgekoeld)"}, {"a": null, "u": "", "it": "feta of stukjes kip"}, {"a": null, "u": "", "it": "rucola bovenaan"}], "steps": ["Laag de ingrediënten in díé volgorde in een bokaal van ±750 ml — dressing onderaan, blad bovenaan.", "Deksel erop, in de koelkast.", "Schud om in een kom vlak voor ’t eten, zodat de dressing zich verdeelt."], "tip": "De volgorde is de truc: zo blijft de rucola knapperig en wordt niets zompig.", "id": "L0", "meal": "lunch"}, {"title": "Caprese pastasalade", "type": "lunch", "tag": "make-ahead", "yield": "2–3 lunches", "keeps": "3 dagen", "time": "15 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "volkoren pasta (fusilli)"}, {"a": 150, "u": "g", "it": "mini-mozzarella"}, {"a": null, "u": "", "it": "handvol kersttomaten, gehalveerd"}, {"a": 2, "u": "el", "it": "groene pesto"}, {"a": null, "u": "", "it": "rucola of verse basilicum"}, {"a": null, "u": "", "it": "pijnboompitten, olijfolie, peper"}], "steps": ["Kook de pasta, spoel koud onder de kraan.", "Meng met mozzarella, tomaat, pesto, olijfolie en pitten.", "Rucola of basilicum apart houden en pas vlak voor ’t eten erdoor."], "tip": "Koud lekkerder dan warm. Een lepel extra pesto net voor ’t eten frist alles weer op.", "id": "L1", "meal": "lunch"}, {"title": "Vooraf gerolde wraps", "type": "lunch", "tag": "make-ahead", "yield": "2 wraps", "keeps": "2 dagen", "time": "10 min", "base": 2, "ing": [{"a": 2, "u": "", "it": "volkoren wraps"}, {"a": 3, "u": "el", "it": "hummus, kruidenkaas of muhammara"}, {"a": 100, "u": "g", "it": "rauwkost p.p.: paprika, komkommer, wortel, kersttomaat"}, {"a": null, "u": "", "it": "kip, kalkoen of mozzarella/feta"}, {"a": null, "u": "", "it": "handje rucola"}], "steps": ["Besmeer de wrap volledig en verdeel de rucola.", "Beleg met groenten en je eiwit — leg de vochtige dingen (tomaat) in het midden zodat de wrap niet zompig wordt.", "Rol stevig op, wikkel in folie, bewaar in de koelkast. Snij pas door bij het eten."], "tip": "Groentenwraps (wortel, rode biet) geven meteen kleur en passen mooi bij je esthetiek.", "id": "L2", "meal": "lunch"}, {"title": "Couscoussalade met ovengroenten", "type": "lunch", "tag": "make-ahead", "yield": "3–4 lunches", "keeps": "3–4 dagen", "time": "35 min", "base": 3, "ing": [{"a": 200, "u": "g", "it": "volkoren couscous"}, {"a": 250, "u": "ml", "it": "warme groentebouillon"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 1, "u": "", "it": "paprika"}, {"a": 1, "u": "", "it": "rode ui"}, {"a": 100, "u": "g", "it": "feta"}, {"a": null, "u": "", "it": "handvol rucola, muntblaadjes"}, {"a": 2, "u": "el", "it": "olijfolie, citroensap, peper"}], "steps": ["Oven op 200°C. Snij de groenten in blokjes, meng met olie en peper, rooster 25 min.", "Doe de couscous in een kom, giet de warme bouillon erover, dek af, laat 5 min wellen en pluis los met een vork.", "Meng de couscous met de geroosterde groenten, verkruimelde feta en citroensap.", "Rucola en munt pas vlak voor ’t eten erdoor."], "tip": "Een zak kant-en-klare ovengroenten scheelt al het snijwerk.", "id": "L3", "meal": "lunch"}, {"title": "Orzo-salade met zongedroogde tomaat", "type": "lunch", "tag": "make-ahead", "yield": "3 lunches", "keeps": "3 dagen", "time": "15 min", "base": 3, "ing": [{"a": 200, "u": "g", "it": "orzo (pasta-rijst)"}, {"a": 8, "u": "", "it": "zongedroogde tomaten, in reepjes"}, {"a": null, "u": "", "it": "handvol zwarte olijven"}, {"a": 100, "u": "g", "it": "feta"}, {"a": null, "u": "", "it": "rucola of basilicum, pijnboompitten"}, {"a": 2, "u": "el", "it": "olie van de zongedroogde tomaten, citroensap"}], "steps": ["Kook de orzo beetgaar, spoel koud onder de kraan.", "Meng met de zongedroogde tomaat, olijven, feta en pitten.", "Maak aan met de tomatenolie en citroensap — dat is je dressing.", "Blad pas vlak voor ’t eten erdoor."], "tip": "De olie uit het potje zongedroogde tomaten zit vol smaak — gooi die niet weg.", "id": "L4", "meal": "lunch"}, {"title": "Kip-caesarsalade", "type": "lunch", "tag": "dressing apart", "yield": "2–3 lunches", "keeps": "3 dagen", "time": "20 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "kipfilet"}, {"a": null, "u": "", "it": "romaine sla"}, {"a": null, "u": "", "it": "handvol croutons"}, {"a": null, "u": "", "it": "parmezaanschilfers"}, {"a": 3, "u": "el", "it": "Griekse yoghurt (dressing)"}, {"a": 1, "u": "el", "it": "mayo"}, {"a": 1, "u": "tl", "it": "mosterd"}, {"a": null, "u": "", "it": "citroensap, snuf knoflook, parmezaan, peper"}], "steps": ["Bak of grill de kip, kruid met peper, laat afkoelen en snij in reepjes.", "Roer alle dressing-ingrediënten glad.", "Bewaar sla, kip, croutons en dressing apart in de bokaal of doos.", "Meng pas bij het eten, zodat de sla knapperig blijft."], "tip": "Croutons in een apart zakje = nooit zompig tegen de middag.", "id": "L5", "meal": "lunch"}, {"title": "Caprese-traybake met kip", "type": "avond", "tag": "oven", "yield": "2 porties", "keeps": "één schaal", "time": "30 min", "base": 2, "ing": [{"a": 2, "u": "", "it": "kipfilets"}, {"a": 250, "u": "g", "it": "kersttomaten"}, {"a": 1, "u": "", "it": "bol mozzarella"}, {"a": 2, "u": "el", "it": "pesto"}, {"a": null, "u": "", "it": "olijfolie, balsamico, peper"}, {"a": null, "u": "", "it": "verse basilicum"}], "steps": ["Oven op 200°C. Leg de kip en kersttomaten in een ovenschaal, besprenkel met olie, pesto en peper.", "20 min in de oven.", "Haal eruit, leg plakjes mozzarella op de kip, nog 5–8 min tot gesmolten.", "Werk af met basilicum en een drupje balsamico."], "tip": "Serveer met brood of een restje pasta. Eén schaal = bijna geen afwas.", "id": "A0", "meal": "avond"}, {"title": "Champignonrisotto", "type": "avond", "tag": "één pan", "yield": "2 porties", "keeps": "één pan", "time": "30 min", "base": 2, "ing": [{"a": 150, "u": "g", "it": "risottorijst"}, {"a": 250, "u": "g", "it": "champignons"}, {"a": 1, "u": "", "it": "sjalot"}, {"a": 1, "u": "", "it": "teen knoflook"}, {"a": 750, "u": "ml", "it": "warme bouillon"}, {"a": 50, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "klontje boter"}, {"a": null, "u": "", "it": "scheut witte wijn (optioneel), olijfolie, peper"}], "steps": ["Stoof sjalot en knoflook in olie. Voeg de champignons toe, bak goudbruin.", "Voeg de rijst toe, roer 1 min, blus met de wijn.", "Voeg de bouillon pollepel per pollepel toe, blijf roeren tot de rijst beetgaar is (±18 min).", "Van het vuur: roer parmezaan en boter erdoor, peper erover."], "tip": "Het enige recept dat je aandacht vraagt — zet muziek op en roer. Verrassend rustgevend.", "id": "A1", "meal": "avond"}, {"title": "Ovenschotel kip, spinazie & krieltjes", "type": "avond", "tag": "oven", "yield": "2 porties", "keeps": "één schaal", "time": "40 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "kipfilet in reepjes"}, {"a": 200, "u": "g", "it": "krieltjes in blokjes"}, {"a": 150, "u": "g", "it": "verse spinazie"}, {"a": 300, "u": "g", "it": "champignons"}, {"a": 40, "u": "g", "it": "light kruidenkaas"}, {"a": 40, "u": "ml", "it": "kippenbouillon"}, {"a": null, "u": "", "it": "knoflook, olijfolie, peper/muskaat"}], "steps": ["Oven op 190°C. Leg de kip op de bodem van een ingevette schaal.", "Spinazie, champignons en krieltjes erover verdelen.", "Roer kruidenkaas, bouillon en knoflook glad, giet over de schotel.", "Dek af met folie, 20 min. Folie eraf, nog 10 min tot goudbruin."], "tip": "Maak meteen een dubbele portie — de volgende dag nog lekkerder.", "id": "A2", "meal": "avond"}, {"title": "Mediterrane kip uit de oven", "type": "avond", "tag": "oven · batch", "yield": "4–6 porties", "keeps": "in te vriezen", "time": "60 min", "base": 4, "ing": [{"a": 1, "u": "", "it": "hele kip (of 4 dijfilets)"}, {"a": 2, "u": "", "it": "paprika's"}, {"a": 3, "u": "", "it": "wortelen"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 2, "u": "", "it": "uien"}, {"a": 6, "u": "", "it": "aardappelen"}, {"a": 3, "u": "", "it": "tomaten"}, {"a": null, "u": "", "it": "knoflook, olijfolie"}, {"a": null, "u": "", "it": "mediterrane kruiden, tijm, peper"}], "steps": ["Oven op 200°C. Leg de kip in een grote schaal.", "Snij de groenten en aardappelen, meng met olie, knoflook en kruiden, schik rond de kip.", "Na 15 min oven op 160°C; bedruip de kip met het vocht.", "Nog 30–45 min, bedruip elke 15 min. Klaar als het vlees van het bot valt."], "tip": "Eén keer maken = meerdere avonden. Restjes gaan perfect in de wok of een wrap.", "id": "A3", "meal": "avond"}, {"title": "Wok met kip & groenten", "type": "avond", "tag": "één pan", "yield": "2 porties", "keeps": "snel", "time": "20 min", "base": 2, "ing": [{"a": 200, "u": "g", "it": "kipfilet in blokjes"}, {"a": 400, "u": "g", "it": "wokgroenten (vers of diepvries)"}, {"a": 100, "u": "g", "it": "zilvervliesrijst"}, {"a": 1, "u": "el", "it": "sojasaus"}, {"a": 1, "u": "el", "it": "arachideolie"}, {"a": null, "u": "", "it": "stukje gember, peper"}], "steps": ["Kook de rijst.", "Bak de kip in hete olie, haal uit de pan.", "Wok de groenten 4–5 min knapperig met de gember.", "Kip terug erbij, sojasaus erover, kort doorwarmen. Serveer op de rijst."], "tip": "Diepvries-wokgroenten = geen snijwerk en even snel klaar.", "id": "A4", "meal": "avond"}, {"title": "Ovenpasta met groenten", "type": "avond", "tag": "make-ahead", "yield": "4 porties", "keeps": "in te vriezen", "time": "45 min", "base": 4, "ing": [{"a": 300, "u": "g", "it": "volkoren penne"}, {"a": 500, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 1, "u": "", "it": "paprika"}, {"a": 1, "u": "", "it": "ui"}, {"a": null, "u": "", "it": "champignons"}, {"a": 125, "u": "g", "it": "mozzarella + parmezaan"}, {"a": null, "u": "", "it": "knoflook, Italiaanse kruiden, olijfolie"}], "steps": ["Kook de pasta beetgaar. Oven op 200°C.", "Stoof ui, knoflook en groenten; voeg passata en kruiden toe, 10 min pruttelen.", "Meng de saus met de pasta, doe in een ovenschaal, mozzarella en parmezaan erover.", "20–25 min tot goudbruin."], "tip": "Verdeel in porties en vries in — je eigen “kant-en-klaar” voor luie avonden.", "id": "A5", "meal": "avond"}, {"title": "Courgette-lasagne", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "60 min", "base": 4, "ing": [{"a": 3, "u": "", "it": "courgettes, in linten"}, {"a": 500, "u": "g", "it": "rundergehakt"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": 2, "u": "", "it": "tenen knoflook"}, {"a": 250, "u": "g", "it": "ricotta"}, {"a": 150, "u": "g", "it": "geraspte mozzarella"}, {"a": 50, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "Italiaanse kruiden, olijfolie, peper"}], "steps": ["Oven op 200°C. Snij de courgette in linten, bestrooi licht met zout en dep na 10 min droog.", "Bak ui, knoflook en gehakt los; voeg passata en kruiden toe, 15 min pruttelen.", "Vet een schaal in en laag courgette, saus en ricotta. Herhaal en eindig met mozzarella en parmezaan.", "35–40 min tot goudbruin. Laat 10 min rusten voor je snijdt."], "tip": "Courgette i.p.v. pasta houdt het lichter — perfect om per portie in te vriezen.", "id": "I0", "meal": "avond"}, {"title": "Gevulde paprika's met gehakt & rijst", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "50 min", "base": 4, "ing": [{"a": 4, "u": "", "it": "paprika's"}, {"a": 400, "u": "g", "it": "rundergehakt"}, {"a": 150, "u": "g", "it": "rijst (ongekookt)"}, {"a": 400, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": null, "u": "", "it": "knoflook"}, {"a": 100, "u": "g", "it": "geraspte kaas"}, {"a": null, "u": "", "it": "Italiaanse kruiden, olijfolie, peper"}], "steps": ["Oven op 190°C. Halveer de paprika's en verwijder de zaadlijsten.", "Kook de rijst beetgaar. Bak ui, knoflook en gehakt; meng met de rijst, de helft van de passata en kruiden.", "Vul de paprika's, leg ze in een schaal met de rest van de passata eronder. Kaas erover.", "35 min in de oven, de laatste 5 min zonder folie."], "tip": "Maak een dubbele lading — ze warmen perfect op en gaan mee in de diepvries.", "id": "I1", "meal": "avond"}, {"title": "One-pot tomatenpasta met burrata", "type": "avond", "tag": "één pan", "yield": "2 porties", "keeps": "vers eten", "time": "25 min", "base": 2, "ing": [{"a": 250, "u": "g", "it": "pasta (penne of casarecce)"}, {"a": 400, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "burrata"}, {"a": 2, "u": "", "it": "tenen knoflook"}, {"a": null, "u": "", "it": "handvol kersttomaten"}, {"a": null, "u": "", "it": "basilicum, olijfolie, peper"}], "steps": ["Stoof de knoflook in olie. Voeg passata, kersttomaten en 250 ml water toe, breng aan de kook.", "Voeg de rauwe pasta toe en kook ±12 min al dente, af en toe roeren.", "Peper erover, scheur de burrata erbovenop en werk af met basilicum."], "tip": "Eén pan, geen vergiet — de pasta kookt in de saus en wordt zo romiger.", "id": "I2", "meal": "avond"}, {"title": "Vlaamse stoverij", "type": "avond", "tag": "batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "2u30", "base": 4, "ing": [{"a": 800, "u": "g", "it": "stoofvlees (rund)"}, {"a": 2, "u": "", "it": "uien"}, {"a": 330, "u": "ml", "it": "bruin bier"}, {"a": 2, "u": "el", "it": "bruine suiker"}, {"a": 1, "u": "el", "it": "mosterd"}, {"a": 2, "u": "", "it": "sneetjes peperkoek"}, {"a": null, "u": "", "it": "laurier, tijm, boter, peper"}], "steps": ["Dep het vlees droog en bak het bruin in boter; haal uit de pan.", "Stoof de uien zacht. Doe het vlees terug, blus met het bier, voeg suiker, laurier en tijm toe.", "Smeer de peperkoek met mosterd en leg die bovenop.", "Deksel erop en 2 à 2,5 uur zacht laten pruttelen tot het vlees uit elkaar valt."], "tip": "De dag erna nog lekkerder. Heerlijk met brood — sla de friet over als je het lichter wil.", "id": "I3", "meal": "avond"}, {"title": "Aubergine parmigiana", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "60 min", "base": 4, "ing": [{"a": 2, "u": "", "it": "aubergines, in plakjes"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": null, "u": "", "it": "knoflook"}, {"a": 150, "u": "g", "it": "geraspte mozzarella"}, {"a": 60, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "basilicum, olijfolie, peper"}], "steps": ["Oven op 200°C. Bak of gril de aubergineplakjes met olie goudbruin (of 15 min in de oven).", "Maak een snelle saus van ui, knoflook, passata en basilicum.", "Laag aubergine, saus en parmezaan in een schaal, herhaal en eindig met mozzarella.", "30 min tot bubbelend en goudbruin."], "tip": "Geen pasta nodig — de aubergine is vullend genoeg en blijft heerlijk Italiaans.", "id": "I4", "meal": "avond"}, {"title": "Pesto-orzo met geroosterde tomaat & mozzarella", "type": "lunch", "tag": "make-ahead", "yield": "3 lunches", "keeps": "3 dagen", "time": "25 min", "base": 3, "ing": [{"a": 250, "u": "g", "it": "orzo"}, {"a": 300, "u": "g", "it": "kersttomaten"}, {"a": 3, "u": "el", "it": "groene pesto"}, {"a": 150, "u": "g", "it": "mini-mozzarella"}, {"a": null, "u": "", "it": "rucola, pijnboompitten"}, {"a": null, "u": "", "it": "olijfolie, peper"}], "steps": ["Oven op 200°C. Rooster de kersttomaten met olie 18 min tot ze barsten.", "Kook de orzo beetgaar en spoel kort koud.", "Meng met pesto, de geroosterde tomaten en mozzarella.", "Pitten en rucola erdoor (rucola apart als je het meeneemt)."], "tip": "Warm of koud even lekker — ideaal voor de lunchbox.", "id": "I5", "meal": "lunch"}, {"title": "Caprese-frittata", "type": "lunch", "tag": "make-ahead", "yield": "4 porties", "keeps": "3 dagen", "time": "30 min", "base": 4, "ing": [{"a": 8, "u": "", "it": "eieren"}, {"a": 150, "u": "g", "it": "mini-mozzarella"}, {"a": 200, "u": "g", "it": "kersttomaten"}, {"a": 30, "u": "g", "it": "parmezaan"}, {"a": null, "u": "", "it": "handvol basilicum, olijfolie, peper"}], "steps": ["Oven op 180°C. Klop de eieren met parmezaan en peper.", "Verdeel tomaten en mozzarella in een ovenvaste pan met wat olie, giet de eieren erover.", "5 min op het vuur, dan 15 min in de oven tot gestold. Basilicum erover."], "tip": "In punten snijden en meenemen — koud verrassend lekker en boordevol eiwit.", "id": "I6", "meal": "lunch"}, {"title": "Pasta e fagioli", "type": "avond", "tag": "één pan · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "40 min", "base": 4, "ing": [{"a": 200, "u": "g", "it": "kleine pasta (ditalini)"}, {"a": 2, "u": "", "it": "blikken witte bonen"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "ui"}, {"a": 1, "u": "", "it": "wortel"}, {"a": 1, "u": "", "it": "stengel selder"}, {"a": null, "u": "", "it": "knoflook, parmezaan, bouillon, olijfolie, peper"}], "steps": ["Stoof ui, wortel, selder en knoflook zacht.", "Voeg passata, één blik gepureerde bonen, één blik hele bonen en bouillon toe. 15 min pruttelen.", "Voeg de pasta toe en kook tot beetgaar. Parmezaan erover."], "tip": "Romige Italiaanse comfortfood — dikker de volgende dag, gewoon een scheutje water erbij.", "id": "I7", "meal": "avond"}, {"title": "Gnocchi alla sorrentina", "type": "avond", "tag": "oven", "yield": "2 porties", "keeps": "vers eten", "time": "30 min", "base": 2, "ing": [{"a": 500, "u": "g", "it": "gnocchi"}, {"a": 400, "u": "g", "it": "tomatenpassata"}, {"a": 1, "u": "", "it": "burrata of mozzarella"}, {"a": null, "u": "", "it": "knoflook, basilicum, parmezaan, olijfolie, peper"}], "steps": ["Kook de gnocchi kort tot ze bovendrijven.", "Maak een saus van knoflook, passata en basilicum.", "Meng de gnocchi door de saus, doe in een schaal, mozzarella erover.", "12 min onder de grill tot goudbruin."], "tip": "Klaar in een half uur en oogt als een restaurantbord.", "id": "I8", "meal": "avond"}, {"title": "Ricotta & spinazie cannelloni", "type": "avond", "tag": "oven · batch", "yield": "4 porties", "keeps": "in te vriezen", "time": "50 min", "base": 4, "ing": [{"a": 250, "u": "g", "it": "cannelloni"}, {"a": 500, "u": "g", "it": "ricotta"}, {"a": 300, "u": "g", "it": "spinazie (gekookt, uitgeknepen)"}, {"a": 1, "u": "", "it": "ei"}, {"a": 700, "u": "g", "it": "tomatenpassata"}, {"a": 150, "u": "g", "it": "geraspte mozzarella"}, {"a": null, "u": "", "it": "parmezaan, nootmuskaat, peper"}], "steps": ["Oven op 190°C. Meng ricotta, spinazie, ei, nootmuskaat en peper.", "Vul de cannelloni met het mengsel.", "Bedek de bodem van een schaal met passata, leg de cannelloni erop, rest passata erover, mozzarella en parmezaan.", "Folie erop, 25 min; folie eraf, nog 15 min."], "tip": "Wat werk vooraf, maar één lading = meerdere avonden uit de diepvries.", "id": "I9", "meal": "avond"}, {"title": "Couscous-traybake met halloumi", "type": "lunch", "tag": "oven", "yield": "3 lunches", "keeps": "3–4 dagen", "time": "35 min", "base": 3, "ing": [{"a": 200, "u": "g", "it": "parelcouscous"}, {"a": 250, "u": "g", "it": "halloumi, in blokjes"}, {"a": 1, "u": "", "it": "courgette"}, {"a": 1, "u": "", "it": "paprika"}, {"a": 1, "u": "", "it": "rode ui"}, {"a": 250, "u": "ml", "it": "groentebouillon"}, {"a": null, "u": "", "it": "citroen, munt, olijfolie, peper"}], "steps": ["Oven op 200°C. Rooster courgette, paprika, ui en halloumi met olie 22 min.", "Kook de parelcouscous beetgaar in de bouillon.", "Meng alles met citroensap en munt."], "tip": "Halloumi blijft stevig en zout-lekker, ook koud uit de lunchbox.", "id": "I10", "meal": "lunch"}, {"title": "Tonijn–witte bonen salade", "type": "lunch", "tag": "make-ahead", "yield": "3 lunches", "keeps": "3 dagen", "time": "10 min", "base": 3, "ing": [{"a": 2, "u": "", "it": "blikken tonijn"}, {"a": 2, "u": "", "it": "blikken witte bonen"}, {"a": 200, "u": "g", "it": "kersttomaten"}, {"a": 1, "u": "", "it": "rode ui"}, {"a": null, "u": "", "it": "peterselie, citroen, olijfolie, peper"}], "steps": ["Laat de tonijn en bonen goed uitlekken.", "Meng met gehalveerde tomaten en fijngesneden rode ui.", "Maak aan met citroen, olijfolie en peper. Peterselie erdoor."], "tip": "Geen koken, vol eiwit, dagen houdbaar — de luie favoriet.", "id": "I11", "meal": "lunch"}, {"id": "H0", "meal": "hapje", "title": "Burrata met geroosterde tomaat", "tag": "no-cook", "base": 4, "yield": "4 personen", "keeps": "vers", "time": "10 min", "ing": [{"a": 2, "u": "", "it": "bollen burrata"}, {"a": 300, "g": "", "it": "kersttomaten"}, {"a": null, "u": "", "it": "basilicum"}, {"a": null, "u": "", "it": "olijfolie, balsamico, peper"}], "steps": ["Rooster de kersttomaten 15 min op 200°C met olie en peper, of gebruik ze rauw.", "Leg de burrata op een bord, schik de tomaten eromheen.", "Werk af met basilicum, olijfolie en een drupje balsamico."], "tip": "Serveer met geroosterd zuurdesem. Oogt als een restaurantbord voor nul moeite."}, {"id": "H1", "meal": "hapje", "title": "Prosciutto-vijgenbites", "tag": "no-cook", "base": 4, "yield": "4 personen", "keeps": "vers", "time": "10 min", "ing": [{"a": 4, "u": "", "it": "verse vijgen"}, {"a": 8, "u": "", "it": "plakjes prosciutto"}, {"a": 100, "g": "", "it": "gorgonzola of brie"}, {"a": null, "u": "", "it": "honing, walnoten"}], "steps": ["Halveer de vijgen en leg een stukje kaas bovenop.", "Wikkel elk hapje in een half plakje prosciutto.", "Drupje honing, walnoot erbij en serveren."], "tip": "Koud én warm lekker — even 5 min in de oven op 180°C maakt de kaas gesmolten."}, {"id": "H2", "meal": "hapje", "title": "Caprese spiesjes", "tag": "no-cook", "base": 6, "yield": "6 personen", "keeps": "vers", "time": "10 min", "ing": [{"a": 250, "g": "", "it": "mini-mozzarella"}, {"a": 250, "g": "", "it": "kersttomaten"}, {"a": null, "u": "", "it": "verse basilicum"}, {"a": null, "u": "", "it": "olijfolie, peper, zeezout"}], "steps": ["Prik per spiesje: 1 tomaat, 1 blaadje basilicum, 1 mozzarella.", "Leg op een bord, besprenkel met olijfolie en peper."], "tip": "Voeg een drupje balsamicocrème toe voor meer smaak en een mooiere presentatie."}, {"id": "H3", "meal": "hapje", "title": "Bruschetta classico", "tag": "warm", "base": 4, "yield": "4 personen", "keeps": "vers", "time": "15 min", "ing": [{"a": 1, "u": "", "it": "zuurdesembrood, in sneden"}, {"a": 4, "u": "", "it": "rijpe tomaten"}, {"a": 2, "u": "", "it": "tenen knoflook"}, {"a": null, "u": "", "it": "basilicum, olijfolie, zeezout, peper"}], "steps": ["Snij de tomaten in blokjes, meng met olijfolie, zout en basilicum.", "Rooster het brood knapperig en wrijf direct in met een rauwe knoflookteen.", "Lepel de tomaat erbovenop en serveer meteen."], "tip": "Brood pas toppen vlak voor het serveren, anders wordt het zompig."}, {"id": "H4", "meal": "hapje", "title": "Kaasplank", "tag": "no-cook", "base": 6, "yield": "6 personen", "keeps": "2 uur", "time": "15 min", "ing": [{"a": null, "u": "", "it": "zachte kaas (brie of camembert)"}, {"a": null, "u": "", "it": "harde kaas (parmezaan of aged cheddar)"}, {"a": null, "u": "", "it": "blauwe kaas (gorgonzola)"}, {"a": null, "u": "", "it": "druiven, vijgen of peer"}, {"a": null, "u": "", "it": "noten, honing"}, {"a": null, "u": "", "it": "crackers of stokbrood"}], "steps": ["Leg de kazen verspreid op een houten plank of bord.", "Vul de ruimtes op met fruit, noten en honing.", "Voeg crackers of stokbrood toe aan de zijkant."], "tip": "Haal de kaas 30 min op voorhand uit de koelkast — op kamertemperatuur smaken ze veel beter."}, {"id": "H5", "meal": "hapje", "title": "Whipped feta dip", "tag": "no-cook", "base": 6, "yield": "6 personen", "keeps": "3 dagen", "time": "10 min", "ing": [{"a": 200, "g": "", "it": "feta"}, {"a": 100, "g": "", "it": "Griekse yoghurt"}, {"a": 1, "u": "", "it": "citroen, sap en rasp"}, {"a": 1, "u": "", "it": "teen knoflook"}, {"a": null, "u": "", "it": "olijfolie, chilivlokken, verse munt"}], "steps": ["Blend feta, yoghurt, citroensap, rasp en knoflook tot een gladde crème.", "Doe in een schaaltje, maak een kuiltje en giet er olijfolie in.", "Werk af met chilivlokken en verse munt."], "tip": "Serveer met groenten, pitabrood of crackers. Makkelijk vooraf te maken."}, {"id": "H6", "meal": "hapje", "title": "Prosciutto-meloenspiesjes", "tag": "no-cook", "base": 4, "yield": "4 personen", "keeps": "vers", "time": "10 min", "ing": [{"a": 1, "u": "", "it": "cantaloupe meloen"}, {"a": 8, "u": "", "it": "plakjes prosciutto"}, {"a": null, "u": "", "it": "verse munt, peper"}], "steps": ["Snij de meloen in blokjes of gebruik een bolletjeslepel.", "Wikkel elk stukje in een half plakje prosciutto.", "Prik op een spiesje, werk af met verse munt en peper."], "tip": "Klassieke zomerse combinatie. Koud serveren."}, {"id": "H7", "meal": "hapje", "title": "Mini-pizzette", "tag": "warm", "base": 4, "yield": "4 personen", "keeps": "vers", "time": "20 min", "ing": [{"a": 4, "u": "", "it": "kleine Engelse muffins of pitabroodjes"}, {"a": 4, "u": "el", "it": "tomatenpassata"}, {"a": 150, "g": "", "it": "mozzarella"}, {"a": null, "u": "", "it": "toppings naar keuze: basilicum, olijven, ham"}], "steps": ["Oven op 200°C. Halveer de muffins/pita's en bestrijk met passata.", "Beleg met mozzarella en toppings naar keuze.", "10-12 min tot de kaas bubbelend is."], "tip": "Laat iedereen zijn eigen mini-pizzette beleggen — leuk voor groepen."}, {"id": "H8", "meal": "hapje", "title": "Gevulde dadels met geitenkaas", "tag": "no-cook", "base": 4, "yield": "4 personen", "keeps": "2 dagen", "time": "10 min", "ing": [{"a": 16, "u": "", "it": "medjool dadels"}, {"a": 100, "g": "", "it": "zachte geitenkaas"}, {"a": null, "u": "", "it": "walnoten, honing, chilivlokken"}], "steps": ["Snij de dadels open en verwijder de pit.", "Vul elk dadeltje met een theelepel geitenkaas.", "Leg een walnoothalf bovenop, drupje honing, optioneel chilivlokken."], "tip": "Zoet, zout en romig tegelijk. Altijd een hit op een apérobordje."}, {"id": "H9", "meal": "hapje", "title": "Antipasto-bordje", "tag": "no-cook", "base": 6, "yield": "6 personen", "keeps": "2 uur", "time": "10 min", "ing": [{"a": null, "u": "", "it": "salami of chorizo"}, {"a": null, "u": "", "it": "prosciutto of coppa"}, {"a": null, "u": "", "it": "gegrilde artisjokken (uit pot)"}, {"a": null, "u": "", "it": "zongedroogde tomaten, olijven"}, {"a": null, "u": "", "it": "parmezaan in schilfers"}, {"a": null, "u": "", "it": "focaccia of broodstengels"}], "steps": ["Schik alles op een grote plank of bord, afgewisseld van kleur en textuur.", "Voeg een schaaltje olijfolie toe voor het brood."], "tip": "Geen koken — gewoon mooi schikken. Koop kwaliteitsproducten en het doet de rest."}], "home": {"billen": ["Glute bridges — 3 × 15", "Hip thrusts (rug op de zetel) — 3 × 12", "Squats — 3 × 15", "Lunges (per been) — 3 × 10", "Kickbacks (per been) — 3 × 12", "Clamshells met band — 3 × 15"], "tip": "Voeg om de 2–3 weken reps, een band of een halter toe. Die progressie doet billen groeien.", "buik": ["Genoeg water — 1,5 tot 2 liter per dag", "Regelmatig eten i.p.v. skippen + ’s avonds schransen", "Minder ultra-bewerkt en zout (dat bloat het meest)", "Core & houding: plank, dead bug, pilates — 2× per week", "Rechtop zitten/staan oogt meteen platter", "Voldoende slaap en minder stress"], "billen_tip": "Voeg om de 2–3 weken reps, een band of een halter toe. Die progressie doet billen groeien.", "core": ["Plank — 3 × 30 sec (bouw op naar 60 sec)", "Dead bug — 3 × 10 (per been)", "Reverse crunches — 3 × 15", "Bicycle crunches — 3 × 20", "Leg raises — 3 × 12", "Side plank — 2 × 20 sec per kant"], "core_tip": "Core-training geeft geen platte buik op zich — maar betere houding en stabiliteit wel. Combineer met genoeg water en slaap."}, "jims": ["Reformer pilates", "Yoga", "Small group training", "Danceles", "Spinning", "Bodypump", "Zwemmen"], "labelMap": {"B00": ["high-protein", "koud"], "B01": ["high-protein", "koud"], "B02": ["high-protein", "koud"], "B03": ["high-protein", "koud"], "B04": ["high-protein", "koud"], "B05": ["high-protein", "koud"], "B10": ["light", "koud"], "B11": ["light", "koud"], "B12": ["high-protein", "koud"], "B13": ["light", "koud"], "B14": ["high-protein", "koud"], "B15": ["light", "koud"], "B20": ["high-protein", "warm"], "B21": ["high-protein", "warm"], "B22": ["high-protein", "warm"], "B23": ["high-protein", "warm"], "B24": ["high-protein", "warm"], "B25": ["high-protein", "warm"], "B30": ["high-protein", "koud"], "B31": ["high-protein", "koud"], "B32": ["high-protein", "koud"], "B33": ["high-protein", "koud"], "B34": ["high-protein", "koud"], "B35": ["high-protein", "koud"], "B40": ["high-protein", "warm"], "B41": ["light", "koud"], "B42": ["light", "koud"], "B43": ["light", "koud"], "B44": ["high-protein", "koud"], "B45": ["high-protein", "warm"], "L0": ["high-protein", "koud", "light"], "L1": ["koud"], "L2": ["high-protein", "koud"], "L3": ["koud", "light"], "L4": ["koud"], "L5": ["high-protein", "koud"], "A0": ["high-protein", "warm", "hoofdgerecht"], "A1": ["warm", "hoofdgerecht"], "A2": ["high-protein", "warm", "hoofdgerecht"], "A3": ["high-protein", "warm", "hoofdgerecht"], "A4": ["high-protein", "warm", "hoofdgerecht"], "A5": ["warm", "hoofdgerecht"], "I0": ["warm", "hoofdgerecht"], "I1": ["high-protein", "warm", "hoofdgerecht"], "I2": ["warm", "hoofdgerecht"], "I3": ["warm", "hoofdgerecht"], "I4": ["warm", "hoofdgerecht"], "I5": ["koud", "light"], "I6": ["high-protein", "warm"], "I7": ["warm", "hoofdgerecht"], "I8": ["warm", "hoofdgerecht"], "I9": ["warm", "hoofdgerecht"], "I10": ["warm", "light"], "I11": ["high-protein", "koud", "light"], "H0": ["light", "koud"], "H1": ["warm", "koud"], "H2": ["light", "koud"], "H3": ["warm"], "H4": ["koud"], "H5": ["koud", "light"], "H6": ["koud", "light"], "H7": ["warm"], "H8": ["koud"], "H9": ["koud"]}, "allLabels": [["high-protein", "High Protein"], ["light", "Light Meal"], ["koud", "Koud"], ["warm", "Warm"], ["hoofdgerecht", "Hoofdgerecht"], ["batch", "Batch Cook"], ["hapje", "Hapje"], ["voorgerecht", "Voorgerecht"]]};
+const BUILTIN=DATA.recipes;
+const LABEL_MAP=DATA.labelMap;
+const ALL_LABELS=DATA.allLabels;
+const DAYS=["Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag","Zondag"];
+const SHORT=["Ma","Di","Wo","Do","Vr","Za","Zo"];
+const MON=["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
+const MEALS=["ontbijt","lunch","avond"];
+const todayIdx=(new Date().getDay()+6)%7;
+
+function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+function defPlan(){return {meals:DAYS.map(function(){return {ontbijt:null,lunch:null,avond:null};}),billen:null,core:null,jims:null,jimsClass:null};}
+function defWeekData(){return {meals:DAYS.map(function(){return {ontbijt:null,lunch:null,avond:null};}),billen:null,core:null,jims:null,jimsClass:null,mealprep:[],mealPrepNote:'',workoutDone:{}};}
+var plan=load("fp_plan",defPlan());
+var custom=load("fp_custom",[]);
+var meta=load("fp_meta",{});
+var jimsClasses=load("fp_jims",DATA.jims.slice());
+var listChecks=load("fp_list",{});
+var viewOffset=0,servingsState={},recQuery="",recFilter="all",recLabels=new Set();
+var weekView=0;
+var allPlans=load("fp_allplans",{});
+var dayNotes=load("fp_daynotes",{});
+var cycleData=load("fp_cycle",{
+  manualPhase:null,
+  startDate:null,
+  cycleLen:28,
+  periodLen:5
+});
+var leftovers=load("fp_leftovers",{});
+function daysBetween(a,b){return Math.round((b-a)/(1000*60*60*24));}
+function getISOWeek(d){
+  var date=new Date(d); date.setHours(0,0,0,0);
+  date.setDate(date.getDate()+4-(date.getDay()||7));
+  var yearStart=new Date(date.getFullYear(),0,1);
+  return Math.ceil((((date-yearStart)/86400000)+1)/7);
+}
+function weekKey(offset){
+  var d=new Date(); d.setDate(d.getDate()+(offset||0)*7);
+  var y=d.getFullYear(); var w=getISOWeek(d);
+  return y+"-W"+(w<10?"0":"")+w;
+}
+function curPlan(){
+  var k=weekKey(weekView);
+  if(!allPlans[k])allPlans[k]=defWeekData();
+  return allPlans[k];
+}
+function activePlan(){
+  var k=weekKey(0);
+  if(!allPlans[k])allPlans[k]=defWeekData();
+  return allPlans[k];
+}
+function planForOffset(offset){
+  // which week does (today + offset days) fall in?
+  var d=new Date(); d.setDate(d.getDate()+offset);
+  var y=d.getFullYear(); var w=getISOWeek(d);
+  var k=y+"-W"+(w<10?"0":"")+w;
+  if(!allPlans[k])allPlans[k]=defWeekData();
+  return allPlans[k];
+}
+function savePlans(){save("fp_allplans",allPlans);}
+function getAutoPhase(){
+  if(!cycleData.startDate) return null;
+  var start=new Date(cycleData.startDate);
+  var today=new Date(); today.setHours(0,0,0,0);
+  var diff=Math.round((today-start)/(1000*60*60*24));
+  var cLen=cycleData.cycleLen||28;
+  var dayInCycle=((diff%cLen)+cLen)%cLen+1;
+  var pLen=cycleData.periodLen||5;
+  if(dayInCycle<=pLen) return "menstruatie";
+  if(dayInCycle<=Math.round(cLen*0.46)) return "folliculair";
+  if(dayInCycle<=Math.round(cLen*0.57)) return "ovulatie";
+  return "luteaal";
+}
+function getCurrentPhase(){return cycleData.manualPhase||getAutoPhase();}
+function getDayInCycle(){
+  if(!cycleData.startDate) return null;
+  var start=new Date(cycleData.startDate);
+  var today=new Date(); today.setHours(0,0,0,0);
+  var diff=Math.round((today-start)/(1000*60*60*24));
+  var cLen=cycleData.cycleLen||28;
+  return ((diff%cLen)+cLen)%cLen+1;
+}
+var CYCLE_PHASES=[
+  ["menstruatie","Menstruatie","#C49A92","Rustiger bewegen, warme gerechten, ijzerrijke maaltijden."],
+  ["folliculair","Folliculair","#8E9A82","Energie stijgt — goed moment voor intensere training."],
+  ["ovulatie","Ovulatie","#B79A6B","Piekenergie — push jezelf gerust wat meer."],
+  ["luteaal","Luteaal","#7A9BAE","Iets rustiger, meer behoefte aan comfortfood is normaal."]
+];
+var waterLog=load("fp_water",{glasses:0,date:""});
+function todayStr(){var d=new Date();return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();}
+function getWater(){if(waterLog.date!==todayStr()){waterLog={glasses:0,date:todayStr()};save("fp_water",waterLog);}return waterLog.glasses;}
+function setWater(n){waterLog={glasses:Math.max(0,Math.min(12,n)),date:todayStr()};save("fp_water",waterLog);renderVandaag();}
+
+var checkSvg='<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M5 12l5 5L20 6"/></svg>';
+
+function esc(s){return (""+s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function heart(on){
+  if(on) return '<svg viewBox="0 0 24 24" fill="#C49A92" stroke="#C49A92" stroke-width="1.5"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 1.7 5 5 5c2 0 3.2 1.1 4 2.3C9.8 6.1 11 5 13 5c3.3 0 4.6 3.6 3 6.8C18.5 16.4 12 21 12 21z"/></svg>';
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="#C49A92" stroke-width="1.7"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 1.7 5 5 5c2 0 3.2 1.1 4 2.3C9.8 6.1 11 5 13 5c3.3 0 4.6 3.6 3 6.8C18.5 16.4 12 21 12 21z"/></svg>';
+}
+function metaOf(id){return meta[id]||{};}
+function getLabels(id){
+  var built=(LABEL_MAP[id]||[]).concat(metaOf(id).extraLabels||[]);
+  var excl=metaOf(id).exLabels||[];
+  return built.filter(function(l){return excl.indexOf(l)<0;});
+}
+function renderLabelTags(id){
+  return getLabels(id).map(function(l){
+    var nm=(ALL_LABELS.find(function(x){return x[0]===l;})||[l,l])[1];
+    return '<span class="lbl-tag">'+nm+'</span>';
+  }).join("");
+}
+function allRecipes(){
+  return BUILTIN.concat(custom).filter(function(r){
+    var m=metaOf(r.id); if(m.deleted) return false;
+    if(m.ov) return Object.assign({},r,m.ov);
+    return true;
+  }).map(function(r){var m=metaOf(r.id);return m.ov?Object.assign({},r,m.ov):r;});
+}
+function recipeById(id){
+  var r=BUILTIN.concat(custom).find(function(x){return x.id===id;});
+  if(!r) return null;
+  var m=metaOf(id); return m.ov?Object.assign({},r,m.ov):r;
+}
+function scaleAmt(a,u,f){
+  if(a==null) return null;
+  var v=a*f;
+  if(u==="g"||u==="ml"){v=v>=20?Math.round(v/5)*5:Math.round(v);}
+  else{v=Math.round(v*10)/10;}
+  return Number.isInteger(v)?v.toString():v.toString().replace(".",",");
+}
+function ingText(r){return (r.ing||[]).map(function(x){return x.it;}).join(" ");}
+function fmtDate(off){var d=new Date();d.setDate(d.getDate()+off);return d.getDate()+" "+MON[d.getMonth()];}
+
+// ── VANDAAG ──
+function renderVandaag(){
+  var idx=((todayIdx+viewOffset)%7+7)%7;
+  var lbl=viewOffset===0?"VANDAAG":viewOffset===1?"MORGEN":viewOffset===-1?"GISTEREN":SHORT[idx].toUpperCase();
+  var plan0=planForOffset(viewOffset);
+  // Header
+  var h='<div class="day-header">'
+    +'<div class="day-nav">'
+    +'<button class="arrow" onclick="shiftDay(-1)">&#8249;</button>'
+    +'<div class="day-center">'
+    +'<div class="day-lbl">'+lbl+'</div>'
+    +'<div class="day-name">'+DAYS[idx]+'</div>'
+    +'<div class="day-date">'+fmtDate(viewOffset)+'</div>'
+    +'</div>'
+    +'<button class="arrow" onclick="shiftDay(1)">&#8250;</button>'
+    +'</div></div>';
+  // Cycle
+  var autoPhase=getCurrentPhase();
+  var cpInfo=autoPhase?CYCLE_PHASES.find(function(x){return x[0]===autoPhase;}):null;
+  var dayNum=getDayInCycle();
+  h+='<div class="cycle-pill" onclick="openCyclePicker()">'
+    +'<div><div class="cycle-phase">'+(cpInfo?cpInfo[1].toUpperCase():"CYCLUS INSTELLEN")+(dayNum?" &middot; DAG "+dayNum:"")+'</div>'
+    +(cpInfo?'<div class="cycle-tip">'+cpInfo[3]+'</div>':'')
+    +'</div>'
+    +'<span style="color:var(--ochre);font-size:11px;font-weight:700;letter-spacing:.15em">&rarr;</span></div>';
+  // Meals
+  var ICONS={ontbijt:"&#9749;",lunch:"&#127807;",avond:"&#127859;"};
+  MEALS.forEach(function(m){
+    var v=plan0.meals[idx][m];
+    if(v&&v!=="nvt"){
+      var r=recipeById(v);
+      h+='<div class="meal-row" onclick="openDetail(\''+esc(v)+'\')">'
+        +'<span class="m-emoji">'+ICONS[m]+'</span>'
+        +'<span class="m-type">'+m+'</span>'
+        +'<span class="m-title">'+(r?esc(r.title):"?")+'</span>'
+        +'<span class="m-arrow">&#8250;</span></div>';
+    } else if(v==="nvt"){
+      h+='<div class="meal-row" onclick="openPicker('+idx+',\''+m+'\',\'vandaag\')">'
+        +'<span class="m-emoji" style="opacity:.3">'+ICONS[m]+'</span>'
+        +'<span class="m-type">'+m+'</span>'
+        +'<span class="m-title empty">nvt</span></div>';
+    } else {
+      h+='<div class="meal-row" onclick="openPicker('+idx+',\''+m+'\',\'vandaag\')">'
+        +'<span class="m-emoji" style="opacity:.3">'+ICONS[m]+'</span>'
+        +'<span class="m-type">'+m+'</span>'
+        +'<span class="m-title empty">toevoegen</span>'
+        +'<span class="m-arrow" style="font-size:20px;font-weight:300">+</span></div>';
+    }
+  });
+  // Movement
+  var wd=plan0.workoutDone||{};
+  var moved=false;
+  if(plan0.billen===idx){moved=true;
+    h+='<div class="move-row" onclick="openWorkout()">'
+      +'<span class="move-type">Bewegen</span>'
+      +'<span class="move-name">Billentraining</span>'
+      +(wd["billen_"+idx]?'<span class="move-done">DONE</span>':'<span class="m-arrow">&#8250;</span>')
+      +'</div>';
+  }
+  if(plan0.core===idx){moved=true;
+    h+='<div class="move-row" onclick="openCore()">'
+      +'<span class="move-type">Bewegen</span>'
+      +'<span class="move-name">Core & buik</span>'
+      +(wd["core_"+idx]?'<span class="move-done">DONE</span>':'<span class="m-arrow">&#8250;</span>')
+      +'</div>';
+  }
+  if(plan0.jims===idx){moved=true;
+    h+='<div class="move-row" onclick="go(\'week\')">'
+      +'<span class="move-type">Bewegen</span>'
+      +'<span class="move-name">Jims'+(plan0.jimsClass?' &mdash; '+esc(plan0.jimsClass):'')+'</span>'
+      +(wd["jims_"+idx]?'<span class="move-done">DONE</span>':'<span class="m-arrow">&#8250;</span>')
+      +'</div>';
+  }
+  if(!moved) h+='<div class="rest-row">Rustdag &mdash; bewust uitrusten is ook trainen.</div>';
+  // Workout done
+  var wdHtml='';
+  if(plan0.billen===idx)wdHtml+='<button class="wdbtn'+(wd["billen_"+idx]?" on":"")+'" onclick="toggleWD(\'billen_'+idx+'\')">Billen '+(wd["billen_"+idx]?"&#10003;":"&#9675;")+'</button>';
+  if(plan0.core===idx)wdHtml+='<button class="wdbtn'+(wd["core_"+idx]?" on":"")+'" onclick="toggleWD(\'core_'+idx+'\')">Core '+(wd["core_"+idx]?"&#10003;":"&#9675;")+'</button>';
+  if(plan0.jims===idx)wdHtml+='<button class="wdbtn'+(wd["jims_"+idx]?" on":"")+'" onclick="toggleWD(\'jims_'+idx+'\')">Jims '+(wd["jims_"+idx]?"&#10003;":"&#9675;")+'</button>';
+  if(wdHtml)h+='<div class="wd-row">'+wdHtml+'</div>';
+  // Energy + daynote
+  var dnKey=idx+"-"+todayStr();
+  var dn=dayNotes[dnKey]||{energy:null,note:""};
+  h+='<div class="energy-block">'
+    +'<div class="label">Energie</div>'
+    +'<div class="energy-opts">'
+    +'<button class="energy-btn'+(dn.energy==="laag"?" on":"")+'" onclick="setEnergy(\'laag\')">Laag</button>'
+    +'<button class="energy-btn'+(dn.energy==="ok"?" on":"")+'" onclick="setEnergy(\'ok\')">Ok</button>'
+    +'<button class="energy-btn'+(dn.energy==="top"?" on":"")+'" onclick="setEnergy(\'top\')">Top</button>'
+    +'</div>'
+    +'<textarea class="daynote-text" placeholder="Notitie..." oninput="setDayNote(this.value)">'+esc(dn.note||"")+'</textarea>'
+    +'</div>';
+  // Water — tracking bar style
+  var wg=getWater(),wgoal=8,wpct=Math.round(wg/wgoal*100);
+  h+='<div class="water-card">'
+    +'<div class="water-top">'
+    +'<div><div class="label">Water</div><div class="water-count">'+wg+' <span>/ '+wgoal+' gl.</span></div></div>'
+    +'<div class="water-btns">'
+    +'<button onclick="setWater(getWater()-1)" class="water-btn">&minus;</button>'
+    +'<button onclick="setWater(getWater()+1)" class="water-btn plus">+</button>'
+    +'</div></div>'
+    +'<div class="water-bar"><div class="water-fill" style="width:'+Math.min(100,wpct)+'%"></div></div>'
+    +'</div>';
+  // Plan week
+  h+='<div class="plan-btn-row">'
+    +'<button class="btn ghost" onclick="go(\'week\')">Plan deze week &rarr;</button>'
+    +'</div>';
+  document.getElementById("v-vandaag").innerHTML=h;
+}
+
+function shiftDay(d){viewOffset+=d;renderVandaag();}
+function toggleWD(key){var wd=activePlan().workoutDone||(activePlan().workoutDone={});wd[key]=!wd[key];savePlans();renderVandaag();}
+function setEnergy(e){var k=((todayIdx+viewOffset)%7+7)%7+'-'+todayStr();var dn=dayNotes[k]||(dayNotes[k]={});dn.energy=(dn.energy===e?null:e);save('fp_daynotes',dayNotes);renderVandaag();}
+function setDayNote(v){var k=((todayIdx+viewOffset)%7+7)%7+'-'+todayStr();var dn=dayNotes[k]||(dayNotes[k]={});dn.note=v;save('fp_daynotes',dayNotes);}
+function openCyclePicker(){
+  var ap=getAutoPhase();
+  var mp=cycleData.manualPhase;
+  var dn=getDayInCycle();
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Cyclus</span><h1 class="serif">Mijn cyclus</h1>'
+    // Settings block
+    +'<div class="block">'
+    +'<span class="eyebrow" style="display:block;margin-bottom:12px">Instellingen</span>'
+    +'<div class="field"><label>Eerste dag laatste menstruatie</label>'
+    +'<input type="date" id="cStart" value="'+(cycleData.startDate||'')+'" onchange="saveCycleSettings()"></div>'
+    +'<div style="display:flex;gap:12px">'
+    +'<div class="field" style="flex:1"><label>Cycluslengte (dagen)</label>'
+    +'<input type="number" id="cLen" min="21" max="45" value="'+(cycleData.cycleLen||28)+'" onchange="saveCycleSettings()"></div>'
+    +'<div class="field" style="flex:1"><label>Menstruatieduur (dagen)</label>'
+    +'<input type="number" id="cPer" min="2" max="10" value="'+(cycleData.periodLen||5)+'" onchange="saveCycleSettings()"></div>'
+    +'</div></div>'
+    // Current phase
+    +(ap?'<div class="block" style="text-align:center"><span class="eyebrow" style="display:block;margin-bottom:4px">Nu automatisch</span><div class="serif" style="font-size:22px">'+(CYCLE_PHASES.find(function(x){return x[0]===ap;})||[null,ap])[1]+(dn?' &middot; dag '+dn:'')+'</div><div style="font-size:13px;color:var(--soft);margin-top:6px">'+(CYCLE_PHASES.find(function(x){return x[0]===ap;})||['','','',''])[3]+'</div></div>':'')
+    // Start period button
+    +'<button class="btn" onclick="startPeriodToday()">&#128197; Mijn menstruatie is vandaag gestart</button>'
+    +'<div class="divider"></div>'
+    // Manual override
+    +'<span class="eyebrow" style="display:block;margin-bottom:10px">Manueel overschrijven</span>'
+    +'<p style="color:var(--soft);font-size:13px;margin:0 0 12px">Gebruik dit als de berekening niet klopt.</p>';
+  CYCLE_PHASES.forEach(function(p){
+    var isActive=mp===p[0];
+    h+='<div class="pickopt'+(isActive?' cycle-active':'')+'" onclick="setCyclePhase(\''+p[0]+'\')" style="'+(isActive?'border-color:'+p[2]+';background:'+p[2]+'18':'')+'">'
+      +'<div style="width:12px;height:12px;border-radius:50%;background:'+p[2]+';flex:0 0 auto;margin-top:3px"></div>'
+      +'<div><div class="pt">'+p[1]+'</div><div class="ps">'+p[3]+'</div></div>'
+      +(isActive?'<div style="color:'+p[2]+';font-size:18px">&#10003;</div>':'')
+      +'</div>';
+  });
+  h+='<div class="pickopt special" onclick="setCyclePhase(null)"><div class="pt" style="font-style:italic;color:var(--soft)">Manuele override wissen (terug naar auto)</div></div>';
+  h+='</div>';
+  document.getElementById("sheetContent").innerHTML=h;openSheet();
+}
+function saveCycleSettings(){
+  var s=document.getElementById("cStart");
+  var l=document.getElementById("cLen");
+  var p=document.getElementById("cPer");
+  if(s&&s.value) cycleData.startDate=s.value;
+  if(l&&l.value) cycleData.cycleLen=parseInt(l.value)||28;
+  if(p&&p.value) cycleData.periodLen=parseInt(p.value)||5;
+  save('fp_cycle',cycleData);
+  openCyclePicker();
+}
+function startPeriodToday(){
+  var today=new Date();
+  cycleData.startDate=today.getFullYear()+'-'+(today.getMonth()+1<10?'0':'')+(today.getMonth()+1)+'-'+(today.getDate()<10?'0':'')+today.getDate();
+  cycleData.manualPhase=null;
+  save('fp_cycle',cycleData);
+  openCyclePicker();
+}
+function setCyclePhase(p){cycleData.manualPhase=p;save('fp_cycle',cycleData);closeSheet();renderVandaag();}
+
+// ── WEEK ──
+function slotLabel(v){
+  if(v==null) return {cls:"empty",t:"+"};
+  if(v==="nvt") return {cls:"nvt",t:"nvt"};
+  var r=recipeById(v);
+  var t=r?(r.title.length>16?r.title.slice(0,15)+"\u2026":r.title):"?";
+  return {cls:"set",t:t};
+}
+function renderWeek(){
+  var wstab0=weekView===0?' active':'';
+  var wstab1=weekView===1?' active':'';
+  var weekSwHtml='<div class="week-switcher">'
+    +'<button class="wstab'+wstab0+'" onclick="weekView=0;renderWeek()">Deze week</button>'
+    +'<button class="wstab'+wstab1+'" onclick="weekView=1;renderWeek()">Volgende week</button>'
+    +'</div>';
+  var h=weekSwHtml+'<div class="sec-head"><span class="eyebrow">Deel I &middot; Voeding</span>'
+    +'<h2 class="serif">Je <em>week</em></h2>'
+    +'<p>Kies per dag wat je eet, of zet &lsquo;nvt&rsquo; als je niet thuis eet of een maaltijd overslaat.</p></div>';
+  h+='<div class="slothead"><div>Dag</div><div>Ontbijt</div><div>Lunch</div><div>Avond</div></div>';
+  for(var i=0;i<7;i++){
+    h+='<div class="dayrow'+(i===todayIdx?' today':'')+'"><div class="dl">'+SHORT[i]+'</div>';
+    MEALS.forEach(function(m){
+      var s=slotLabel(curPlan().meals[i][m]);
+      h+='<div class="slot '+s.cls+'" onclick="openPicker('+i+',\''+m+'\',\'week\')">'+esc(s.t)+'</div>';
+    });
+    h+='</div>';
+  }
+  h+='<button class="btn subtle" style="margin-top:12px" onclick="clearWeekMeals()">Voeding leegmaken</button>';
+  var mp=curPlan().mealprep||[],mpNote=curPlan().mealPrepNote||'';
+  var maRecipes=[];
+  var allMeals=MEALS.concat(["ontbijt"]);
+  curPlan().meals.forEach(function(day){
+    ["ontbijt","lunch","avond"].forEach(function(m){
+      var id=day[m];if(!id||id==='nvt')return;
+      var r=recipeById(id);
+      if(r&&(r.tag||'').indexOf('make-ahead')>=0&&maRecipes.indexOf(id)<0)maRecipes.push(id);
+    });
+  });
+  // Fixed weekly prep items
+  var FIXED_PREP=[
+    "fp_yoghurt","Yoghurtpotjes portioneren (bewaar granola apart)","yoghurt",
+    "fp_eggbites","Egg bites bakken (6 stuks, heel de week mee)","egg bites",
+    "fp_smoothie","Smoothie-zakjes portioneren in diepvries","smoothie",
+    "fp_dressing","Dressings & sauzen klaarmaken","dressing",
+    "fp_groenten","Groenten snijden & bewaren per dag","groenten",
+    "fp_granen","Granen/rijst/couscous voorkoken","granen"
+  ];
+  h+='<div class="block" style="border-color:#e8dfc8;background:#fdfaf3">'
+    +'<span class="eyebrow" style="color:var(--gold);display:block;margin-bottom:4px">Zondag · Mealprep</span>'
+    +'<p style="font-size:12.5px;color:var(--soft);margin:0 0 12px">Alles wat je op zondag klaarkan zodat je de rest van de week niets meer hoeft te doen.</p>';
+  // Fixed prep suggestions
+  h+='<div class="eyebrow" style="color:var(--soft);font-size:9px;margin-bottom:6px">Vaste prep</div>';
+  for(var fi=0;fi<FIXED_PREP.length;fi+=3){
+    var fid=FIXED_PREP[fi],flbl=FIXED_PREP[fi+1];
+    var fdone=mp.indexOf(fid)>=0;
+    h+='<div class="mprow" onclick="toggleMealprep(\''+fid+'\')">'
+      +'<div class="tick">'+(fdone?'<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M5 12l5 5L20 6"/></svg>':'')+'</div>'
+      +'<div class="txt">'+esc(flbl)+'</div></div>';
+  }
+  // Make-ahead from weekplan
+  if(maRecipes.length){
+    h+='<div class="eyebrow" style="color:var(--soft);font-size:9px;margin:12px 0 6px">Uit je weekplan</div>';
+    maRecipes.forEach(function(id){
+      var r=recipeById(id);
+      var done=mp.indexOf(id)>=0;
+      h+='<div class="mprow" onclick="toggleMealprep(\''+id+'\')">'
+        +'<div class="tick">'+(done?'<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M5 12l5 5L20 6"/></svg>':'')+'</div>'
+        +'<div class="txt">'+esc(r.title)+'</div></div>';
+    });
+  }
+  h+='<div class="field" style="margin-top:12px"><label style="color:var(--gold)">Extra notitie</label>'
+    +'<textarea style="min-height:54px" oninput="saveMpNote(this.value)" placeholder="bv. soep trekken, extra portie bolognese...">'+esc(mpNote)+'</textarea></div></div>';
+  h+='<div class="divider"></div>'
+    +'<div class="sec-head"><span class="eyebrow">Deel II &middot; Beweging</span>'
+    +'<h2 class="serif">Vastgepind <em>= gedaan</em></h2>'
+    +'<p>Pin een dag vast &mdash; voor jou werkt dat als accountability.</p></div>';
+  h+='<div class="block"><span class="eyebrow">Billentraining &middot; thuis</span><div class="daychips">';
+  for(var i=0;i<7;i++) h+='<div class="daychip'+(curPlan().billen===i?' active':'')+'" onclick="pinBillen('+i+')">'+SHORT[i]+'</div>';
+  h+='</div><button class="btn ghost" style="margin-top:12px" onclick="openWorkout()">Bekijk de oefeningen &#8250;</button></div>';
+  h+='<div class="block"><span class="eyebrow">Core & buik &middot; thuis</span><div class="daychips">';
+  for(var i=0;i<7;i++) h+='<div class="daychip'+(curPlan().core===i?' active':'')+'" onclick="pinCore('+i+')">'+SHORT[i]+'</div>';
+  h+='</div><button class="btn ghost" style="margin-top:12px" onclick="openCore()">Bekijk de oefeningen &#8250;</button></div>';
+  h+='<div class="block"><span class="eyebrow">Jims</span><div class="daychips">';
+  for(var i=0;i<7;i++) h+='<div class="daychip'+(curPlan().jims===i?' active':'')+'" onclick="pinJims('+i+')">'+SHORT[i]+'</div>';
+  h+='</div>'
+    +'<div class="classpick" onclick="openClassPicker()">'
+    +'<div><div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--blush);font-weight:700;margin-bottom:3px">Les</div>'
+    +'<div class="cv'+(curPlan().jimsClass?'':' muted')+'">'+(curPlan().jimsClass?esc(curPlan().jimsClass):"Kies een les")+'</div></div>'
+    +'<div class="chev" style="color:var(--blush);font-size:20px">&#8250;</div></div></div>';
+  document.getElementById("v-week").innerHTML=h;
+}
+function pinBillen(i){curPlan().billen=(curPlan().billen===i?null:i);savePlans();renderWeek();}
+function pinJims(i){curPlan().jims=(curPlan().jims===i?null:i);savePlans();renderWeek();}
+function pinCore(i){curPlan().core=(curPlan().core===i?null:i);savePlans();renderWeek();}
+function clearWeekMeals(){curPlan().meals=defWeekData().meals;savePlans();renderWeek();}
+
+// ── CORE WORKOUT ──
+function openCore(){
+  var H=DATA.home;
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Thuis &middot; &plusmn;20 min</span>'
+    +'<h1 class="serif">Core & buik</h1>'
+    +'<div class="metaline">'+(activePlan().core!=null?"Gepind op "+DAYS[activePlan().core]:"Nog geen dag gepind")+'</div>';
+  (H.core||[]).forEach(function(b){
+    h+='<div class="ingrow" onclick="this.classList.toggle(\'done\')">'+
+      '<div class="tick">'+checkSvg+'</div><div class="txt">'+esc(b)+'</div></div>';
+  });
+  h+='<div class="tipbox" style="margin-top:16px"><b>Tip &mdash;</b> '+(H.core_tip?esc(H.core_tip):'')+'</div>';
+  h+='</div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  openSheet();
+}
+
+// ── PICKER ──
+var pickerCtx=null;
+function openPicker(day,meal,origin){pickerCtx={day:day,meal:meal,origin:origin,q:""};drawPicker();openSheet();}
+function drawPicker(){
+  var day=pickerCtx.day,meal=pickerCtx.meal;
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body">'
+    +'<span class="eyebrow">'+esc(meal)+' &middot; '+DAYS[day]+'</span>'
+    +'<h1 class="serif">Kies een '+esc(meal)+'</h1>'
+    +'<div class="searchbar"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3A322C" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>'
+    +'<input id="pq" placeholder="Zoek..." oninput="pickerCtx.q=this.value.trim().toLowerCase();drawPickerList()"></div>'
+    +'<div class="pickopt special" onclick="assign(\'nvt\')"><div class="pt" style="font-style:italic">Niet van toepassing (nvt)</div></div>'
+    +'<div class="pickopt special" onclick="assign(null)"><div class="pt" style="font-style:italic;color:var(--soft)">Leegmaken</div></div>'
+    +'<div id="pickList"></div></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  drawPickerList();
+}
+function drawPickerList(){
+  var meal=pickerCtx.meal;
+  var list=allRecipes().filter(function(r){return r.meal===meal;});
+  if(pickerCtx.q) list=list.filter(function(r){return r.title.toLowerCase().indexOf(pickerCtx.q)>=0;});
+  list.sort(function(a,b){return (metaOf(b.id).liked?1:0)-(metaOf(a.id).liked?1:0);});
+  var h="";
+  list.forEach(function(r){
+    var lk=metaOf(r.id).liked;
+    h+='<div class="pickopt" onclick="assign(\''+r.id+'\')"><div><div class="pt">'+esc(r.title)+'</div>'
+      +'<div class="ps">'+(r.sub?esc(r.sub)+' &middot; ':'')+esc(r.tag||'')+'</div></div>'
+      +(lk?'<div style="width:18px;height:18px">'+heart(true)+'</div>':'')+'</div>';
+  });
+  if(!list.length) h='<div class="empty"><p>Geen recepten gevonden.</p></div>';
+  document.getElementById("pickList").innerHTML=h;
+}
+function assign(val){
+  var o=pickerCtx.origin;
+  var target=(o==="week")?curPlan():planForOffset(viewOffset);
+  target.meals[pickerCtx.day][pickerCtx.meal]=val;
+  savePlans();
+  closeSheet();
+  if(o==="week") renderWeek(); else renderVandaag();
+}
+
+// ── CLASS PICKER ──
+function openClassPicker(){drawClassPicker();openSheet();}
+function drawClassPicker(){
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Jims</span><h1 class="serif">Kies je les</h1>'
+    +'<div class="pickopt special" onclick="setClass(null)"><div class="pt" style="font-style:italic;color:var(--soft)">Geen les</div></div>';
+  jimsClasses.forEach(function(c,i){
+    h+='<div class="pickopt" style="justify-content:space-between">'
+      +'<div class="pt" onclick="setClass(\''+esc(c).replace(/'/g,"\\'")+'\')" style="flex:1">'+esc(c)+'</div>'
+      +'<button style="background:none;border:none;color:var(--soft);font-size:20px;cursor:pointer" onclick="delClass('+i+')">&times;</button></div>';
+  });
+  h+='<div class="field" style="margin-top:16px"><label>Les toevoegen</label>'
+    +'<input id="newClass" placeholder="bv. Pilates vrijdag">'
+    +'<button class="btn ghost" style="margin-top:10px" onclick="addClass()">Toevoegen</button></div></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+}
+function setClass(c){curPlan().jimsClass=c;savePlans();closeSheet();renderWeek();}
+function addClass(){var v=document.getElementById("newClass").value.trim();if(!v)return;jimsClasses.push(v);save("fp_jims",jimsClasses);drawClassPicker();}
+function delClass(i){jimsClasses.splice(i,1);save("fp_jims",jimsClasses);drawClassPicker();}
+
+// ── WORKOUT ──
+function openWorkout(){
+  var H=DATA.home;
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Thuis &middot; &plusmn;25 min</span>'
+    +'<h1 class="serif">Billentraining</h1>'
+    +'<div class="metaline">'+(activePlan().billen!=null?"Gepind op "+DAYS[activePlan().billen]:"Nog geen dag gepind")+'</div>';
+  H.billen.forEach(function(b){
+    h+='<div class="ingrow" onclick="this.classList.toggle(\'done\')">'
+      +'<div class="tick">'+checkSvg+'</div><div class="txt">'+esc(b)+'</div></div>';
+  });
+  h+='<div class="tipbox" style="margin-top:16px"><b>Progressie &mdash;</b> '+esc(H.tip)+'</div>';
+  h+='<div class="subhead">Platte-buik-hefbomen</div>';
+  H.buik.forEach(function(b){
+    h+='<div class="ingrow" style="cursor:default">'
+      +'<div class="tick" style="border:none">&#10022;</div><div class="txt">'+esc(b)+'</div></div>';
+  });
+  h+='</div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  openSheet();
+}
+
+// ── RECEPTEN ──
+function renderRecepten(){
+  var lblChips=ALL_LABELS.map(function(lbl){
+    return '<button class="chip'+(recLabels.has(lbl[0])?' active':'')+'" onclick="toggleLabel(\''+lbl[0]+'\')">'+esc(lbl[1])+'</button>';
+  }).join("");
+  var h='<div class="sec-head"><span class="eyebrow">Bibliotheek</span><h2 class="serif">Mijn <em>recepten</em></h2></div>'
+    +'<div class="toolrow">'
+    +'<button onclick="openEditor(null)">+ Eigen recept</button>'
+    +'<button onclick="openImport()">Importeren</button>'
+    +'<button onclick="backup()">Backup</button>'
+    +'<button onclick="openBulkDelete()">Opruimen</button></div>'
+    +'<div class="searchbar"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3A322C" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>'
+    +'<input placeholder="Zoek recept of ingredi\u00ebnt..." oninput="recQuery=this.value.trim().toLowerCase();drawRecList()"></div>'
+    +'<div class="chips">'
+    +'<button class="chip'+(recFilter==='all'?' active':'')+'" onclick="setRecF(\'all\')">Alles</button>'
+    +'<button class="chip'+(recFilter==='ontbijt'?' active':'')+'" onclick="setRecF(\'ontbijt\')">Ontbijt</button>'
+    +'<button class="chip'+(recFilter==='lunch'?' active':'')+'" onclick="setRecF(\'lunch\')">Lunch</button>'
+    +'<button class="chip'+(recFilter==='avond'?' active':'')+'" onclick="setRecF(\'avond\')">Avond</button>'
+    +'<button class="chip'+(recFilter==='fav'?' active':'')+'" onclick="setRecF(\'fav\')">&#9829; Favoriet</button>'
+    +'<button class="chip'+(recFilter==='made'?' active':'')+'" onclick="setRecF(\'made\')">&#10003; Gemaakt</button>'
+    +'</div>'
+    +'<div class="chips" id="lblChips">'+lblChips+'</div>'
+    +'<div id="recList"></div>';
+  document.getElementById("v-recepten").innerHTML=h;
+  drawRecList();
+}
+function setRecF(f){recFilter=f;renderRecepten();}
+function toggleLabel(l){if(recLabels.has(l))recLabels.delete(l);else recLabels.add(l);renderRecepten();}
+function drawRecList(){
+  var list=allRecipes();
+  if(["ontbijt","lunch","avond","hapje"].indexOf(recFilter)>=0) list=list.filter(function(r){return r.meal===recFilter;});
+  else if(recFilter==="fav") list=list.filter(function(r){return metaOf(r.id).liked;});
+  else if(recFilter==="made") list=list.filter(function(r){return metaOf(r.id).made;});
+  if(recLabels.size>0) list=list.filter(function(r){
+    var lbl=getLabels(r.id);
+    return Array.from(recLabels).every(function(l){return lbl.indexOf(l)>=0;});
+  });
+  if(recQuery) list=list.filter(function(r){return (r.title+" "+ingText(r)).toLowerCase().indexOf(recQuery)>=0;});
+  var h="";
+  list.forEach(function(r){
+    var m=metaOf(r.id);
+    var pills='<span class="pill '+r.meal+'">'+r.meal+'</span>'
+      +(r.tag?'<span class="pill kind">'+esc(r.tag)+'</span>':'')
+      +(m.made?'<span class="badge-made">gemaakt</span>':'');
+    var metaStr=(r.sub?esc(r.sub)+' &middot; ':'')+(r.yield?esc(r.yield):'')+( r.time?' &middot; '+esc(r.time):'');
+    h+='<div class="card" onclick="openDetail(\''+r.id+'\')"> '
+      +'<button class="heart" data-like="'+r.id+'" onclick="toggleLike(\''+r.id+'\',event)">'+heart(!!m.liked)+'</button>'
+      +'<div class="tagrow">'+pills+'</div>'
+      +'<h3>'+esc(r.title)+'</h3>'
+      +'<div class="meta">'+metaStr+'</div>'
+      +renderLabelTags(r.id)
+      +'</div>';
+  });
+  if(!list.length) h='<div class="empty"><div class="big">&#10022;</div><p>Niets gevonden.</p></div>';
+  document.getElementById("recList").innerHTML=h;
+}
+function toggleLike(id,ev){
+  if(ev) ev.stopPropagation();
+  var m=meta[id]||(meta[id]={});
+  m.liked=!m.liked;
+  save("fp_meta",meta);
+  document.querySelectorAll('[data-like="'+id+'"]').forEach(function(b){b.innerHTML=heart(!!m.liked);});
+}
+
+// ── DETAIL ──
+function openDetail(id){
+  if(!servingsState[id]) servingsState[id]=(recipeById(id)||{base:1}).base||1;
+  drawDetail(id);
+  openSheet();
+}
+function changeServ(id,d){servingsState[id]=Math.max(1,servingsState[id]+d);drawDetail(id);}
+function drawDetail(id){
+  var r=recipeById(id);
+  if(!r){closeSheet();return;}
+  var m=metaOf(id),serv=servingsState[id],f=serv/(r.base||1);
+  var h='<div class="sheet-head">'
+    +'<button class="backbtn" onclick="closeSheet()">&#8249; Terug</button>'
+    +'<button class="heart" style="position:static" data-like="'+id+'" onclick="toggleLike(\''+id+'\',event)">'+heart(!!m.liked)+'</button>'
+    +'</div><div class="sheet-body">'
+    +'<span class="eyebrow">'+r.meal+(r.tag?' &middot; '+esc(r.tag):'')+'</span>'
+    +'<h1 class="serif">'+esc(r.title)+'</h1>'
+    +'<div class="metaline">'+(r.yield?esc(r.yield):'')+( r.keeps?' &middot; houdt '+esc(r.keeps):'')+( r.time?' &middot; '+esc(r.time):'')+'</div>'
+    +'<div class="servings"><div class="lbl">'+serv+' '+(serv===1?"portie":"porties")+'<span>basis: '+(r.base||1)+'</span></div>'
+    +'<div class="stepper">'
+    +'<button onclick="changeServ(\''+id+'\',-1)">&minus;</button>'
+    +'<span class="val serif">'+serv+'</span>'
+    +'<button onclick="changeServ(\''+id+'\',1)">+</button>'
+    +'</div></div>'
+    +'<div class="subhead">Nodig</div>';
+  (r.ing||[]).forEach(function(x){
+    var a=scaleAmt(x.a,x.u,f);
+    var at=a!=null?'<span class="amt">'+a+(x.u?' '+x.u:'')+'</span>':'<span class="amt"></span>';
+    h+='<div class="ingrow" onclick="this.classList.toggle(\'done\')">'
+      +'<div class="tick">'+checkSvg+'</div>'+at+'<div class="txt">'+esc(x.it)+'</div></div>';
+  });
+  h+='<div class="subhead">Zo maak je \u2019t</div><ol class="steplist">';
+  (r.steps||[]).forEach(function(s){h+='<li>'+esc(s)+'</li>';});
+  h+='</ol>';
+  if(r.tip) h+='<div class="tipbox" style="margin-top:14px"><b>Tip &mdash;</b> '+esc(r.tip)+'</div>';
+  if(m.notes) h+='<div class="noteshown"><div class="nl">Mijn notitie</div>'+esc(m.notes)+'</div>';
+  if((r.tag||'').indexOf('batch')>=0||(r.tag||'').indexOf('make-ahead')>=0){
+    var loActive=leftovers[id];
+    h+='<button class="btn ghost" style="margin-bottom:10px" onclick="toggleLeftover(\''+id+'\');drawDetail(\''+id+'\')">'+( loActive?'✓ Restjes gemarkeerd':'Restjes in huis markeren')+'</button>';
+  }
+  h+='<div class="actionrow">'
+    +'<button class="'+(m.made?'on':'')+'" onclick="toggleMade(\''+id+'\')">'+(m.made?'&#10003; Gemaakt':'Al gemaakt?')+'</button>'
+    +'<button onclick="openNote(\''+id+'\')">Notitie</button>'
+    +'<button onclick="openEditor(\''+id+'\')">Bewerken</button>'
+    +'</div>'
+    +'<div class="actionrow">'
+    +'<button class="danger" onclick="delRecipe(\''+id+'\')">Verwijderen</button>';
+  if(metaOf(id).ov) h+='<button onclick="resetRecipe(\''+id+'\')">Herstel origineel</button>';
+  h+='</div>'
+    +'<div class="subhead">Labels</div>'
+    +'<div class="label-edit-row" id="detailLbls"></div>'
+    +'</div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  document.getElementById("sheet").scrollTop=0;
+  var curLbls=getLabels(id);
+  var row=document.getElementById("detailLbls");
+  if(row){
+    ALL_LABELS.forEach(function(lbl){
+      var sp=document.createElement("span");
+      sp.className="lbl-tog"+(curLbls.indexOf(lbl[0])>=0?" on":"");
+      sp.textContent=lbl[1];
+      sp.onclick=function(){toggleRecLabel(id,lbl[0]);};
+      row.appendChild(sp);
+    });
+  }
+}
+function toggleMade(id){var m=meta[id]||(meta[id]={});m.made=!m.made;save("fp_meta",meta);drawDetail(id);}
+function toggleRecLabel(id,l){
+  var m=meta[id]||(meta[id]={});
+  var built=LABEL_MAP[id]||[];
+  if(built.indexOf(l)>=0){
+    if(!m.exLabels) m.exLabels=[];
+    var i=m.exLabels.indexOf(l);
+    if(i>=0) m.exLabels.splice(i,1); else m.exLabels.push(l);
+  } else {
+    if(!m.extraLabels) m.extraLabels=[];
+    var i=m.extraLabels.indexOf(l);
+    if(i>=0) m.extraLabels.splice(i,1); else m.extraLabels.push(l);
+  }
+  save("fp_meta",meta);drawDetail(id);
+}
+function openNote(id){
+  var m=metaOf(id);
+  var h='<div class="sheet-head"><button class="backbtn" onclick="drawDetail(\''+id+'\')">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Notitie</span>'
+    +'<h1 class="serif">'+(recipeById(id)?esc(recipeById(id).title):"Recept")+'</h1>'
+    +'<textarea class="note" id="noteText" placeholder="bv. minder zout, extra knoflook...">'+esc(m.notes||'')+'</textarea>'
+    +'<button class="btn" style="margin-top:12px" onclick="saveNote(\''+id+'\')">Bewaren</button></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+}
+function saveNote(id){
+  var v=document.getElementById("noteText").value.trim();
+  var m=meta[id]||(meta[id]={});
+  if(v) m.notes=v; else delete m.notes;
+  save("fp_meta",meta);drawDetail(id);
+}
+function delRecipe(id){
+  if(!confirm("Dit recept verwijderen?")) return;
+  var m=meta[id]||(meta[id]={});m.deleted=true;save("fp_meta",meta);closeSheet();renderRecepten();
+}
+function resetRecipe(id){var m=meta[id];if(m){delete m.ov;save("fp_meta",meta);}drawDetail(id);}
+
+// ── EDITOR ──
+function ingToText(ing){
+  return (ing||[]).map(function(x){return (x.a!=null?x.a+(x.u?' '+x.u:'')+" ":"")+x.it;}).join("\n");
+}
+function parseIng(line){
+  line=line.trim();if(!line)return null;
+  var m=line.match(/^(\d+(?:[.,]\d+)?)\s*([a-zA-Z]+)?\s+(.+)$/);
+  var units=["g","kg","ml","l","el","tl","tsp","tbsp","cup","stuks","blik","blikken","teen","tenen","bol"];
+  if(m){
+    var a=parseFloat(m[1].replace(",",".")),u="",it;
+    if(m[2]&&units.indexOf(m[2].toLowerCase())>=0){u=m[2].toLowerCase();it=m[3];}
+    else{it=(m[2]?m[2]+" ":"")+m[3];}
+    return {a:a,u:u,it:it};
+  }
+  return {a:null,u:"",it:line};
+}
+function openEditor(id){
+  var r=id?recipeById(id):{meal:"avond",base:2,ing:[],steps:[],title:"",tag:"",tip:""};
+  if(!r) r={meal:"avond",base:2,ing:[],steps:[],title:"",tag:"",tip:""};
+  var curLbls=id?getLabels(id):[];
+  var lblHtml=ALL_LABELS.map(function(lbl){
+    return '<span class="lbl-tog'+(curLbls.indexOf(lbl[0])>=0?" on":"")+'" onclick="this.classList.toggle(\'on\')">'+esc(lbl[1])+'</span>';
+  }).join("");
+  var h='<div class="sheet-head"><button class="backbtn" onclick="'+(id?"drawDetail('"+id+"')":'closeSheet()')+'">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">'+(id?"Bewerken":"Nieuw recept")+'</span>'
+    +'<h1 class="serif">'+(id?"Recept aanpassen":"Eigen recept")+'</h1>'
+    +'<div class="field"><label>Titel</label><input id="eTitle" value="'+esc(r.title||'')+'"></div>'
+    +'<div class="field"><label>Maaltijd</label><select id="eMeal">'
+    +'<option value="ontbijt"'+(r.meal==="ontbijt"?" selected":"")+'>Ontbijt</option>'
+    +'<option value="lunch"'+(r.meal==="lunch"?" selected":"")+'>Lunch</option>'
+    +'<option value="avond"'+(r.meal==="avond"?" selected":"")+'>Avond</option>'
+    +'<option value="hapje"'+(r.meal==="hapje"?" selected":"")+'>Hapje</option>'
+    +'</select></div>'
+    +'<div class="field"><label>Label (optioneel)</label><input id="eTag" value="'+esc(r.tag||'')+'" placeholder="bv. oven \u00b7 batch"></div>'
+    +'<div class="field"><label>Porties (basis)</label><input id="eBase" type="number" min="1" value="'+(r.base||2)+'"></div>'
+    +'<div class="field"><label>Ingredi\u00ebnten &mdash; \u00e9\u00e9n per regel</label>'
+    +'<textarea id="eIng" placeholder="200 g pasta\n1 burrata\nbasilicum, peper">'+esc(ingToText(r.ing))+'</textarea>'
+    +'<div class="hint">Begin met hoeveelheid + eenheid (g, ml, el...) als je porties wil laten meeschalen.</div></div>'
+    +'<div class="field"><label>Stappen &mdash; \u00e9\u00e9n per regel</label>'
+    +'<textarea id="eSteps" placeholder="Oven op 200\u00b0C.\nMeng alles.\n20 min bakken.">'+esc((r.steps||[]).join("\n"))+'</textarea></div>'
+    +'<div class="field"><label>Tip (optioneel)</label><input id="eTip" value="'+esc(r.tip||'')+'"></div>'
+    +'<div class="field"><label>Labels</label><div class="label-edit-row" id="eLblRow">'+lblHtml+'</div></div>'
+    +'<button class="btn" onclick="saveRecipe(\''+( id||'')+'\')">Bewaren</button>'
+    +'<button class="btn subtle" onclick="'+(id?"drawDetail('"+id+"')":'closeSheet()')+'">Annuleren</button>'
+    +'</div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  openSheet();
+}
+function saveRecipe(id){
+  var lblNodes=document.querySelectorAll("#eLblRow .lbl-tog.on");
+  var lblArr=[];
+  lblNodes.forEach(function(el){
+    var found=ALL_LABELS.find(function(x){return x[1]===el.textContent;});
+    if(found) lblArr.push(found[0]);
+  });
+  var obj={
+    title:document.getElementById("eTitle").value.trim()||"Naamloos recept",
+    meal:document.getElementById("eMeal").value,
+    tag:document.getElementById("eTag").value.trim(),
+    base:Math.max(1,parseInt(document.getElementById("eBase").value)||2),
+    ing:document.getElementById("eIng").value.split("\n").map(parseIng).filter(Boolean),
+    steps:document.getElementById("eSteps").value.split("\n").map(function(s){return s.trim();}).filter(Boolean),
+    tip:document.getElementById("eTip").value.trim(),
+  };
+  if(id){
+    var isCustom=custom.find(function(x){return x.id===id;});
+    if(isCustom){Object.assign(isCustom,obj);save("fp_custom",custom);if(meta[id])delete meta[id].ov;}
+    else{var m=meta[id]||(meta[id]={});m.ov=obj;}
+    var m2=meta[id]||(meta[id]={});m2.extraLabels=lblArr;
+    save("fp_meta",meta);drawDetail(id);
+  } else {
+    var nid="C"+Date.now();
+    custom.push(Object.assign({id:nid},obj));
+    var nm=meta[nid]||(meta[nid]={});nm.extraLabels=lblArr;
+    save("fp_custom",custom);save("fp_meta",meta);
+    closeSheet();renderRecepten();
+  }
+}
+
+// ── IMPORT / BACKUP ──
+function openBulkDelete(){
+  var groups=[
+    {label:"Ontbijt",list:allRecipes().filter(function(r){return r.meal==="ontbijt";})},
+    {label:"Lunch",list:allRecipes().filter(function(r){return r.meal==="lunch";})},
+    {label:"Avond",list:allRecipes().filter(function(r){return r.meal==="avond";})},
+    {label:"Hapjes",list:allRecipes().filter(function(r){return r.meal==="hapje";})},
+  ];
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button>'
+    +'<button style="background:none;border:none;color:var(--ochre);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;cursor:pointer" onclick="bulkSelectAll()">Alles</button>'
+    +'</div>'
+    +'<div class="sheet-body">'
+    +'<span class="eyebrow">Recepten beheren</span>'
+    +'<h1>Opruimen</h1>'
+    +'<p style="color:var(--soft);font-size:13.5px;margin:0 0 20px">Selecteer wat je wil verwijderen. Ingebouwde recepten zijn herstelbaar via het recept zelf.</p>';
+  groups.forEach(function(g){
+    if(!g.list.length) return;
+    g.list.sort(function(a,b){return a.title.localeCompare(b.title);});
+    h+='<div class="subhead">'+g.label+' ('+g.list.length+')</div>';
+    g.list.forEach(function(r){
+      var isCustom=r.id.indexOf("C")===0;
+      h+='<div class="bulk-row" id="brow_'+r.id+'" onclick="bulkToggle(\"'+r.id+'\")">'
+        +'<div class="bulk-check" id="bchk_'+r.id+'"></div>'
+        +'<div class="bulk-info">'
+        +'<div class="bulk-title">'+esc(r.title)+(isCustom?' <span style="font-size:9px;color:var(--ochre);letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--ochre);padding:1px 5px;margin-left:6px">import</span>':'')+'</div>'
+        +'<div class="bulk-sub">'+esc(r.meal)+(r.sub?' · '+esc(r.sub):'')+(r.tag?' · '+esc(r.tag):'')+'</div>'
+        +'</div></div>';
+    });
+  });
+  h+='<div id="bulkActions" style="display:none;position:sticky;bottom:16px;margin-top:20px">'
+    +'<button class="btn" style="background:#9B3A2A" onclick="bulkDeleteConfirm()">Verwijder geselecteerde &rarr;</button>'
+    +'</div></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  window._bulkSel=new Set();
+  openSheet();
+}
+function bulkToggle(id){
+  if(window._bulkSel.has(id))window._bulkSel.delete(id);
+  else window._bulkSel.add(id);
+  var chk=document.getElementById("bchk_"+id);
+  var row=document.getElementById("brow_"+id);
+  if(chk){chk.classList.toggle("on",window._bulkSel.has(id));}
+  if(row){row.classList.toggle("selected",window._bulkSel.has(id));}
+  var act=document.getElementById("bulkActions");
+  if(act)act.style.display=window._bulkSel.size>0?"block":"none";
+  var btn=act?act.querySelector("button"):null;
+  if(btn)btn.textContent="Verwijder "+window._bulkSel.size+" recept"+(window._bulkSel.size===1?"":"en")+" →";
+}
+function bulkSelectAll(){
+  var rows=document.querySelectorAll(".bulk-row");
+  var allSelected=window._bulkSel.size===rows.length;
+  window._bulkSel=new Set();
+  if(!allSelected)rows.forEach(function(row){var id=row.id.replace("brow_","");window._bulkSel.add(id);});
+  rows.forEach(function(row){
+    var id=row.id.replace("brow_","");
+    var chk=document.getElementById("bchk_"+id);
+    if(chk)chk.classList.toggle("on",window._bulkSel.has(id));
+    row.classList.toggle("selected",window._bulkSel.has(id));
+  });
+  var act=document.getElementById("bulkActions");
+  if(act)act.style.display=window._bulkSel.size>0?"block":"none";
+  var btn=act?act.querySelector("button"):null;
+  if(btn)btn.textContent="Verwijder "+window._bulkSel.size+" recept"+(window._bulkSel.size===1?"":"en")+" →";
+}
+function bulkDeleteConfirm(){
+  var n=window._bulkSel.size;
+  if(!n)return;
+  if(!confirm(n+" recept"+(n===1?" ":"en ")+"definitief verwijderen?"))return;
+  window._bulkSel.forEach(function(id){
+    // Custom recipes: remove from array
+    var ci=custom.findIndex(function(r){return r.id===id;});
+    if(ci>=0)custom.splice(ci,1);
+    // All: mark as deleted in meta
+    var m=meta[id]||(meta[id]={});m.deleted=true;
+  });
+  save("fp_custom",custom);save("fp_meta",meta);
+  window._bulkSel=new Set();
+  closeSheet();renderRecepten();
+}
+function openImport(){
+  var h='<div class="sheet-head"><button class="backbtn" onclick="closeSheet()">&#8249; Terug</button></div>'
+    +'<div class="sheet-body"><span class="eyebrow">Importeren</span><h1 class="serif">Recepten inladen</h1>'
+    +'<p style="color:var(--soft);font-size:13.5px;margin-top:0">Plak hier een receptenpakket van Claude en tik op Importeren.</p>'
+    +'<div class="field"><textarea id="impText" style="min-height:160px;font-family:monospace;font-size:12px" placeholder=\'[{"meal":"avond","title":"..."}]\'></textarea></div>'
+    +'<button class="btn" onclick="doImport()">Importeren</button></div>';
+  document.getElementById("sheetContent").innerHTML=h;
+  openSheet();
+}
+function doImport(){
+  var raw=document.getElementById("impText").value.trim();
+  try{
+    var arr=JSON.parse(raw);
+    if(!Array.isArray(arr)) arr=[arr];
+    var n=0;
+    arr.forEach(function(r,i){
+      if(!r.title)return;
+      custom.push({id:"C"+Date.now()+"_"+i,meal:r.meal||"avond",title:r.title,tag:r.tag||"",
+        base:r.base||2,ing:(r.ing||[]).map(function(x){return{a:x.a!=null?x.a:null,u:x.u||"",it:x.it||x.item||""};;}),
+        steps:r.steps||[],tip:r.tip||"",yield:r.yield||"",keeps:r.keeps||"",time:r.time||""});
+      if(r.labels){var m=meta["C"+Date.now()+"_"+i]||(meta["C"+Date.now()+"_"+i]={});m.extraLabels=r.labels;}
+      n++;
+    });
+    save("fp_custom",custom);closeSheet();renderRecepten();
+    alert(n+" recept"+(n===1?"":"en")+" toegevoegd.");
+  }catch(e){alert("Hmm, dat lukte niet. Controleer of je de volledige code plakte.");}
+}
+function backup(){
+  var data=JSON.stringify({allPlans:allPlans,custom:custom,meta:meta,jims:jimsClasses});
+  copyText(data,"Backup gekopieerd! Bewaar \u2019m in Notes.");
+}
+function copyText(t,msg){
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){alert(msg);}).catch(function(){fallbackCopy(t,msg);});}
+  else fallbackCopy(t,msg);
+}
+function fallbackCopy(t,msg){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");alert(msg);}catch(e){prompt("Kopieer handmatig:",t);}document.body.removeChild(ta);}
+
+// ── LIJST ──
+function buildList(){
+  var map={},staples={};
+  activePlan().meals.forEach(function(day){
+    MEALS.forEach(function(m){
+      var id=day[m];
+      if(!id||id==="nvt")return;
+      var r=recipeById(id);if(!r)return;
+      (r.ing||[]).forEach(function(x){
+        if(x.a==null){staples[x.it.toLowerCase()]=x.it;return;}
+        var k=x.it.toLowerCase()+"|"+x.u;
+        if(!map[k])map[k]={it:x.it,u:x.u,a:0,lo:false};
+        map[k].a+=x.a;
+        if(leftovers[x.it.toLowerCase()])map[k].lo=true;
+      });
+    });
+  });
+  var toBuy=Object.values(map).map(function(o){
+    var a=(o.u==="g"||o.u==="ml")?(o.a>=20?Math.round(o.a/5)*5:Math.round(o.a)):Math.round(o.a*10)/10;
+    return {txt:o.it,amt:a,unit:o.u,lo:o.lo||false};
+  });
+  toBuy.sort(function(a,b){return a.txt.localeCompare(b.txt);});
+  return {toBuy:toBuy,staples:Object.values(staples).sort()};
+}
+function renderLijst(){
+  var L=buildList();
+  var h='<div class="sec-head"><span class="eyebrow">Boodschappen</span><h2 class="serif">Je <em>lijst</em></h2><p>Automatisch uit je weekplan.</p></div>'
+    +'<div class="installhint"><span>&#10022;</span><div><b>Zet me op je beginscherm</b> &mdash; deel-icoon &rarr; &ldquo;Zet op beginscherm&rdquo;. De app opent dan offline.</div></div>';
+  if(!L.toBuy.length&&!L.staples.length){
+    h+='<div class="empty"><div class="big">&#10022;</div><p>Nog niets om te kopen.<br>Stel eerst je <b>week</b> samen.</p></div>'
+      +'<button class="btn ghost" onclick="go(\'week\')">Naar de week &#8250;</button>';
+    document.getElementById("v-lijst").innerHTML=h;return;
+  }
+  var all=L.toBuy.length+L.staples.length,done=0;
+  L.toBuy.forEach(function(o){if(listChecks["b|"+o.txt])done++;});
+  L.staples.forEach(function(s){if(listChecks["s|"+s])done++;});
+  var pct=all?Math.round(done/all*100):0;
+  h+='<button class="btn" onclick="copyList()">Lijst kopi\u00ebren om te delen</button>'
+    +'<div class="progress">'+done+' van '+all+' &middot; '+pct+'%</div>'
+    +'<div class="pbar"><i id="pbarI" style="width:'+pct+'%"></i></div>';
+  L.toBuy.forEach(function(o){
+    var key="b|"+o.txt,d=listChecks[key]?"done":"",loTag=o.lo?'<span class="leftover-tag">al in huis</span>':'';
+    var amt='<span class="amt">'+((""+o.amt).replace(".",","))+(o.unit?" "+o.unit:"")+'</span>';
+    h+='<div class="shoprow '+d+'" onclick="toggleL(this,\''+esc(key).replace(/'/g,"\\'")+'\')">'
+      +'<div class="tick">'+checkSvg+'</div>'+amt+'<div class="txt">'+esc(o.txt)+'</div></div>';
+  });
+  if(L.staples.length){
+    h+='<div class="subhead">Check je voorraad</div>';
+    L.staples.forEach(function(s){
+      var key="s|"+s,d=listChecks[key]?"done":"";
+      h+='<div class="shoprow '+d+'" onclick="toggleL(this,\''+esc(key).replace(/'/g,"\\'")+'\')">'
+        +'<div class="tick">'+checkSvg+'</div><span class="amt"></span><div class="txt">'+esc(s)+'</div></div>';
+    });
+  }
+  h+='<button class="btn subtle" style="margin-top:16px" onclick="resetL()">Vinkjes wissen</button>';
+  document.getElementById("v-lijst").innerHTML=h;
+}
+function updListBar(){
+  var L=buildList(),all=L.toBuy.length+L.staples.length,done=0;
+  L.toBuy.forEach(function(o){if(listChecks["b|"+o.txt])done++;});
+  L.staples.forEach(function(s){if(listChecks["s|"+s])done++;});
+  var pct=all?Math.round(done/all*100):0;
+  var pr=document.querySelector("#v-lijst .progress");
+  var bar=document.getElementById("pbarI");
+  if(pr)pr.innerHTML=done+" van "+all+" &middot; "+pct+"%";
+  if(bar)bar.style.width=pct+"%";
+}
+function toggleL(el,key){
+  el.classList.toggle("done");
+  listChecks[key]=el.classList.contains("done");
+  if(!listChecks[key])delete listChecks[key];
+  save("fp_list",listChecks);updListBar();
+}
+function resetL(){listChecks={};save("fp_list",listChecks);renderLijst();}
+function copyList(){
+  var L=buildList(),t="Boodschappen\n\n";
+  L.toBuy.forEach(function(o){t+="- "+((""+o.amt).replace(".",","))+(o.unit?" "+o.unit:"")+" "+o.txt+"\n";});
+  if(L.staples.length){t+="\nCheck voorraad:\n";L.staples.forEach(function(s){t+="- "+s+"\n";});}
+  copyText(t,"Lijst gekopieerd! Plak \u2019m in Notes, Bring of WhatsApp.");
+}
+
+// ── SHEET / NAV ──
+function openSheet(){document.getElementById("sheet").classList.add("on");document.body.style.overflow="hidden";}
+function closeSheet(){document.getElementById("sheet").classList.remove("on");document.body.style.overflow="";}
+var TABS={vandaag:{t:"Plan"},week:{t:"Week"},recepten:{t:"Recepten"},lijst:{t:"Boodschappen"}};
+function go(tab){
+  if(tab==="vandaag")renderVandaag();
+  if(tab==="week")renderWeek();
+  if(tab==="recepten")renderRecepten();
+  if(tab==="lijst")renderLijst();
+  document.querySelectorAll(".view").forEach(function(v){v.classList.remove("on");});
+  document.getElementById("v-"+tab).classList.add("on");
+  document.querySelectorAll("nav button").forEach(function(b){b.classList.toggle("active",b.dataset.tab===tab);});
+  document.getElementById("htitle").textContent=TABS[tab].t;
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("nav button").forEach(function(b){b.onclick=function(){go(b.dataset.tab);};});
+go("vandaag");
+function toggleLeftover(id){leftovers[id]=!leftovers[id];if(!leftovers[id])delete leftovers[id];save('fp_leftovers',leftovers);}
+
+</script>
+</body>
+</html>
